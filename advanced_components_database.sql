@@ -109,7 +109,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (1, 'siteurl', 'http://advanced-components', 'yes'),
 (2, 'home', 'http://advanced-components', 'yes'),
 (3, 'blogname', 'Advanced Components', 'yes'),
-(4, 'blogdescription', 'Ещё один сайт на WordPress', 'yes'),
+(4, 'blogdescription', 'Магазин продвинутых компонентов ПК', 'yes'),
 (5, 'users_can_register', '0', 'yes'),
 (6, 'admin_email', 'Romez1990@gmail.com', 'yes'),
 (7, 'start_of_week', '1', 'yes'),
