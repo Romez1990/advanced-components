@@ -2020,14 +2020,14 @@ video#wp-custom-header-video {
 }
 
 #primary {
-	float: left;
+	float: right;
 	width: 70%;
 }
 
 /* 19.0 Sidebars
 ================================================== */
 #secondary {
-	float: left;
+	float: right;
 	padding-left: 40px;
 	width: 30%;
 }
