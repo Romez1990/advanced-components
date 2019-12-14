@@ -2,10 +2,10 @@
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: sql312.epizy.com
--- Generation Time: Dec 14, 2019 at 01:40 AM
--- Server version: 5.6.45-86.1
--- PHP Version: 7.2.22
+-- Host: 127.0.0.1:3306
+-- Generation Time: Dec 14, 2019 at 11:37 AM
+-- Server version: 8.0.15
+-- PHP Version: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `epiz_24730328_advanced_components`
+-- Database: `advanced_components`
 --
 
 -- --------------------------------------------------------
@@ -31,8 +31,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `wp_commentmeta` (
   `meta_id` bigint(20) UNSIGNED NOT NULL,
   `comment_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
-  `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
+  `meta_key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `meta_value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
@@ -62,17 +62,17 @@ INSERT INTO `wp_commentmeta` (`meta_id`, `comment_id`, `meta_key`, `meta_value`)
 CREATE TABLE `wp_comments` (
   `comment_ID` bigint(20) UNSIGNED NOT NULL,
   `comment_post_ID` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
-  `comment_author` tinytext COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `comment_author_email` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `comment_author_url` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `comment_author_IP` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `comment_author` tinytext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `comment_author_email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `comment_author_url` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `comment_author_IP` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `comment_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `comment_date_gmt` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `comment_content` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `comment_content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `comment_karma` int(11) NOT NULL DEFAULT '0',
-  `comment_approved` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '1',
-  `comment_agent` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `comment_type` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `comment_approved` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '1',
+  `comment_agent` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `comment_type` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `comment_parent` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
   `user_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
@@ -230,7 +230,16 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 (146, 173, 'ActionScheduler', '', '', '', '2019-12-13 20:52:33', '2019-12-13 20:52:33', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
 (147, 173, 'ActionScheduler', '', '', '', '2019-12-14 06:14:45', '2019-12-14 06:14:45', 'action started', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
 (148, 173, 'ActionScheduler', '', '', '', '2019-12-14 06:14:45', '2019-12-14 06:14:45', 'action complete', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
-(149, 181, 'ActionScheduler', '', '', '', '2019-12-14 06:14:45', '2019-12-14 06:14:45', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0);
+(149, 181, 'ActionScheduler', '', '', '', '2019-12-14 06:14:45', '2019-12-14 06:14:45', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(150, 181, 'ActionScheduler', '', '', '', '2019-12-14 07:28:25', '2019-12-14 07:28:25', 'action started', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(151, 181, 'ActionScheduler', '', '', '', '2019-12-14 07:28:25', '2019-12-14 07:28:25', 'action complete', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(152, 185, 'ActionScheduler', '', '', '', '2019-12-14 07:28:26', '2019-12-14 07:28:26', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(153, 186, 'ActionScheduler', '', '', '', '2019-12-14 07:28:34', '2019-12-14 07:28:34', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(154, 187, 'ActionScheduler', '', '', '', '2019-12-14 07:28:34', '2019-12-14 07:28:34', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(155, 186, 'ActionScheduler', '', '', '', '2019-12-14 07:29:44', '2019-12-14 07:29:44', 'action started', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(156, 186, 'ActionScheduler', '', '', '', '2019-12-14 07:29:45', '2019-12-14 07:29:45', 'action complete', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(157, 187, 'ActionScheduler', '', '', '', '2019-12-14 07:29:45', '2019-12-14 07:29:45', 'action started', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(158, 187, 'ActionScheduler', '', '', '', '2019-12-14 07:29:46', '2019-12-14 07:29:46', 'action complete', 0, '1', 'ActionScheduler', 'action_log', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -240,18 +249,18 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 
 CREATE TABLE `wp_links` (
   `link_id` bigint(20) UNSIGNED NOT NULL,
-  `link_url` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `link_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `link_image` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `link_target` varchar(25) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `link_description` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `link_visible` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'Y',
+  `link_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `link_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `link_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `link_target` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `link_description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `link_visible` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'Y',
   `link_owner` bigint(20) UNSIGNED NOT NULL DEFAULT '1',
   `link_rating` int(11) NOT NULL DEFAULT '0',
   `link_updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `link_rel` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `link_notes` mediumtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `link_rss` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
+  `link_rel` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `link_notes` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `link_rss` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 -- --------------------------------------------------------
@@ -261,10 +270,10 @@ CREATE TABLE `wp_links` (
 --
 
 CREATE TABLE `wp_mailchimp_carts` (
-  `id` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `email` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `user_id` int(11) DEFAULT NULL,
-  `cart` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `cart` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `created_at` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -276,8 +285,8 @@ CREATE TABLE `wp_mailchimp_carts` (
 
 CREATE TABLE `wp_mailchimp_jobs` (
   `id` bigint(20) NOT NULL,
-  `obj_id` text COLLATE utf8mb4_unicode_520_ci,
-  `job` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `obj_id` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci,
+  `job` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `created_at` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -289,9 +298,9 @@ CREATE TABLE `wp_mailchimp_jobs` (
 
 CREATE TABLE `wp_options` (
   `option_id` bigint(20) UNSIGNED NOT NULL,
-  `option_name` varchar(191) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `option_value` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `autoload` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'yes'
+  `option_name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `option_value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `autoload` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'yes'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
@@ -402,7 +411,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (101, 'widget_archives', 'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (102, 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (103, 'sidebars_widgets', 'a:12:{s:19:\"wp_inactive_widgets\";a:0:{}s:20:\"idyllic_main_sidebar\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:19:\"idyllic_header_info\";a:0:{}s:17:\"idyllic_side_menu\";a:0:{}s:28:\"idyllic_contact_page_sidebar\";a:0:{}s:29:\"idyllic_form_for_contact_page\";a:0:{}s:27:\"idyllic_woocommerce_sidebar\";a:0:{}s:16:\"idyllic_footer_1\";a:0:{}s:16:\"idyllic_footer_2\";a:0:{}s:16:\"idyllic_footer_3\";a:0:{}s:16:\"idyllic_footer_4\";a:0:{}s:13:\"array_version\";i:3;}', 'yes'),
-(104, 'cron', 'a:17:{i:1576304739;a:1:{s:26:\"action_scheduler_run_queue\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:12:\"every_minute\";s:4:\"args\";a:0:{}s:8:\"interval\";i:60;}}}i:1576305307;a:1:{s:33:\"wc_admin_process_orders_milestone\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1576306668;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1576307685;a:1:{s:32:\"woocommerce_cancel_unpaid_orders\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:2:{s:8:\"schedule\";b:0;s:4:\"args\";a:0:{}}}}i:1576310266;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576310268;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1576310319;a:1:{s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576310322;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576310374;a:1:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576312490;a:1:{s:14:\"wc_admin_daily\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576312783;a:1:{s:33:\"woocommerce_cleanup_personal_data\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576312793;a:1:{s:30:\"woocommerce_tracker_send_event\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576323583;a:1:{s:24:\"woocommerce_cleanup_logs\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576334383;a:1:{s:28:\"woocommerce_cleanup_sessions\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1576357200;a:1:{s:27:\"woocommerce_scheduled_sales\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1577966400;a:1:{s:25:\"woocommerce_geoip_updater\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:7:\"monthly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:2635200;}}}s:7:\"version\";i:2;}', 'yes'),
+(104, 'cron', 'a:17:{i:1576311334;a:1:{s:26:\"action_scheduler_run_queue\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:12:\"every_minute\";s:4:\"args\";a:0:{}s:8:\"interval\";i:60;}}}i:1576312103;a:1:{s:32:\"woocommerce_cancel_unpaid_orders\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:2:{s:8:\"schedule\";b:0;s:4:\"args\";a:0:{}}}}i:1576312490;a:1:{s:14:\"wc_admin_daily\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576312534;a:1:{s:33:\"wc_admin_process_orders_milestone\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1576313868;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1576319303;a:1:{s:24:\"woocommerce_cleanup_logs\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576330103;a:1:{s:28:\"woocommerce_cleanup_sessions\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1576353468;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1576357200;a:1:{s:27:\"woocommerce_scheduled_sales\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576394903;a:1:{s:33:\"woocommerce_cleanup_personal_data\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576394913;a:1:{s:30:\"woocommerce_tracker_send_event\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576396666;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576396719;a:1:{s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576396722;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1576396774;a:1:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1578355200;a:1:{s:25:\"woocommerce_geoip_updater\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:7:\"monthly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:2635200;}}}s:7:\"version\";i:2;}', 'yes'),
 (105, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (106, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (107, 'widget_media_audio', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -421,11 +430,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (1950, '_transient_wc_customer_bought_product_2cd73b8b105a03df7fc6f72f94e92200', 'a:2:{s:7:\"version\";s:10:\"1575655590\";s:5:\"value\";a:0:{}}', 'no'),
 (2026, '_transient_timeout_wc_related_131', '1576337182', 'no'),
 (2027, '_transient_wc_related_131', 'a:1:{s:51:\"limit=4&exclude_ids%5B0%5D=0&exclude_ids%5B1%5D=131\";a:4:{i:0;s:2:\"50\";i:1;s:3:\"124\";i:2;s:3:\"127\";i:3;s:3:\"129\";}}', 'no'),
-(2111, '_transient_timeout_wc_admin_unsnooze_admin_notes_checked', '1576307968', 'no'),
-(2112, '_transient_wc_admin_unsnooze_admin_notes_checked', 'yes', 'no'),
 (2094, 'widget_the_computer_repair_social_widget', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (2095, 'theme_mods_the-computer-repair', 'a:1:{s:18:\"custom_css_post_id\";i:-1;}', 'yes'),
-(2039, 'auto_updater.lock', '1576270358', 'no'),
 (2065, '_transient_timeout_feed_mod_126d1ca39d75da07beec8b892738427b', '1576313603', 'no'),
 (2066, '_transient_feed_mod_126d1ca39d75da07beec8b892738427b', '1576270403', 'no'),
 (2067, '_transient_timeout_feed_d117b5738fbd35bd8c0391cda1f2b5d9', '1576313603', 'no');
@@ -583,14 +589,13 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (341, 'mailchimp_woocommerce_db_mailchimp_carts', '1', 'no'),
 (342, 'mailchimp-woocommerce_cart_table_add_index_update', '1', 'yes'),
 (352, 'storefront_nux_dismissed', '1', 'yes'),
-(354, '_transient_product_query-transient-version', '1576304872', 'yes'),
-(359, '_transient_product-transient-version', '1576304872', 'yes'),
+(354, '_transient_product_query-transient-version', '1576311076', 'yes'),
+(359, '_transient_product-transient-version', '1576311076', 'yes'),
 (362, 'wc_admin_install_timestamp', '1573979757', 'yes'),
 (365, 'wc_admin_last_orders_milestone', '1', 'yes'),
-(381, 'wc_admin_version', '0.22.0', 'yes'),
-(387, 'woocommerce_version', '3.8.0', 'yes'),
-(388, 'woocommerce_db_version', '3.8.0', 'yes'),
-(390, '_transient_wc_attribute_taxonomies', 'a:0:{}', 'yes'),
+(2204, 'wc_admin_version', '0.23.1', 'yes'),
+(2174, 'woocommerce_version', '3.8.1', 'yes'),
+(2175, 'woocommerce_db_version', '3.8.1', 'yes'),
 (406, 'theme_mods_astra', 'a:4:{i:0;b:0;s:18:\"nav_menu_locations\";a:0:{}s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1573986820;s:4:\"data\";a:11:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"header-widget\";a:0:{}s:15:\"footer-widget-1\";a:0:{}s:15:\"footer-widget-2\";a:0:{}s:24:\"advanced-footer-widget-1\";a:0:{}s:24:\"advanced-footer-widget-2\";a:0:{}s:24:\"advanced-footer-widget-3\";a:0:{}s:24:\"advanced-footer-widget-4\";a:0:{}s:22:\"astra-woo-shop-sidebar\";a:0:{}s:24:\"astra-woo-single-sidebar\";a:0:{}}}}', 'yes'),
 (408, 'astra-settings', 'a:3:{s:18:\"theme-auto-version\";s:5:\"2.1.3\";s:22:\"is_theme_queue_running\";b:0;s:33:\"_astra_pb_compatibility_completed\";b:1;}', 'yes'),
 (410, '_transient_timeout_astra-theme-first-rating', '1576572521', 'no'),
@@ -598,7 +603,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (414, 'astra-theme-old-setup', '1', 'yes'),
 (452, 'theme_mods_idyllic', 'a:13:{i:0;b:0;s:21:\"idyllic_theme_options\";a:90:{s:18:\"idyllic_responsive\";s:2:\"on\";s:21:\"idyllic_design_layout\";s:17:\"full-width-layout\";s:30:\"idyllic_sidebar_layout_options\";s:5:\"right\";s:19:\"idyllic_blog_layout\";s:19:\"large_image_display\";s:28:\"idyllic_search_custom_header\";i:0;s:17:\"idyllic_side_menu\";i:0;s:31:\"idyllic-img-upload-footer-image\";s:0:\"\";s:22:\"idyllic_header_display\";s:11:\"header_text\";s:18:\"idyllic_categories\";a:0:{}s:14:\"idyllic_scroll\";i:0;s:22:\"idyllic_secondary_text\";s:0:\"\";s:21:\"idyllic_secondary_url\";s:0:\"\";s:16:\"idyllic_tag_text\";s:16:\"Continue Reading\";s:22:\"idyllic_excerpt_length\";s:2:\"50\";s:17:\"idyllic_reset_all\";i:0;s:18:\"idyllic_stick_menu\";i:0;s:18:\"idyllic_wow_effect\";i:0;s:28:\"idyllic_logo_high_resolution\";i:0;s:23:\"idyllic_blog_post_image\";s:2:\"on\";s:19:\"idyllic_search_text\";s:15:\"Search &hellip;\";s:27:\"idyllic_blog_content_layout\";s:19:\"excerptblog_display\";s:28:\"idyllic_header_design_layout\";s:0:\"\";s:25:\"idyllic_entry_meta_single\";s:4:\"show\";s:23:\"idyllic_entry_meta_blog\";s:9:\"show-meta\";s:29:\"idyllic_footer_column_section\";s:1:\"4\";s:25:\"idyllic_disable_main_menu\";i:0;s:21:\"idyllic_slider_button\";i:0;s:19:\"idyllic_slider_type\";s:14:\"default_slider\";s:28:\"idyllic_slider_design_layout\";s:12:\"layer-slider\";s:31:\"idyllic_slider_animation_option\";s:16:\"animation-bottom\";s:19:\"idyllic_slider_link\";i:0;s:21:\"idyllic_enable_slider\";s:9:\"frontpage\";s:23:\"idyllic_category_slider\";a:0:{}s:30:\"idyllic_category_slider_number\";s:1:\"6\";s:24:\"idyllic_animation_effect\";s:5:\"slide\";s:22:\"idyllic_slideshowSpeed\";s:1:\"5\";s:22:\"idyllic_animationSpeed\";s:1:\"7\";s:31:\"idyllic_slider_content_bg_color\";s:3:\"off\";s:42:\"idyllic_display_page_single_featured_image\";i:0;s:37:\"idyllic_fullwidth_feature_single_post\";i:0;s:24:\"idyllic_disable_about_us\";i:1;s:28:\"idyllic_about_us_remove_link\";i:0;s:16:\"idyllic_about_us\";s:0:\"\";s:19:\"idyllic_about_title\";s:0:\"\";s:25:\"idyllic_about_description\";s:0:\"\";s:35:\"idyllic-img-upload-aboutus-bg-image\";s:0:\"\";s:26:\"idyllic-about-flip-content\";i:0;s:24:\"idyllic_disable_features\";i:1;s:32:\"idyllic_frontpage_feature_design\";s:0:\"\";s:30:\"idyllic_disable_features_image\";i:0;s:22:\"idyllic_total_features\";s:1:\"4\";s:22:\"idyllic_features_title\";s:0:\"\";s:28:\"idyllic_features_description\";s:0:\"\";s:26:\"idyllic_frontpage_position\";s:7:\"default\";s:31:\"idyllic_disable_fact_figure_box\";i:1;s:40:\"idyllic_disable_fact_figure_number_count\";i:0;s:23:\"idyllic_fact_figure_box\";s:0:\"\";s:29:\"idyllic_fact_figure_box_title\";s:0:\"\";s:35:\"idyllic_fact_figure_box_description\";s:0:\"\";s:33:\"idyllic-img-fact-fig-box-bg-image\";s:0:\"\";s:28:\"idyllic_img_fact_fig_boxlink\";s:0:\"\";s:29:\"idyllic_disable_portfolio_box\";i:1;s:27:\"idyllic_total_portfolio_box\";s:1:\"8\";s:23:\"idyllic_portfolio_title\";s:0:\"\";s:29:\"idyllic_portfolio_description\";s:0:\"\";s:34:\"idyllic_portfolio_fullwidth_layout\";i:0;s:33:\"idyllic_portfolio_noborder_layout\";i:0;s:35:\"idyllic_portfolio_show_title_layout\";i:0;s:31:\"idyllic_portfolio_category_list\";a:0:{}s:27:\"idyllic_disable_latest_blog\";i:1;s:30:\"idyllic_total_latest_from_blog\";s:1:\"4\";s:25:\"idyllic_latest_blog_title\";s:0:\"\";s:31:\"idyllic_latest_blog_description\";s:0:\"\";s:29:\"idyllic_display_blog_category\";s:4:\"blog\";s:34:\"idyllic_display_blog_design_layout\";s:0:\"\";s:38:\"idyllic_latest_from_blog_category_list\";a:0:{}s:31:\"idyllic_disable_our_testimonial\";i:1;s:29:\"idyllic_total_our_testimonial\";s:1:\"3\";s:28:\"idyllic-testimonial-bg-image\";s:0:\"\";s:25:\"idyllic_testimonial_title\";s:0:\"\";s:31:\"idyllic_testimonial_description\";s:0:\"\";s:27:\"idyllic_disable_team_member\";i:1;s:28:\"idyllic_our_team_remove_link\";i:0;s:33:\"idyllic_team_member_design_layout\";s:0:\"\";s:25:\"idyllic_total_team_member\";s:1:\"6\";s:25:\"idyllic_team_member_title\";s:0:\"\";s:31:\"idyllic_team_member_description\";s:0:\"\";s:24:\"idyllic_top_social_icons\";i:0;s:30:\"idyllic_side_menu_social_icons\";i:0;s:27:\"idyllic_buttom_social_icons\";i:0;}s:18:\"nav_menu_locations\";a:0:{}s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1573986959;s:4:\"data\";a:11:{s:19:\"wp_inactive_widgets\";a:0:{}s:20:\"idyllic_main_sidebar\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:19:\"idyllic_header_info\";a:0:{}s:17:\"idyllic_side_menu\";a:0:{}s:28:\"idyllic_contact_page_sidebar\";a:0:{}s:29:\"idyllic_form_for_contact_page\";a:0:{}s:27:\"idyllic_woocommerce_sidebar\";a:0:{}s:16:\"idyllic_footer_1\";a:0:{}s:16:\"idyllic_footer_2\";a:0:{}s:16:\"idyllic_footer_3\";a:0:{}s:16:\"idyllic_footer_4\";a:0:{}}}s:16:\"background_color\";s:6:\"ededed\";s:16:\"background_image\";s:0:\"\";s:17:\"background_preset\";s:6:\"custom\";s:21:\"background_position_x\";s:4:\"left\";s:21:\"background_position_y\";s:3:\"top\";s:15:\"background_size\";s:5:\"cover\";s:17:\"background_repeat\";s:6:\"repeat\";s:21:\"background_attachment\";s:5:\"fixed\";}', 'yes'),
 (464, 'theme_mods_oceanwp', 'a:4:{i:0;b:0;s:18:\"nav_menu_locations\";a:0:{}s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1573987177;s:4:\"data\";a:9:{s:19:\"wp_inactive_widgets\";a:0:{}s:7:\"sidebar\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:9:\"sidebar-2\";a:0:{}s:14:\"search_sidebar\";a:0:{}s:10:\"footer-one\";a:0:{}s:10:\"footer-two\";a:0:{}s:12:\"footer-three\";a:0:{}s:11:\"footer-four\";a:0:{}s:11:\"woo_sidebar\";a:0:{}}}}', 'yes'),
-(550, '_transient_woocommerce_reports-transient-version', '1576304203', 'yes'),
+(550, '_transient_woocommerce_reports-transient-version', '1576308515', 'yes'),
 (1222, 'product_cat_children', 'a:0:{}', 'yes'),
 (650, '_transient_timeout_wc_shipping_method_count_legacy', '1576578696', 'no'),
 (651, '_transient_wc_shipping_method_count_legacy', 'a:2:{s:7:\"version\";s:10:\"1573979475\";s:5:\"value\";i:0;}', 'no'),
@@ -625,18 +630,23 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (1433, '_transient_orders-transient-version', '1575655590', 'yes'),
 (2051, '_site_transient_timeout_php_check_f0b6411b8c82dcf39302e5312c1fbd33', '1576875185', 'no'),
 (2052, '_site_transient_php_check_f0b6411b8c82dcf39302e5312c1fbd33', 'a:5:{s:19:\"recommended_version\";s:3:\"7.3\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}', 'no'),
-(2044, 'core_updater.lock', '1576270360', 'no'),
 (2100, 'widget_vw_kids_social_widget', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (2101, 'theme_mods_vw-kids', 'a:1:{s:18:\"custom_css_post_id\";i:-1;}', 'yes'),
-(2103, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:3:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/ru_RU/wordpress-5.3.1.zip\";s:6:\"locale\";s:5:\"ru_RU\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/ru_RU/wordpress-5.3.1.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.3.1\";s:7:\"version\";s:5:\"5.3.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.3\";s:15:\"partial_version\";s:0:\"\";}i:1;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.3.1.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.3.1.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.3.1-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.3.1-new-bundled.zip\";s:7:\"partial\";s:69:\"https://downloads.wordpress.org/release/wordpress-5.3.1-partial-0.zip\";s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.3.1\";s:7:\"version\";s:5:\"5.3.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.3\";s:15:\"partial_version\";s:3:\"5.3\";}i:2;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/ru_RU/wordpress-5.3.1.zip\";s:6:\"locale\";s:5:\"ru_RU\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/ru_RU/wordpress-5.3.1.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.3.1\";s:7:\"version\";s:5:\"5.3.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.3\";s:15:\"partial_version\";s:0:\"\";s:9:\"new_files\";s:1:\"1\";}}s:12:\"last_checked\";i:1576272091;s:15:\"version_checked\";s:3:\"5.3\";s:12:\"translations\";a:0:{}}', 'no'),
-(2104, '_site_transient_update_plugins', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1576304387;s:8:\"response\";a:2:{s:27:\"woocommerce/woocommerce.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:25:\"w.org/plugins/woocommerce\";s:4:\"slug\";s:11:\"woocommerce\";s:6:\"plugin\";s:27:\"woocommerce/woocommerce.php\";s:11:\"new_version\";s:5:\"3.8.1\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/woocommerce/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/woocommerce.3.8.1.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/woocommerce/assets/icon-256x256.png?rev=2075035\";s:2:\"1x\";s:64:\"https://ps.w.org/woocommerce/assets/icon-128x128.png?rev=2075035\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:67:\"https://ps.w.org/woocommerce/assets/banner-1544x500.png?rev=2075035\";s:2:\"1x\";s:66:\"https://ps.w.org/woocommerce/assets/banner-772x250.png?rev=2075035\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"5.3.1\";s:12:\"requires_php\";s:3:\"5.6\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:39:\"woocommerce-admin/woocommerce-admin.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:31:\"w.org/plugins/woocommerce-admin\";s:4:\"slug\";s:17:\"woocommerce-admin\";s:6:\"plugin\";s:39:\"woocommerce-admin/woocommerce-admin.php\";s:11:\"new_version\";s:6:\"0.23.1\";s:3:\"url\";s:48:\"https://wordpress.org/plugins/woocommerce-admin/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/woocommerce-admin.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:70:\"https://ps.w.org/woocommerce-admin/assets/icon-256x256.jpg?rev=2057866\";s:2:\"1x\";s:70:\"https://ps.w.org/woocommerce-admin/assets/icon-128x128.jpg?rev=2057866\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:73:\"https://ps.w.org/woocommerce-admin/assets/banner-1544x500.jpg?rev=2057866\";s:2:\"1x\";s:72:\"https://ps.w.org/woocommerce-admin/assets/banner-772x250.jpg?rev=2057866\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"5.3.0\";s:12:\"requires_php\";s:6:\"5.6.20\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:2:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.1.3\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.1.3.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}}s:51:\"mailchimp-for-woocommerce/mailchimp-woocommerce.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:39:\"w.org/plugins/mailchimp-for-woocommerce\";s:4:\"slug\";s:25:\"mailchimp-for-woocommerce\";s:6:\"plugin\";s:51:\"mailchimp-for-woocommerce/mailchimp-woocommerce.php\";s:11:\"new_version\";s:3:\"2.3\";s:3:\"url\";s:56:\"https://wordpress.org/plugins/mailchimp-for-woocommerce/\";s:7:\"package\";s:72:\"https://downloads.wordpress.org/plugin/mailchimp-for-woocommerce.2.3.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:78:\"https://ps.w.org/mailchimp-for-woocommerce/assets/icon-256x256.png?rev=1509501\";s:2:\"1x\";s:78:\"https://ps.w.org/mailchimp-for-woocommerce/assets/icon-256x256.png?rev=1509501\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:81:\"https://ps.w.org/mailchimp-for-woocommerce/assets/banner-1544x500.png?rev=1950415\";s:2:\"1x\";s:80:\"https://ps.w.org/mailchimp-for-woocommerce/assets/banner-772x250.jpg?rev=1950415\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
+(2162, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/ru_RU/wordpress-5.3.1.zip\";s:6:\"locale\";s:5:\"ru_RU\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/ru_RU/wordpress-5.3.1.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.3.1\";s:7:\"version\";s:5:\"5.3.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.3\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1576310897;s:15:\"version_checked\";s:5:\"5.3.1\";s:12:\"translations\";a:0:{}}', 'no'),
+(2171, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1576308611;s:7:\"checked\";a:4:{s:19:\"akismet/akismet.php\";s:5:\"4.1.3\";s:51:\"mailchimp-for-woocommerce/mailchimp-woocommerce.php\";s:3:\"2.3\";s:27:\"woocommerce/woocommerce.php\";s:5:\"3.8.1\";s:39:\"woocommerce-admin/woocommerce-admin.php\";s:6:\"0.23.1\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:4:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.1.3\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.1.3.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}}s:51:\"mailchimp-for-woocommerce/mailchimp-woocommerce.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:39:\"w.org/plugins/mailchimp-for-woocommerce\";s:4:\"slug\";s:25:\"mailchimp-for-woocommerce\";s:6:\"plugin\";s:51:\"mailchimp-for-woocommerce/mailchimp-woocommerce.php\";s:11:\"new_version\";s:3:\"2.3\";s:3:\"url\";s:56:\"https://wordpress.org/plugins/mailchimp-for-woocommerce/\";s:7:\"package\";s:72:\"https://downloads.wordpress.org/plugin/mailchimp-for-woocommerce.2.3.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:78:\"https://ps.w.org/mailchimp-for-woocommerce/assets/icon-256x256.png?rev=1509501\";s:2:\"1x\";s:78:\"https://ps.w.org/mailchimp-for-woocommerce/assets/icon-256x256.png?rev=1509501\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:81:\"https://ps.w.org/mailchimp-for-woocommerce/assets/banner-1544x500.png?rev=1950415\";s:2:\"1x\";s:80:\"https://ps.w.org/mailchimp-for-woocommerce/assets/banner-772x250.jpg?rev=1950415\";}s:11:\"banners_rtl\";a:0:{}}s:27:\"woocommerce/woocommerce.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/woocommerce\";s:4:\"slug\";s:11:\"woocommerce\";s:6:\"plugin\";s:27:\"woocommerce/woocommerce.php\";s:11:\"new_version\";s:5:\"3.8.1\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/woocommerce/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/woocommerce.3.8.1.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/woocommerce/assets/icon-256x256.png?rev=2075035\";s:2:\"1x\";s:64:\"https://ps.w.org/woocommerce/assets/icon-128x128.png?rev=2075035\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:67:\"https://ps.w.org/woocommerce/assets/banner-1544x500.png?rev=2075035\";s:2:\"1x\";s:66:\"https://ps.w.org/woocommerce/assets/banner-772x250.png?rev=2075035\";}s:11:\"banners_rtl\";a:0:{}}s:39:\"woocommerce-admin/woocommerce-admin.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:31:\"w.org/plugins/woocommerce-admin\";s:4:\"slug\";s:17:\"woocommerce-admin\";s:6:\"plugin\";s:39:\"woocommerce-admin/woocommerce-admin.php\";s:11:\"new_version\";s:6:\"0.23.1\";s:3:\"url\";s:48:\"https://wordpress.org/plugins/woocommerce-admin/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/woocommerce-admin.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:70:\"https://ps.w.org/woocommerce-admin/assets/icon-256x256.jpg?rev=2057866\";s:2:\"1x\";s:70:\"https://ps.w.org/woocommerce-admin/assets/icon-128x128.jpg?rev=2057866\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:73:\"https://ps.w.org/woocommerce-admin/assets/banner-1544x500.jpg?rev=2057866\";s:2:\"1x\";s:72:\"https://ps.w.org/woocommerce-admin/assets/banner-772x250.jpg?rev=2057866\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
+(2200, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1576308601;s:7:\"checked\";a:1:{s:7:\"idyllic\";s:5:\"1.1.3\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
+(2222, '_site_transient_timeout_theme_roots', '1576312698', 'no'),
+(2223, '_site_transient_theme_roots', 'a:1:{s:7:\"idyllic\";s:7:\"/themes\";}', 'no'),
+(2181, '_transient_timeout_wc_admin_unsnooze_admin_notes_checked', '1576312107', 'no'),
+(2182, '_transient_wc_admin_unsnooze_admin_notes_checked', 'yes', 'no'),
+(2198, '_transient_wc_count_comments', 'O:8:\"stdClass\":7:{s:14:\"total_comments\";i:5;s:3:\"all\";i:5;s:5:\"trash\";s:1:\"1\";s:8:\"approved\";s:1:\"5\";s:9:\"moderated\";i:0;s:4:\"spam\";i:0;s:12:\"post-trashed\";i:0;}', 'yes'),
 (2113, '_site_transient_timeout_browser_49bd5de0f3500cf321f7989944e6548c', '1576909169', 'no'),
 (2114, '_site_transient_browser_49bd5de0f3500cf321f7989944e6548c', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:12:\"79.0.3945.79\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
 (2116, '_site_transient_timeout_community-events-12500940dd65e5ebe2d6e064be30f5cd', '1576347585', 'no'),
 (2117, '_site_transient_community-events-12500940dd65e5ebe2d6e064be30f5cd', 'a:3:{s:9:\"sandboxed\";b:0;s:8:\"location\";a:1:{s:2:\"ip\";s:11:\"5.139.109.0\";}s:6:\"events\";a:0:{}}', 'no'),
-(2057, '_transient_timeout_wc_report_sales_by_date', '1576390778', 'no'),
+(2057, '_transient_timeout_wc_report_sales_by_date', '1576392570', 'no'),
 (2058, '_transient_wc_report_sales_by_date', 'a:16:{s:32:\"0779c8c7dcf1bee4d889e75c28980205\";a:2:{i:0;O:8:\"stdClass\":2:{s:5:\"count\";s:1:\"1\";s:9:\"post_date\";s:19:\"2019-12-05 12:46:38\";}i:1;O:8:\"stdClass\":2:{s:5:\"count\";s:1:\"1\";s:9:\"post_date\";s:19:\"2019-12-06 21:06:25\";}}s:32:\"4b1ac0a709379fb54b6eaad873dd3671\";a:0:{}s:32:\"ea3bfe4a66b7dc382dc96a3a28daccc2\";a:2:{i:0;O:8:\"stdClass\":2:{s:16:\"order_item_count\";s:1:\"1\";s:9:\"post_date\";s:19:\"2019-12-05 12:46:38\";}i:1;O:8:\"stdClass\":2:{s:16:\"order_item_count\";s:1:\"4\";s:9:\"post_date\";s:19:\"2019-12-06 21:06:25\";}}s:32:\"c79230f4317fc4abdb5bde965e0da372\";N;s:32:\"1d93d2a589ed3b0ec6afc09e10e6ce17\";a:2:{i:0;O:8:\"stdClass\":5:{s:11:\"total_sales\";s:4:\"2700\";s:14:\"total_shipping\";s:1:\"0\";s:9:\"total_tax\";s:1:\"0\";s:18:\"total_shipping_tax\";s:1:\"0\";s:9:\"post_date\";s:19:\"2019-12-05 12:46:38\";}i:1;O:8:\"stdClass\":5:{s:11:\"total_sales\";s:5:\"36000\";s:14:\"total_shipping\";s:1:\"0\";s:9:\"total_tax\";s:1:\"0\";s:18:\"total_shipping_tax\";s:1:\"0\";s:9:\"post_date\";s:19:\"2019-12-06 21:06:25\";}}s:32:\"0669b471bce246a132285bee4977ece8\";a:0:{}s:32:\"27803eca85b7c04a22539d6b7155bd05\";a:0:{}s:32:\"caa50b8d80d99f2e3318a5e28973dbc1\";a:0:{}s:32:\"4c76ec32e883f0784b3d4782b03c205b\";a:2:{i:0;O:8:\"stdClass\":2:{s:5:\"count\";s:1:\"1\";s:9:\"post_date\";s:19:\"2019-12-05 12:46:38\";}i:1;O:8:\"stdClass\":2:{s:5:\"count\";s:1:\"1\";s:9:\"post_date\";s:19:\"2019-12-06 21:06:25\";}}s:32:\"407b16284b7f9b73518a76957c02e625\";a:0:{}s:32:\"61de46e8aae8e7706b34434697b49cf1\";a:2:{i:0;O:8:\"stdClass\":2:{s:16:\"order_item_count\";s:1:\"1\";s:9:\"post_date\";s:19:\"2019-12-05 12:46:38\";}i:1;O:8:\"stdClass\":2:{s:16:\"order_item_count\";s:1:\"4\";s:9:\"post_date\";s:19:\"2019-12-06 21:06:25\";}}s:32:\"9c63f049a5d80e2bf2b54393001be361\";N;s:32:\"665708ecda8364a1a4e3130f21e6b62a\";a:2:{i:0;O:8:\"stdClass\":5:{s:11:\"total_sales\";s:4:\"2700\";s:14:\"total_shipping\";s:1:\"0\";s:9:\"total_tax\";s:1:\"0\";s:18:\"total_shipping_tax\";s:1:\"0\";s:9:\"post_date\";s:19:\"2019-12-05 12:46:38\";}i:1;O:8:\"stdClass\":5:{s:11:\"total_sales\";s:5:\"36000\";s:14:\"total_shipping\";s:1:\"0\";s:9:\"total_tax\";s:1:\"0\";s:18:\"total_shipping_tax\";s:1:\"0\";s:9:\"post_date\";s:19:\"2019-12-06 21:06:25\";}}s:32:\"df6c6485507832bc6ee648e8b73d2833\";a:0:{}s:32:\"66aad1b3f79652e3f15f9fa8aef96612\";a:0:{}s:32:\"147c4ca7affb365e469ef1a7343fa899\";a:0:{}}', 'no'),
-(2059, '_transient_timeout_wc_admin_report', '1576390778', 'no'),
+(2059, '_transient_timeout_wc_admin_report', '1576392570', 'no'),
 (2060, '_transient_wc_admin_report', 'a:2:{s:32:\"fcc35a9692b6a69ce4e5306cbbdbf2ce\";a:2:{i:0;O:8:\"stdClass\":2:{s:15:\"sparkline_value\";s:4:\"2700\";s:9:\"post_date\";s:19:\"2019-12-05 12:46:38\";}i:1;O:8:\"stdClass\":2:{s:15:\"sparkline_value\";s:5:\"36000\";s:9:\"post_date\";s:19:\"2019-12-06 21:06:25\";}}s:32:\"f7bcda4e3914360dcdf92fe53a21e66b\";a:1:{i:0;O:8:\"stdClass\":3:{s:10:\"product_id\";s:2:\"50\";s:15:\"sparkline_value\";s:1:\"4\";s:9:\"post_date\";s:19:\"2019-12-06 21:06:25\";}}}', 'no'),
 (2061, '_site_transient_timeout_community-events-343170e86b8ce8fdee9197f66d77099e', '1576313601', 'no'),
 (2062, '_site_transient_community-events-343170e86b8ce8fdee9197f66d77099e', 'a:3:{s:9:\"sandboxed\";b:0;s:8:\"location\";a:1:{s:2:\"ip\";s:12:\"178.76.231.0\";}s:6:\"events\";a:0:{}}', 'no'),
@@ -655,11 +665,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (2071, '_transient_timeout_dash_v2_f69de0bbfe7eaa113146875f40c02000', '1576313604', 'no'),
 (2072, '_transient_dash_v2_f69de0bbfe7eaa113146875f40c02000', '<div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://ru.wordpress.org/news/2019/11/2019-annual-survey/\'>Ежегодный опрос пользователей и разработчиков WordPress 2019</a></li></ul></div><div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://wptavern.com/wordpress-5-3-1-includes-security-and-bug-fixes-accessibility-enhancements-and-twenty-twenty-changes\'>WPTavern: WordPress 5.3.1 Includes Security and Bug Fixes, Accessibility Enhancements, and Twenty Twenty Changes</a></li><li><a class=\'rsswidget\' href=\'https://wordpress.org/news/2019/12/wordpress-5-3-1-security-and-maintenance-release/\'>WordPress.org blog: WordPress 5.3.1 Security and Maintenance Release</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/gutenberg-7-1-includes-welcome-modal-improves-multi-block-selection-and-adds-drag-and-drop-featured-images\'>WPTavern: Gutenberg 7.1 Includes Welcome Modal, Improves Multi-Block Selection, and Adds Drag-and-Drop Featured Images</a></li></ul></div>', 'no'),
 (2087, 'idyllic_theme_options', 'a:2:{s:31:\"idyllic-img-upload-footer-image\";s:0:\"\";s:22:\"idyllic_header_display\";s:9:\"show_both\";}', 'yes'),
-(2105, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1576272092;s:7:\"checked\";a:4:{s:7:\"idyllic\";s:5:\"1.1.2\";s:10:\"storefront\";s:5:\"2.5.3\";s:19:\"the-computer-repair\";s:5:\"0.2.6\";s:7:\"vw-kids\";s:5:\"0.3.8\";}s:8:\"response\";a:1:{s:7:\"idyllic\";a:6:{s:5:\"theme\";s:7:\"idyllic\";s:11:\"new_version\";s:5:\"1.1.3\";s:3:\"url\";s:37:\"https://wordpress.org/themes/idyllic/\";s:7:\"package\";s:55:\"https://downloads.wordpress.org/theme/idyllic.1.1.3.zip\";s:8:\"requires\";s:3:\"5.0\";s:12:\"requires_php\";s:3:\"5.6\";}}s:12:\"translations\";a:0:{}}', 'no'),
-(2108, '_transient_wc_count_comments', 'O:8:\"stdClass\":7:{s:14:\"total_comments\";i:5;s:3:\"all\";i:5;s:8:\"approved\";s:1:\"5\";s:5:\"trash\";s:1:\"1\";s:9:\"moderated\";i:0;s:4:\"spam\";i:0;s:12:\"post-trashed\";i:0;}', 'yes'),
-(2109, '_transient_as_comment_count', 'O:8:\"stdClass\":7:{s:8:\"approved\";s:1:\"5\";s:5:\"trash\";s:1:\"1\";s:14:\"total_comments\";i:5;s:3:\"all\";i:5;s:9:\"moderated\";i:0;s:4:\"spam\";i:0;s:12:\"post-trashed\";i:0;}', 'yes'),
-(2118, '_transient_timeout__woocommerce_helper_subscriptions', '1576305287', 'no'),
-(2119, '_transient__woocommerce_helper_subscriptions', 'a:0:{}', 'no'),
+(2199, '_transient_as_comment_count', 'O:8:\"stdClass\":7:{s:5:\"trash\";s:1:\"1\";s:8:\"approved\";s:1:\"5\";s:14:\"total_comments\";i:5;s:3:\"all\";i:5;s:9:\"moderated\";i:0;s:4:\"spam\";i:0;s:12:\"post-trashed\";i:0;}', 'yes'),
+(2141, '_site_transient_timeout_php_check_a5b4d2808570efd012607394df5c6fa9', '1576910967', 'no'),
+(2142, '_site_transient_php_check_a5b4d2808570efd012607394df5c6fa9', 'a:5:{s:19:\"recommended_version\";s:3:\"7.3\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}', 'no'),
 (776, 'theme_mods_floral-lite', 'a:4:{i:0;b:0;s:18:\"nav_menu_locations\";a:0:{}s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1573986902;s:4:\"data\";a:2:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}}}}', 'yes'),
 (777, 'widget_floral-recent-posts', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (780, 'theme_mods_hestia', 'a:6:{i:0;b:0;s:28:\"zerif_frontpage_was_imported\";s:9:\"not-zerif\";s:18:\"custom_css_post_id\";i:-1;s:28:\"ti_about_recommended_plugins\";a:1:{s:19:\"themeisle-companion\";s:7:\"visible\";}s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1573986971;s:4:\"data\";a:10:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:17:\"subscribe-widgets\";a:0:{}s:19:\"sidebar-woocommerce\";a:0:{}s:15:\"sidebar-top-bar\";a:0:{}s:14:\"header-sidebar\";a:0:{}s:17:\"sidebar-big-title\";a:0:{}s:18:\"footer-one-widgets\";a:0:{}s:18:\"footer-two-widgets\";a:0:{}s:20:\"footer-three-widgets\";a:0:{}}}s:18:\"nav_menu_locations\";a:0:{}}', 'yes'),
@@ -679,11 +687,6 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (924, 'theme_mods_shop-isle', 'a:10:{i:0;b:0;s:28:\"ti_about_recommended_plugins\";a:0:{}s:18:\"nav_menu_locations\";a:0:{}s:16:\"shop_isle_slider\";s:895:\"[{\"image_url\":\"http:\\/\\/advanced-components\\/wp-content\\/themes\\/shop-isle\\/assets\\/images\\/slide1.jpg\",\"link\":\"#\",\"text\":\"Shop Isle\",\"subtext\":\"\\u0422\\u0435\\u043c\\u0430 WooCommerce\",\"label\":\"\\u0427\\u0438\\u0442\\u0430\\u0442\\u044c \\u0434\\u0430\\u043b\\u044c\\u0448\\u0435\",\"id\":\"shop_isle_5dd1237050a33\"},{\"image_url\":\"http:\\/\\/advanced-components\\/wp-content\\/themes\\/shop-isle\\/assets\\/images\\/slide2.jpg\",\"link\":\"#\",\"text\":\"Shop Isle\",\"subtext\":\"\\u0422\\u0435\\u043c\\u0430 WooCommerce\",\"label\":\"\\u0427\\u0438\\u0442\\u0430\\u0442\\u044c \\u0434\\u0430\\u043b\\u044c\\u0448\\u0435\",\"id\":\"shop_isle_5dd1237050a3d\"},{\"image_url\":\"http:\\/\\/advanced-components\\/wp-content\\/themes\\/shop-isle\\/assets\\/images\\/slide3.jpg\",\"link\":\"#\",\"text\":\"Shop Isle\",\"subtext\":\"\\u0422\\u0435\\u043c\\u0430 WooCommerce\",\"label\":\"\\u0427\\u0438\\u0442\\u0430\\u0442\\u044c \\u0434\\u0430\\u043b\\u044c\\u0448\\u0435\",\"id\":\"shop_isle_5dd1237050a42\"}]\";s:17:\"shop_isle_banners\";s:442:\"[{\"image_url\":\"http:\\/\\/advanced-components\\/wp-content\\/themes\\/shop-isle\\/assets\\/images\\/banner1.jpg\",\"link\":\"#\",\"id\":\"shop_isle_5dd1237095472\"},{\"image_url\":\"http:\\/\\/advanced-components\\/wp-content\\/themes\\/shop-isle\\/assets\\/images\\/banner2.jpg\",\"link\":\"#\",\"id\":\"shop_isle_5dd123709547a\"},{\"image_url\":\"http:\\/\\/advanced-components\\/wp-content\\/themes\\/shop-isle\\/assets\\/images\\/banner3.jpg\",\"link\":\"#\",\"id\":\"shop_isle_5dd123709547d\"}]\";s:17:\"shop_isle_socials\";s:297:\"[{\"icon_value\":\"social_facebook\",\"link\":\"#\",\"id\":\"shop_isle_5dd12370b7e54\"},{\"icon_value\":\"social_twitter\",\"link\":\"#\",\"id\":\"shop_isle_5dd12370b7e5b\"},{\"icon_value\":\"social_dribbble\",\"link\":\"#\",\"id\":\"shop_isle_5dd12370b7e5f\"},{\"icon_value\":\"social_skype\",\"link\":\"#\",\"id\":\"shop_isle_5dd12370b7e62\"}]\";s:22:\"shop_isle_team_members\";s:1086:\"[{\"image_url\":\"http:\\/\\/advanced-components\\/wp-content\\/themes\\/shop-isle\\/assets\\/images\\/team1.jpg\",\"text\":\"Eva Bean\",\"subtext\":\"Developer\",\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.\",\"id\":\"shop_isle_5dd12370dca7e\"},{\"image_url\":\"http:\\/\\/advanced-components\\/wp-content\\/themes\\/shop-isle\\/assets\\/images\\/team2.jpg\",\"text\":\"Maria Woods\",\"subtext\":\"Designer\",\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.\",\"id\":\"shop_isle_5dd12370dca89\"},{\"image_url\":\"http:\\/\\/advanced-components\\/wp-content\\/themes\\/shop-isle\\/assets\\/images\\/team3.jpg\",\"text\":\"Booby Stone\",\"subtext\":\"Director\",\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.\",\"id\":\"shop_isle_5dd12370dca8e\"},{\"image_url\":\"http:\\/\\/advanced-components\\/wp-content\\/themes\\/shop-isle\\/assets\\/images\\/team4.jpg\",\"text\":\"Anna Neaga\",\"subtext\":\"Art Director\",\"description\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a iaculis diam.\",\"id\":\"shop_isle_5dd12370dca92\"}]\";s:20:\"shop_isle_advantages\";s:987:\"[{\"icon_value\":\"icon_lightbulb\",\"text\":\"\\u0418\\u0434\\u0435\\u0438 \\u0438 \\u043a\\u043e\\u043d\\u0446\\u0435\\u043f\\u0446\\u0438\\u0438\",\"subtext\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\"id\":\"shop_isle_5dd123710d1a2\"},{\"icon_value\":\"icon_tools\",\"text\":\"\\u0414\\u0438\\u0437\\u0430\\u0439\\u043d\\u044b \\u0438 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0444\\u0435\\u0439\\u0441\\u044b\",\"subtext\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\"id\":\"shop_isle_5dd123710d1ad\"},{\"icon_value\":\"icon_cogs\",\"text\":\"\\u041f\\u043e\\u043b\\u043d\\u043e\\u0441\\u0442\\u044c\\u044e \\u043d\\u0430\\u0441\\u0442\\u0440\\u0430\\u0438\\u0432\\u0430\\u0435\\u043c\\u0430\\u044f\",\"subtext\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\"id\":\"shop_isle_5dd123710d1b2\"},{\"icon_value\":\"icon_like\",\"text\":\"\\u041b\\u0435\\u0433\\u043a\\u043e \\u0438\\u0441\\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u044c\",\"subtext\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\"id\":\"shop_isle_5dd123710d1b6\"}]\";s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1573987192;s:4:\"data\";a:7:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:21:\"sidebar-footer-area-1\";a:0:{}s:21:\"sidebar-footer-area-2\";a:0:{}s:21:\"sidebar-footer-area-3\";a:0:{}s:21:\"sidebar-footer-area-4\";a:0:{}s:30:\"shop-isle-sidebar-shop-archive\";a:0:{}}}}', 'yes'),
 (926, 'shop_isle_update_woocommerce_customizer_controls', '1', 'yes'),
 (929, 'shop_isle_install', '1573987181', 'yes'),
-(2133, '_transient_doing_cron', '1576304884.4069819450378417968750', 'yes'),
-(2136, '_transient_timeout_wc_term_counts', '1578896889', 'no'),
-(2137, '_transient_wc_term_counts', 'a:1:{i:22;s:1:\"5\";}', 'no'),
-(1515, '_site_transient_timeout_browser_480ab0ea437e023d38e280fd3bf88e97', '1576260532', 'no'),
-(1516, '_site_transient_browser_480ab0ea437e023d38e280fd3bf88e97', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:13:\"74.0.3729.169\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
 (1467, 'woocommerce_sales_record_date', '2019-12-06', 'yes'),
 (1468, 'woocommerce_sales_record_amount', '36000', 'yes'),
 (1849, '_site_transient_timeout_browser_38c29658ac4a538847367b9c9869a6f7', '1576667555', 'no'),
@@ -695,13 +698,18 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (943, 'shop_isle_migrate_translation', '1', 'yes'),
 (948, 'shop_isle_section_order_migrate', 'yes', 'yes'),
 (996, 'flash_admin_notice_welcome', '1', 'yes'),
-(2120, '_site_transient_timeout_theme_roots', '1576306187', 'no'),
-(2121, '_site_transient_theme_roots', 'a:4:{s:7:\"idyllic\";s:7:\"/themes\";s:10:\"storefront\";s:7:\"/themes\";s:19:\"the-computer-repair\";s:7:\"/themes\";s:7:\"vw-kids\";s:7:\"/themes\";}', 'no'),
-(2124, '_transient_timeout_plugin_slugs', '1576390788', 'no'),
+(2177, '_transient_wc_attribute_taxonomies', 'a:0:{}', 'yes'),
+(2124, '_transient_timeout_plugin_slugs', '1576392984', 'no'),
 (2125, '_transient_plugin_slugs', 'a:4:{i:0;s:19:\"akismet/akismet.php\";i:1;s:51:\"mailchimp-for-woocommerce/mailchimp-woocommerce.php\";i:2;s:27:\"woocommerce/woocommerce.php\";i:3;s:39:\"woocommerce-admin/woocommerce-admin.php\";}', 'no'),
 (2126, '_transient_timeout_wc_upgrade_notice_3.8.1', '1576390789', 'no'),
 (2127, '_transient_wc_upgrade_notice_3.8.1', '', 'no'),
-(1888, 'category_children', 'a:0:{}', 'yes');
+(1888, 'category_children', 'a:0:{}', 'yes'),
+(2138, '_transient_timeout_external_ip_address_127.0.0.1', '1576910907', 'no'),
+(2139, '_transient_external_ip_address_127.0.0.1', '5.139.109.176', 'no'),
+(2229, '_transient_timeout_wc_term_counts', '1578903080', 'no'),
+(2230, '_transient_wc_term_counts', 'a:1:{i:22;s:1:\"5\";}', 'no'),
+(2147, '_site_transient_timeout_community-events-1aecf33ab8525ff212ebdffbb438372e', '1576349372', 'no'),
+(2148, '_site_transient_community-events-1aecf33ab8525ff212ebdffbb438372e', 'a:3:{s:9:\"sandboxed\";b:0;s:8:\"location\";a:1:{s:2:\"ip\";s:9:\"127.0.0.0\";}s:6:\"events\";a:0:{}}', 'no');
 
 -- --------------------------------------------------------
 
@@ -712,8 +720,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 CREATE TABLE `wp_postmeta` (
   `meta_id` bigint(20) UNSIGNED NOT NULL,
   `post_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
-  `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
+  `meta_key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `meta_value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
@@ -836,7 +844,6 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (366, 73, '_stock_status', 'instock'),
 (365, 73, '_stock', '5'),
 (352, 73, '_edit_last', '1'),
-(353, 73, '_thumbnail_id', '74'),
 (354, 73, '_regular_price', '2900'),
 (355, 73, 'total_sales', '0'),
 (356, 73, '_tax_status', 'taxable'),
@@ -857,21 +864,22 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (346, 71, '_stock_status', 'instock'),
 (347, 71, '_wc_average_rating', '0'),
 (348, 71, '_wc_review_count', '0'),
-(349, 71, '_product_version', '3.8.0'),
-(350, 74, '_wp_attached_file', '2019/11/5.jpg'),
-(351, 74, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:800;s:6:\"height\";i:600;s:4:\"file\";s:13:\"2019/11/5.jpg\";s:5:\"sizes\";a:9:{s:6:\"medium\";a:4:{s:4:\"file\";s:13:\"5-300x225.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:225;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:13:\"5-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:13:\"5-768x576.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:576;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:13:\"5-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";s:9:\"uncropped\";b:0;}s:18:\"woocommerce_single\";a:4:{s:4:\"file\";s:13:\"5-600x450.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:450;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:13:\"5-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"shop_catalog\";a:4:{s:4:\"file\";s:13:\"5-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:11:\"shop_single\";a:4:{s:4:\"file\";s:13:\"5-600x450.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:450;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:13:\"5-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(349, 71, '_product_version', '3.8.1'),
+(888, 190, '_wp_attached_file', '2019/11/4.jpg'),
+(889, 190, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:800;s:6:\"height\";i:600;s:4:\"file\";s:13:\"2019/11/4.jpg\";s:5:\"sizes\";a:9:{s:6:\"medium\";a:4:{s:4:\"file\";s:13:\"4-300x225.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:225;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:13:\"4-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:13:\"4-768x576.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:576;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:13:\"4-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";s:9:\"uncropped\";b:0;}s:18:\"woocommerce_single\";a:4:{s:4:\"file\";s:13:\"4-600x450.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:450;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:13:\"4-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"shop_catalog\";a:4:{s:4:\"file\";s:13:\"4-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:11:\"shop_single\";a:4:{s:4:\"file\";s:13:\"4-600x450.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:450;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:13:\"4-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
 (339, 71, '_backorders', 'no'),
 (338, 71, '_manage_stock', 'yes'),
 (337, 71, '_tax_class', ''),
-(334, 71, '_thumbnail_id', '72'),
 (335, 71, 'total_sales', '0'),
 (336, 71, '_tax_status', 'taxable'),
-(331, 71, '_edit_lock', '1576304546:1'),
-(332, 72, '_wp_attached_file', '2019/11/4.jpg'),
-(333, 72, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:800;s:6:\"height\";i:198;s:4:\"file\";s:13:\"2019/11/4.jpg\";s:5:\"sizes\";a:9:{s:6:\"medium\";a:4:{s:4:\"file\";s:12:\"4-300x74.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:74;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:13:\"4-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:13:\"4-768x190.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:190;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:13:\"4-300x198.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:198;s:9:\"mime-type\";s:10:\"image/jpeg\";s:9:\"uncropped\";b:0;}s:18:\"woocommerce_single\";a:4:{s:4:\"file\";s:13:\"4-600x149.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:149;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:13:\"4-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"shop_catalog\";a:4:{s:4:\"file\";s:13:\"4-300x198.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:198;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:11:\"shop_single\";a:4:{s:4:\"file\";s:13:\"4-600x149.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:149;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:13:\"4-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(331, 71, '_edit_lock', '1576310853:1'),
+(893, 69, '_thumbnail_id', '191'),
+(890, 71, '_thumbnail_id', '190'),
+(891, 191, '_wp_attached_file', '2019/11/5.jpg'),
+(892, 191, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:650;s:6:\"height\";i:650;s:4:\"file\";s:13:\"2019/11/5.jpg\";s:5:\"sizes\";a:8:{s:6:\"medium\";a:4:{s:4:\"file\";s:13:\"5-300x300.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:13:\"5-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:13:\"5-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";s:9:\"uncropped\";b:0;}s:18:\"woocommerce_single\";a:4:{s:4:\"file\";s:13:\"5-600x600.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:600;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:13:\"5-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"shop_catalog\";a:4:{s:4:\"file\";s:13:\"5-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:11:\"shop_single\";a:4:{s:4:\"file\";s:13:\"5-600x600.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:600;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:13:\"5-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
 (330, 71, '_edit_last', '1'),
 (329, 69, '_price', '2700'),
-(328, 69, '_product_version', '3.8.0'),
+(328, 69, '_product_version', '3.8.1'),
 (312, 69, '_sku', '5'),
 (313, 69, '_regular_price', '2700'),
 (314, 69, 'total_sales', '1'),
@@ -888,10 +896,8 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (325, 69, '_stock_status', 'instock'),
 (326, 69, '_wc_average_rating', '0'),
 (327, 69, '_wc_review_count', '0'),
-(311, 69, '_thumbnail_id', '70'),
-(309, 70, '_wp_attached_file', '2019/11/3.jpg'),
 (307, 69, '_edit_last', '1'),
-(308, 69, '_edit_lock', '1576304545:1'),
+(308, 69, '_edit_lock', '1576311077:1'),
 (292, 67, '_tax_status', 'taxable'),
 (290, 67, '_regular_price', '6200'),
 (291, 67, 'total_sales', '0'),
@@ -901,9 +907,8 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (280, 62, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1574870847;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
 (279, 61, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1574862653;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
 (278, 60, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1574772050;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
-(310, 70, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:650;s:6:\"height\";i:650;s:4:\"file\";s:13:\"2019/11/3.jpg\";s:5:\"sizes\";a:8:{s:6:\"medium\";a:4:{s:4:\"file\";s:13:\"3-300x300.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:13:\"3-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:13:\"3-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";s:9:\"uncropped\";b:0;}s:18:\"woocommerce_single\";a:4:{s:4:\"file\";s:13:\"3-600x600.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:600;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:13:\"3-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"shop_catalog\";a:4:{s:4:\"file\";s:13:\"3-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:11:\"shop_single\";a:4:{s:4:\"file\";s:13:\"3-600x600.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:600;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:13:\"3-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
 (306, 67, '_price', '6200'),
-(305, 67, '_product_version', '3.8.0'),
+(305, 67, '_product_version', '3.8.1'),
 (304, 67, '_wc_review_count', '0'),
 (303, 67, '_wc_average_rating', '0'),
 (302, 67, '_stock_status', 'instock'),
@@ -916,10 +921,10 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (295, 67, '_backorders', 'no'),
 (294, 67, '_manage_stock', 'yes'),
 (293, 67, '_tax_class', ''),
-(289, 67, '_thumbnail_id', '68'),
-(288, 68, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:607;s:6:\"height\";i:650;s:4:\"file\";s:15:\"2019/11/2-1.jpg\";s:5:\"sizes\";a:8:{s:6:\"medium\";a:4:{s:4:\"file\";s:15:\"2-1-280x300.jpg\";s:5:\"width\";i:280;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:15:\"2-1-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:15:\"2-1-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";s:9:\"uncropped\";b:0;}s:18:\"woocommerce_single\";a:4:{s:4:\"file\";s:15:\"2-1-600x643.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:643;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:15:\"2-1-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"shop_catalog\";a:4:{s:4:\"file\";s:15:\"2-1-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:11:\"shop_single\";a:4:{s:4:\"file\";s:15:\"2-1-600x643.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:643;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:15:\"2-1-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
-(287, 68, '_wp_attached_file', '2019/11/2-1.jpg'),
-(286, 67, '_edit_lock', '1576304543:1'),
+(887, 67, '_thumbnail_id', '188'),
+(886, 188, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:700;s:6:\"height\";i:700;s:4:\"file\";s:13:\"2019/11/3.png\";s:5:\"sizes\";a:8:{s:6:\"medium\";a:4:{s:4:\"file\";s:13:\"3-300x300.png\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:9:\"image/png\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:13:\"3-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";}s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:13:\"3-300x375.png\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:9:\"image/png\";s:9:\"uncropped\";b:0;}s:18:\"woocommerce_single\";a:4:{s:4:\"file\";s:13:\"3-600x600.png\";s:5:\"width\";i:600;s:6:\"height\";i:600;s:9:\"mime-type\";s:9:\"image/png\";}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:13:\"3-100x100.png\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:9:\"image/png\";}s:12:\"shop_catalog\";a:4:{s:4:\"file\";s:13:\"3-300x375.png\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:9:\"image/png\";}s:11:\"shop_single\";a:4:{s:4:\"file\";s:13:\"3-600x600.png\";s:5:\"width\";i:600;s:6:\"height\";i:600;s:9:\"mime-type\";s:9:\"image/png\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:13:\"3-100x100.png\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:9:\"image/png\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(885, 188, '_wp_attached_file', '2019/11/3.png'),
+(286, 67, '_edit_lock', '1576308669:1'),
 (285, 67, '_edit_last', '1'),
 (283, 65, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1575035084;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
 (221, 44, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1573979766;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
@@ -1114,8 +1119,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (605, 115, '_download_expiry', '-1'),
 (606, 115, '_stock', '6'),
 (607, 115, '_stock_status', 'instock'),
-(608, 115, '_wc_average_rating', '0');
-INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(608, 115, '_wc_average_rating', '0'),
 (609, 115, '_wc_review_count', '0'),
 (610, 115, '_product_version', '3.8.0'),
 (611, 115, '_price', '14499'),
@@ -1131,7 +1135,8 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (621, 118, '_tax_class', ''),
 (622, 118, '_manage_stock', 'yes'),
 (623, 118, '_backorders', 'no'),
-(624, 118, '_sold_individually', 'no'),
+(624, 118, '_sold_individually', 'no');
+INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (625, 118, '_virtual', 'no'),
 (626, 118, '_downloadable', 'no'),
 (627, 118, '_download_limit', '-1'),
@@ -1279,7 +1284,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (770, 133, '_wc_review_count', '0'),
 (771, 133, '_product_version', '3.8.0'),
 (772, 133, '_price', '4850'),
-(773, 133, '_edit_lock', '1575798301:1'),
+(773, 133, '_edit_lock', '1576308721:1'),
 (774, 135, '_edit_last', '1'),
 (775, 135, '_edit_lock', '1575798766:1'),
 (776, 136, '_wp_attached_file', '2019/12/67.jpg'),
@@ -1353,7 +1358,6 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (853, 171, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1576254194;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
 (854, 172, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1576259679;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
 (855, 173, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1576273953;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
-(856, 90, '_customize_restore_dismissed', '1'),
 (857, 174, '_wp_trash_meta_status', 'publish'),
 (858, 174, '_wp_trash_meta_time', '1576270685'),
 (859, 175, '_wp_trash_meta_status', 'publish'),
@@ -1372,7 +1376,10 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (872, 180, '_edit_lock', '1576272167:1'),
 (873, 181, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1576307685;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
 (879, 184, '_wp_attached_file', '2019/11/1.jpg'),
-(880, 184, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1486;s:6:\"height\";i:1480;s:4:\"file\";s:13:\"2019/11/1.jpg\";s:5:\"sizes\";a:10:{s:6:\"medium\";a:4:{s:4:\"file\";s:13:\"1-300x300.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:15:\"1-1024x1020.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:1020;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:13:\"1-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:13:\"1-768x765.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:765;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:13:\"1-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";s:9:\"uncropped\";b:0;}s:18:\"woocommerce_single\";a:4:{s:4:\"file\";s:13:\"1-600x598.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:598;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:13:\"1-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"shop_catalog\";a:4:{s:4:\"file\";s:13:\"1-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:11:\"shop_single\";a:4:{s:4:\"file\";s:13:\"1-600x598.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:598;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:13:\"1-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}');
+(880, 184, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1486;s:6:\"height\";i:1480;s:4:\"file\";s:13:\"2019/11/1.jpg\";s:5:\"sizes\";a:10:{s:6:\"medium\";a:4:{s:4:\"file\";s:13:\"1-300x300.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:15:\"1-1024x1020.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:1020;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:13:\"1-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:13:\"1-768x765.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:765;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:13:\"1-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";s:9:\"uncropped\";b:0;}s:18:\"woocommerce_single\";a:4:{s:4:\"file\";s:13:\"1-600x598.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:598;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:13:\"1-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"shop_catalog\";a:4:{s:4:\"file\";s:13:\"1-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:11:\"shop_single\";a:4:{s:4:\"file\";s:13:\"1-600x598.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:598;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:13:\"1-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(882, 185, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1576312105;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
+(883, 186, '_action_manager_schedule', 'O:30:\"ActionScheduler_SimpleSchedule\":1:{s:41:\"\0ActionScheduler_SimpleSchedule\0timestamp\";i:1576308513;}'),
+(884, 187, '_action_manager_schedule', 'O:30:\"ActionScheduler_SimpleSchedule\":1:{s:41:\"\0ActionScheduler_SimpleSchedule\0timestamp\";i:1576308515;}');
 
 -- --------------------------------------------------------
 
@@ -1385,24 +1392,24 @@ CREATE TABLE `wp_posts` (
   `post_author` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
   `post_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `post_date_gmt` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `post_content` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `post_title` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `post_excerpt` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `post_status` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'publish',
-  `comment_status` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'open',
-  `ping_status` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'open',
-  `post_password` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `post_name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `to_ping` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `pinged` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `post_content` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `post_title` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `post_excerpt` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `post_status` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'publish',
+  `comment_status` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'open',
+  `ping_status` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'open',
+  `post_password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `post_name` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `to_ping` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `pinged` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `post_modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `post_modified_gmt` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `post_content_filtered` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `post_content_filtered` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `post_parent` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
-  `guid` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `guid` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `menu_order` int(11) NOT NULL DEFAULT '0',
-  `post_type` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'post',
-  `post_mime_type` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `post_type` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'post',
+  `post_mime_type` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `comment_count` bigint(20) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -1427,7 +1434,6 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (93, 1, '2019-12-06 21:06:25', '2019-12-06 18:06:25', '', 'Order &ndash; Декабрь 6, 2019 @ 09:06 ПП', '', 'wc-processing', 'open', 'closed', 'wc_order_8sadE1xU4ggLY', '%d0%b7%d0%b0%d0%ba%d0%b0%d0%b7-06-dec-2019-%d0%b2-1806', '', '', '2019-12-06 21:06:25', '2019-12-06 18:06:25', '', 0, 'http://advanced-components.epizy.com/?post_type=shop_order&#038;p=93', 0, 'shop_order', '', 2),
 (92, 0, '2019-12-06 18:52:12', '2019-12-06 18:52:12', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5deb7040421f66.89440743-TX0IYZIENqjbIJmP7RdOnWbBIeBpJf3f', '', '', '2019-12-07 12:26:24', '2019-12-07 09:26:24', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=92', 0, 'scheduled-action', '', 3),
 (91, 0, '2019-12-06 17:49:52', '2019-12-06 17:49:52', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dea954cdfe572.10953009-unbX1tJUSUbDknJaP9I8rxczl4nJsniE', '', '', '2019-12-06 20:52:12', '2019-12-06 17:52:12', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=91', 0, 'scheduled-action', '', 3),
-(90, 1, '2019-12-06 13:46:53', '0000-00-00 00:00:00', '{\n    \"idyllic::background_color\": {\n        \"value\": \"#ffffff\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2019-12-06 10:46:53\"\n    }\n}', '', '', 'auto-draft', 'closed', 'closed', '', '38b63261-f5fa-4997-b029-3737e12bee53', '', '', '2019-12-06 13:46:53', '0000-00-00 00:00:00', '', 0, 'http://advanced-components.epizy.com/?p=90', 0, 'customize_changeset', '', 0),
 (89, 0, '2019-12-06 11:39:18', '2019-12-06 11:39:18', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dea86b04bfe93.18120896-GvMtYjigjmMaNTERl65nhhyGoi2bpajK', '', '', '2019-12-06 19:49:52', '2019-12-06 16:49:52', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=89', 0, 'scheduled-action', '', 3),
 (88, 0, '2019-12-05 17:58:53', '2019-12-05 17:58:53', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dea2fd6b74f29.46538565-m7MDGZka27NPkUFOqthjZVnyx8KQEcaa', '', '', '2019-12-06 13:39:18', '2019-12-06 10:39:18', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=88', 0, 'scheduled-action', '', 3),
 (87, 0, '2019-12-05 10:57:20', '2019-12-05 10:57:20', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5de9374d35ffe1.67835554-Zb0Ev90FFujIu8jrPcyfNW6MbxqyZ8E9', '', '', '2019-12-05 19:58:53', '2019-12-05 16:58:53', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=87', 0, 'scheduled-action', '', 3),
@@ -1444,19 +1450,17 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (77, 0, '2019-12-02 09:03:17', '2019-12-02 09:03:17', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5de52b1fbe7e68.01767082-FBd3QlOHwIHYfE5JDJPVAUrI9JBWPE83', '', '', '2019-12-02 18:17:51', '2019-12-02 15:17:51', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=77', 0, 'scheduled-action', '', 3),
 (75, 0, '2019-11-29 18:35:45', '2019-11-29 18:35:45', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5de4c5457c85f5.62498972-Jbdt5nrikg4ZyC919OTtKzYBrV8e4x9s', '', '', '2019-12-02 11:03:17', '2019-12-02 08:03:17', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=75', 0, 'scheduled-action', '', 3),
 (73, 1, '2019-11-29 19:36:00', '2019-11-29 16:36:00', '<div class=\"price-item-description\">\r\n\r\nБлок питания Chieftec iARENA Series 550W заключен в серый корпус форм-фактора ATX и снабжен активной системой охлаждения с вентилятором размером 12x12 сантиметров. Габариты блока питания при этом составляют 8.7x15x14 сантиметров. Мощность устройства составляет 500 ватт, а входящее напряжение сети может варьироваться в стандартном диапазоне 200 – 240 вольт. Chieftec iARENA Series 550W не усложнен подсветкой, декоративной оплеткой проводов или отстегивающимися кабелями.\r\n\r\n</div>', 'Блок питания Chieftec iARENA Series 550W', '<div class=\"price-item-description\">\r\n\r\nБлок питания Chieftec iARENA Series 550W заключен в серый корпус форм-фактора ATX и снабжен активной системой охлаждения с вентилятором размером 12x12 сантиметров.\r\n\r\n</div>', 'trash', 'open', 'closed', '', '%d0%b1%d0%bb%d0%be%d0%ba-%d0%bf%d0%b8%d1%82%d0%b0%d0%bd%d0%b8%d1%8f-chieftec-iarena-series-550w__trashed', '', '', '2019-12-08 12:38:48', '2019-12-08 09:38:48', '', 0, 'http://advanced-components.epizy.com/?post_type=product&#038;p=73', 0, 'product', '', 0),
-(74, 1, '2019-11-29 19:35:45', '2019-11-29 16:35:45', '', '', '', 'inherit', 'open', 'closed', '', '5', '', '', '2019-12-08 13:03:42', '2019-12-08 10:03:42', '', 73, 'http://advanced-components.epizy.com/wp-content/uploads/2019/11/5.jpg', 0, 'attachment', 'image/jpeg', 0),
+(190, 1, '2019-12-14 11:09:46', '2019-12-14 08:09:46', '', '', '', 'inherit', 'open', 'closed', '', '4', '', '', '2019-12-14 11:09:50', '2019-12-14 08:09:50', '', 71, 'http://advanced-components/wp-content/uploads/2019/11/4.jpg', 0, 'attachment', 'image/jpeg', 0),
 (61, 0, '2019-11-27 13:50:53', '2019-11-27 13:50:53', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dde912f9fe973.87473602-xE7uk52taQMJUsRsCgFk00A1SngQmUVU', '', '', '2019-11-27 18:07:27', '2019-11-27 15:07:27', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=61', 0, 'scheduled-action', '', 3),
 (62, 0, '2019-11-27 16:07:27', '2019-11-27 16:07:27', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5ddf55e8ad2e55.12197626-ZwC3EXiHqkT78dFHyBKmduWDVvmH9cKh', '', '', '2019-11-28 08:06:48', '2019-11-28 05:06:48', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=62', 0, 'scheduled-action', '', 3),
 (63, 0, '2019-11-28 06:06:48', '2019-11-28 06:06:48', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5ddfe95010f591.19118260-k7PtxwdTPuCH5UMsB0cHgQvduoN9prgg', '', '', '2019-11-28 18:35:44', '2019-11-28 15:35:44', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=63', 0, 'scheduled-action', '', 3),
 (64, 0, '2019-11-28 16:35:44', '2019-11-28 16:35:44', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5de112bc28cb48.07932284-U984i99bti801guhCpMi3Ufor4BUnGqp', '', '', '2019-11-29 15:44:44', '2019-11-29 12:44:44', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=64', 0, 'scheduled-action', '', 3),
 (65, 0, '2019-11-29 13:44:44', '2019-11-29 13:44:44', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5de1463977dbc2.42790011-Zdfavu90H0TXv703IxPgIO1y9CTLZwty', '', '', '2019-11-29 19:24:25', '2019-11-29 16:24:25', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=65', 0, 'scheduled-action', '', 3),
 (66, 0, '2019-11-29 17:24:25', '2019-11-29 17:24:25', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5de156f104bd72.70546016-9HgDUZb4iQ9iWZ5BQ8NeBIQ2de56wsI8', '', '', '2019-11-29 20:35:45', '2019-11-29 17:35:45', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=66', 0, 'scheduled-action', '', 3),
-(67, 1, '2019-11-29 19:26:55', '2019-11-29 16:26:55', '<div class=\"price-item-description\">\r\n\r\nМатеринская плата ASUS TUF B360M-E GAMING спроектирована крупным производителем компьютерных комплектующих. Она разработана для использования в игровых ПК. Для производства платы применялись проверенные компоненты, последние наработки, она прошла тестирование и может эксплуатироваться в сложных условиях.\r\nМодель ASUS TUF B360M-E GAMING выпущена в формате Micro-ATX. Размеры у платы – 226x208 мм. Применяемый в ней чипсет – Intel B360. Нельзя не отметить агрессивный игровой дизайн платы, что станет дополнительным преимуществом.\r\nПлата совместима с процессорами Intel. В ней используется сокет LGA 1151-v2. На плату можно поставить последние процессоры от Intel, не забывайте проверять совместимость чипа перед приобретением.\r\nЧипсет сетевого адаптера – Intel I219V. Поддерживаемая им скорость – до 1 Гбит/с. Происходит быстрая передача значительных объемов данных, можно комфортно пользоваться ресурсами сети.\r\nНа плату ставятся модули оперативной памяти DDR4. Доступно два слота под планки ОЗУ, а общий максимальный объем – 32 ГБ. Для присоединения видеокарты есть один слот расширения PCI-E x16. В упаковке прикладывается сопутствующее оснащение для платы.\r\n\r\n</div>', 'Материнская плата ASUS TUF B360M-E GAMING', '<div class=\"price-item-description\">\r\n\r\nМатеринская плата ASUS TUF B360M-E GAMING спроектированная крупным производителем компьютерных комплектующих.\r\n\r\n</div>', 'publish', 'open', 'closed', '', '%d0%bc%d0%b0%d1%82%d0%b5%d1%80%d0%b8%d0%bd%d1%81%d0%ba%d0%b0%d1%8f-%d0%bf%d0%bb%d0%b0%d1%82%d0%b0-asus-tuf-b360m-e-gaming', '', '', '2019-11-29 19:27:29', '2019-11-29 16:27:29', '', 0, 'http://advanced-components.epizy.com/?post_type=product&#038;p=67', 0, 'product', '', 0),
-(68, 1, '2019-11-29 19:26:46', '2019-11-29 16:26:46', '', '', '', 'inherit', 'open', 'closed', '', '2-2', '', '', '2019-12-08 13:03:35', '2019-12-08 10:03:35', '', 67, 'http://advanced-components.epizy.com/wp-content/uploads/2019/11/2-1.jpg', 0, 'attachment', 'image/jpeg', 0),
-(69, 1, '2019-11-29 19:32:31', '2019-11-29 16:32:31', '<div class=\"price-item-description\">\r\n\r\nКомпания Crucial представляет модуль памяти марки Ballistix, известной энтузиастам игровых ПК. Модуль Ballistix Sport AT создан в сотрудничестве с ASUS и соответствуют критериям бренда TUF Gaming Alliance.\r\nПроизводитель гарантирует совместимость с системными платами ASUS TUF Gaming, оформление радиаторов выдержано в едином стиле с изделиями других членов TUF Gaming Alliance (Cooler Master и InWin).\r\n\r\n</div>', 'Оперативная память Ballistix Sport AT [BLS8G4D26BFSTK] 8 ГБ', 'Компания Crucial представляет модуль памяти марки Ballistix, известной энтузиастам игровых ПК.', 'publish', 'open', 'closed', '', '%d0%be%d0%bf%d0%b5%d1%80%d0%b0%d1%82%d0%b8%d0%b2%d0%bd%d0%b0%d1%8f-%d0%bf%d0%b0%d0%bc%d1%8f%d1%82%d1%8c-ballistix-sport-at-bls8g4d26bfstk-8-%d0%b3%d0%b1', '', '', '2019-12-08 11:55:22', '2019-12-08 08:55:22', '', 0, 'http://advanced-components.epizy.com/?post_type=product&#038;p=69', 0, 'product', '', 0),
-(70, 1, '2019-11-29 19:32:20', '2019-11-29 16:32:20', '', '', '', 'inherit', 'open', 'closed', '', '3', '', '', '2019-12-08 11:55:16', '2019-12-08 08:55:16', '', 69, 'http://advanced-components.epizy.com/wp-content/uploads/2019/11/3.jpg', 0, 'attachment', 'image/jpeg', 0),
-(71, 1, '2019-11-29 19:34:42', '2019-11-29 16:34:42', 'В жарких онлайн-баталиях успех в игре во многом зависит от быстродействия вашей машины. Обеспечьте ей это быстродействие, высокую производительность и хороший разгон с оперативной памятью Ballistix Sport LT [BLS16G4D240FSB]. Ведь ее отличает впечатляющий объем в 16 ГБ одного модуля, продуктивный тип DDR4. Тактовая частота также впечатляет – 2400 МГц, при этом память поддерживает 4 режима работы от 1600 до 2400 МГц. Ballistix Sport LT [BLS16G4D240FSB] – это тайминг типичной латентности в 16 CL, это радиатор, отвечающий за равномерное охлаждение мощной системы.', 'Оперативная память Ballistix Sport LT [BLS16G4D240FSB] 16 ГБ', 'В жарких онлайн-баталиях успех в игре во многом зависит от быстродействия вашей машины.', 'publish', 'open', 'closed', '', '%d0%be%d0%bf%d0%b5%d1%80%d0%b0%d1%82%d0%b8%d0%b2%d0%bd%d0%b0%d1%8f-%d0%bf%d0%b0%d0%bc%d1%8f%d1%82%d1%8c-ballistix-sport-lt-bls16g4d240fsb-16-%d0%b3%d0%b1', '', '', '2019-12-08 12:01:42', '2019-12-08 09:01:42', '', 0, 'http://advanced-components.epizy.com/?post_type=product&#038;p=71', 0, 'product', '', 0),
-(72, 1, '2019-11-29 19:33:54', '2019-11-29 16:33:54', '', '', '', 'inherit', 'open', 'closed', '', '4', '', '', '2019-12-08 12:01:37', '2019-12-08 09:01:37', '', 71, 'http://advanced-components.epizy.com/wp-content/uploads/2019/11/4.jpg', 0, 'attachment', 'image/jpeg', 0),
+(67, 1, '2019-11-29 19:26:55', '2019-11-29 16:26:55', '<div class=\"price-item-description\">\r\n\r\nМатеринская плата ASUS TUF B360M-E GAMING спроектирована крупным производителем компьютерных комплектующих. Она разработана для использования в игровых ПК. Для производства платы применялись проверенные компоненты, последние наработки, она прошла тестирование и может эксплуатироваться в сложных условиях.\r\nМодель ASUS TUF B360M-E GAMING выпущена в формате Micro-ATX. Размеры у платы – 226x208 мм. Применяемый в ней чипсет – Intel B360. Нельзя не отметить агрессивный игровой дизайн платы, что станет дополнительным преимуществом.\r\nПлата совместима с процессорами Intel. В ней используется сокет LGA 1151-v2. На плату можно поставить последние процессоры от Intel, не забывайте проверять совместимость чипа перед приобретением.\r\nЧипсет сетевого адаптера – Intel I219V. Поддерживаемая им скорость – до 1 Гбит/с. Происходит быстрая передача значительных объемов данных, можно комфортно пользоваться ресурсами сети.\r\nНа плату ставятся модули оперативной памяти DDR4. Доступно два слота под планки ОЗУ, а общий максимальный объем – 32 ГБ. Для присоединения видеокарты есть один слот расширения PCI-E x16. В упаковке прикладывается сопутствующее оснащение для платы.\r\n\r\n</div>', 'Материнская плата ASUS TUF B360M-E GAMING', '<div class=\"price-item-description\">\r\n\r\nМатеринская плата ASUS TUF B360M-E GAMING спроектированная крупным производителем компьютерных комплектующих.\r\n\r\n</div>', 'publish', 'open', 'closed', '', '%d0%bc%d0%b0%d1%82%d0%b5%d1%80%d0%b8%d0%bd%d1%81%d0%ba%d0%b0%d1%8f-%d0%bf%d0%bb%d0%b0%d1%82%d0%b0-asus-tuf-b360m-e-gaming', '', '', '2019-12-14 10:33:10', '2019-12-14 07:33:10', '', 0, 'http://advanced-components.epizy.com/?post_type=product&#038;p=67', 0, 'product', '', 0),
+(188, 1, '2019-12-14 10:33:01', '2019-12-14 07:33:01', '', '', '', 'inherit', 'open', 'closed', '', '3-2', '', '', '2019-12-14 10:33:07', '2019-12-14 07:33:07', '', 67, 'http://advanced-components/wp-content/uploads/2019/11/3.png', 0, 'attachment', 'image/png', 0),
+(69, 1, '2019-11-29 19:32:31', '2019-11-29 16:32:31', '<div class=\"price-item-description\">\r\n\r\nКомпания Crucial представляет модуль памяти марки Ballistix, известной энтузиастам игровых ПК. Модуль Ballistix Sport AT создан в сотрудничестве с ASUS и соответствуют критериям бренда TUF Gaming Alliance.\r\nПроизводитель гарантирует совместимость с системными платами ASUS TUF Gaming, оформление радиаторов выдержано в едином стиле с изделиями других членов TUF Gaming Alliance (Cooler Master и InWin).\r\n\r\n</div>', 'Оперативная память Ballistix Sport AT [BLS8G4D26BFSTK] 8 ГБ', 'Компания Crucial представляет модуль памяти марки Ballistix, известной энтузиастам игровых ПК.', 'publish', 'open', 'closed', '', '%d0%be%d0%bf%d0%b5%d1%80%d0%b0%d1%82%d0%b8%d0%b2%d0%bd%d0%b0%d1%8f-%d0%bf%d0%b0%d0%bc%d1%8f%d1%82%d1%8c-ballistix-sport-at-bls8g4d26bfstk-8-%d0%b3%d0%b1', '', '', '2019-12-14 11:11:16', '2019-12-14 08:11:16', '', 0, 'http://advanced-components.epizy.com/?post_type=product&#038;p=69', 0, 'product', '', 0),
+(71, 1, '2019-11-29 19:34:42', '2019-11-29 16:34:42', 'В жарких онлайн-баталиях успех в игре во многом зависит от быстродействия вашей машины. Обеспечьте ей это быстродействие, высокую производительность и хороший разгон с оперативной памятью Ballistix Sport LT [BLS16G4D240FSB]. Ведь ее отличает впечатляющий объем в 16 ГБ одного модуля, продуктивный тип DDR4. Тактовая частота также впечатляет – 2400 МГц, при этом память поддерживает 4 режима работы от 1600 до 2400 МГц. Ballistix Sport LT [BLS16G4D240FSB] – это тайминг типичной латентности в 16 CL, это радиатор, отвечающий за равномерное охлаждение мощной системы.', 'Оперативная память Ballistix Sport LT [BLS16G4D240FSB] 16 ГБ', 'В жарких онлайн-баталиях успех в игре во многом зависит от быстродействия вашей машины.', 'publish', 'open', 'closed', '', '%d0%be%d0%bf%d0%b5%d1%80%d0%b0%d1%82%d0%b8%d0%b2%d0%bd%d0%b0%d1%8f-%d0%bf%d0%b0%d0%bc%d1%8f%d1%82%d1%8c-ballistix-sport-lt-bls16g4d240fsb-16-%d0%b3%d0%b1', '', '', '2019-12-14 11:09:52', '2019-12-14 08:09:52', '', 0, 'http://advanced-components.epizy.com/?post_type=product&#038;p=71', 0, 'product', '', 0),
 (44, 0, '2019-11-17 08:36:06', '2019-11-17 08:36:06', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dd106ce47a0d5.12206600-QeMORGMpNrKFZTeFmf2vSyfJvKhwZ5kM', '', '', '2019-11-17 11:37:34', '2019-11-17 08:37:34', '', 0, 'http://advanced-components/?post_type=scheduled-action&#038;p=44', 0, 'scheduled-action', '', 3),
 (45, 0, '2019-11-17 08:36:13', '2019-11-17 08:36:13', '[\"wc_admin_update_0201_order_status_index\"]', 'woocommerce_run_update_callback', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dd106d1d8b112.08726456-PppwrvLb2foyzxWKI67LeQg0sDPcs4eu', '', '', '2019-11-17 11:37:37', '2019-11-17 08:37:37', '', 0, 'http://advanced-components/?post_type=scheduled-action&#038;p=45', 0, 'scheduled-action', '', 3),
 (46, 0, '2019-11-17 08:36:15', '2019-11-17 08:36:15', '[\"wc_admin_update_0201_db_version\"]', 'woocommerce_run_update_callback', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dd106d319d047.90249177-v8rK5V5PtcUC3bMCzp0elNvE9zzECbm7', '', '', '2019-11-17 11:37:39', '2019-11-17 08:37:39', '', 0, 'http://advanced-components/?post_type=scheduled-action&#038;p=46', 0, 'scheduled-action', '', 3),
@@ -1493,10 +1497,10 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (117, 1, '2019-12-08 12:11:42', '2019-12-08 09:11:42', '', '', '', 'inherit', 'open', 'closed', '', '8', '', '', '2019-12-08 12:11:48', '2019-12-08 09:11:48', '', 115, 'http://advanced-components.epizy.com/wp-content/uploads/2019/12/8.jpg', 0, 'attachment', 'image/jpeg', 0),
 (118, 1, '2019-12-08 12:15:06', '2019-12-08 09:15:06', 'Материнская плата GIGABYTE GA-78LMT-USB3 R2 станет хорошим решением для приобретения. Она подойдет для создания обычных сборок, можно установить подходящие компоненты. Материнская плата выпускается известной компанией, качество не вызывает сомнений.\r\nФорм-фактор изделия – Micro-ATX. Материнская плата имеет размеры 244x244 мм, необходимо учесть габариты при подборе корпуса. На нее можно поставить 4 модуля оперативной памяти. Поддерживаются планки типа DDR3, объем ОЗУ может составлять 32 ГБ.\r\nМатеринская плата GIGABYTE GA-78LMT-USB3 R2 спроектирована для процессоров от компании AMD. Она получила сокет AM3+. Это важный параметр, который влияет на покупку подходящего ЦП.\r\nМатеринская плата оснащается шестью разъемами SATA. Они обеспечивают высокую пропускную способность – 3 Гбит/с. Можно подключить достаточно накопителей для дальнейшего применения.\r\nПредусмотрены слоты расширения PCI-E x16 и PCI-E x1. Версия PCI Express – 2.0. Материнская плата оснащается четырьмя разъемами USB 2.0 и двумя USB 3.0. Они используются для подключения накопителей и периферии.', 'Материнская плата GIGABYTE GA-78LMT-USB3 R2', '', 'publish', 'open', 'closed', '', '%d0%bc%d0%b0%d1%82%d0%b5%d1%80%d0%b8%d0%bd%d1%81%d0%ba%d0%b0%d1%8f-%d0%bf%d0%bb%d0%b0%d1%82%d0%b0-gigabyte-ga-78lmt-usb3-r2', '', '', '2019-12-08 12:15:07', '2019-12-08 09:15:07', '', 0, 'http://advanced-components.epizy.com/?post_type=product&#038;p=118', 0, 'product', '', 0),
 (119, 1, '2019-12-08 12:13:13', '2019-12-08 09:13:13', 'Никто не любит медленный Интернет и слабый сигнал Wi-Fi! Поэтому материнская плата ASRock PHANTOM GAMING-ITX/AC имеет на борту сетевой адаптер Intel Wireless-AC 9560. Этот адаптер поддерживает встроенные решения 802.11ac и обеспечивает подключения Bluetooth 5 и 2x2 802.11ac 2.4/5Ghz Wi-Fi, в том числе возможности Wave 2, среди которых каналы 160 МГц, скорость до 1,73 Гбит/с и поддержка MU-MIMO. Удвоенная скорость Wi-Fi в сочетании с мощным сигналом Bluetooth может значительно повысить скорость соединения с Интернетом дома, на работе или в пути.', 'Материнская плата ASRock Z390 PHANTOM GAMING-ITX/AC', '<p><br data-mce-bogus=\"1\"></p>', 'inherit', 'closed', 'closed', '', '115-autosave-v1', '', '', '2019-12-08 12:13:13', '2019-12-08 09:13:13', '', 115, 'http://advanced-components.epizy.com/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/115-autosave-v1/', 0, 'revision', '', 0),
-(120, 1, '2019-12-08 12:14:41', '2019-12-08 09:14:41', '', '', '', 'inherit', 'open', 'closed', '', '99', '', '', '2019-12-08 12:14:49', '2019-12-08 09:14:49', '', 118, 'http://advanced-components.epizy.com/wp-content/uploads/2019/12/99.jpg', 0, 'attachment', 'image/jpeg', 0);
-INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
+(120, 1, '2019-12-08 12:14:41', '2019-12-08 09:14:41', '', '', '', 'inherit', 'open', 'closed', '', '99', '', '', '2019-12-08 12:14:49', '2019-12-08 09:14:49', '', 118, 'http://advanced-components.epizy.com/wp-content/uploads/2019/12/99.jpg', 0, 'attachment', 'image/jpeg', 0),
 (121, 1, '2019-12-08 12:20:50', '2019-12-08 09:20:50', '<div class=\"price-item-description\">\r\n\r\nМатеринская плата GIGABYTE H310M S2P 2.0 – поддерживает 8-е поколение процессоров Intel, предоставляя уникальное сочетание функций и технологий в оптимальной платформе для сборки вашего ПК. Уникальные особенности, среди которых можно выделить: высокоэффектные цифровые цепи питания, улучшенные технологии кэширования данных, эксклюзивные аудио контроллеры высочайшего класса, улучшенные сетевые функции и расширенные возможности зарядки устройств, стильный дизайн выводят платы GIGABYTE в особенный класс устройств.\r\n\r\n</div>', 'Материнская плата GIGABYTE H310M S2P 2.0', '', 'publish', 'open', 'closed', '', '%d0%bc%d0%b0%d1%82%d0%b5%d1%80%d0%b8%d0%bd%d1%81%d0%ba%d0%b0%d1%8f-%d0%bf%d0%bb%d0%b0%d1%82%d0%b0-gigabyte-h310m-s2p-2-0', '', '', '2019-12-08 12:20:50', '2019-12-08 09:20:50', '', 0, 'http://advanced-components.epizy.com/?post_type=product&#038;p=121', 0, 'product', '', 0),
-(122, 1, '2019-12-08 12:20:21', '2019-12-08 09:20:21', '', '', '', 'inherit', 'open', 'closed', '', '00', '', '', '2019-12-08 12:20:33', '2019-12-08 09:20:33', '', 121, 'http://advanced-components.epizy.com/wp-content/uploads/2019/12/00.png', 0, 'attachment', 'image/png', 0),
+(122, 1, '2019-12-08 12:20:21', '2019-12-08 09:20:21', '', '', '', 'inherit', 'open', 'closed', '', '00', '', '', '2019-12-08 12:20:33', '2019-12-08 09:20:33', '', 121, 'http://advanced-components.epizy.com/wp-content/uploads/2019/12/00.png', 0, 'attachment', 'image/png', 0);
+INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (123, 0, '2019-12-08 10:21:40', '2019-12-08 10:21:40', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dedfc228785c5.78503210-t9RiWmYNxx7mF2LsCW2dXRBTihWMKDJP', '', '', '2019-12-09 10:47:46', '2019-12-09 07:47:46', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=123', 0, 'scheduled-action', '', 3),
 (124, 1, '2019-12-08 12:24:46', '2019-12-08 09:24:46', 'Если вы являетесь обладателем компактного корпуса, то низкопрофильная видеокарта GIGABYTE GeForce GTX 1050 Ti OC LP [GV-N105TOC-4GL] станет для вас отличным выбором. Модель оснащена 4 ГБ памяти GDDR5 с эффективной частотой 7008 МГц и максимальной пропускной способностью 112.128 ГБ/с.\r\nВидеокарта использует для подключения интерфейс PCI-E. Для монтажа видеоадаптера потребуются 2 слота расширения. Вы сможете по достоинству оценить минимальный уровень шума, производимый единственным вентилятором устройства.\r\nGIGABYTE GeForce GTX 1050 Ti OC LP [GV-N105TOC-4GL] поддерживает одновременное подключение 4 мониторов: в наличии 2 порта HDMI, а также разъемы DisplayPort и DVI-D. Максимальное разрешение, поддерживаемое устройством, равно 7680x4320. Видеоадаптер экономичен: максимальное энергопотребление устройства равно 75 Вт. Необходимая мощность блока питания равна 300 Вт. Для питания видеокарты используется разъем питания 4-pin. В комплектацию модели входит низкопрофильная монтажная планка.', 'Видеокарта GIGABYTE GeForce GTX 1050 Ti OC LP [GV-N105TOC-4GL]', '', 'publish', 'open', 'closed', '', '%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d0%ba%d0%b0%d1%80%d1%82%d0%b0-gigabyte-geforce-gtx-1050-ti-oc-lp-gv-n105toc-4gl', '', '', '2019-12-08 12:26:49', '2019-12-08 09:26:49', '', 0, 'http://advanced-components.epizy.com/?post_type=product&#038;p=124', 0, 'product', '', 0),
 (125, 1, '2019-12-08 12:24:16', '2019-12-08 09:24:16', '', '', '', 'inherit', 'open', 'closed', '', '125', '', '', '2019-12-08 12:24:22', '2019-12-08 09:24:22', '', 124, 'http://advanced-components.epizy.com/wp-content/uploads/2019/12/0.jpg', 0, 'attachment', 'image/jpeg', 0),
@@ -1539,9 +1543,9 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (167, 1, '2019-12-11 14:44:20', '2019-12-11 11:44:20', '<!-- wp:image {\"align\":\"center\",\"id\":158,\"sizeSlug\":\"medium\"} -->\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-medium\"><img src=\"http://advanced-components.epizy.com/wp-content/uploads/2019/12/90-1-300x169.jpg\" alt=\"\" class=\"wp-image-158\"/></figure></div>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Компания&nbsp;<strong>AMD</strong>&nbsp;активно\nведёт разработку новой микроархитектуры&nbsp;<strong>Zen 3</strong>, которая знаменует\nпереход на восьмиядерные модули CCX и техпроцесс 7++ нанометров на базе\nультрафиолетовой литографии. Релиз же готовых решений&nbsp;ожидается&nbsp;к концу 2020 года.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Вместе с\nпроцессорами&nbsp;<strong>Ryzen 4000</strong>&nbsp;выйдут новые наборы логики серии 600,\nкоторые станут последним продуктом для платформы Socket AM4. Новый\nчипсет&nbsp;поддерживает интерфейс PCI Express 4.0, а также&nbsp;способен\nработать с более широким перечнем портов и слотов расширения, чем нынешняя\nверсия.&nbsp;</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Точные характеристики\nновых чипов пока не сообщают, однако, скорее всего, они будут эволюционным\nразвитием современной версии. Кардинальные изменения запланированы на&nbsp;<strong>Zen\n4</strong>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Процессоры на основе\n«четвёрки» будут поддерживать оперативную память DDR5 и, очевидно, другие\nтехнологии, которые выйдут на рынок к тому моменту.&nbsp;</p>\n<!-- /wp:paragraph -->', 'Процессоры AMD Ryzen 4000 выйдут к концу 2020 года', '', 'inherit', 'closed', 'closed', '', '157-revision-v1', '', '', '2019-12-11 14:44:20', '2019-12-11 11:44:20', '', 157, 'http://advanced-components.epizy.com/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/157-revision-v1/', 0, 'revision', '', 0),
 (162, 1, '2019-12-11 14:39:44', '2019-12-11 11:39:44', '<!-- wp:image {\"id\":145,\"sizeSlug\":\"medium\",\"className\":\"is-style-default\"} -->\n<figure class=\"wp-block-image size-medium is-style-default\"><img src=\"http://advanced-components.epizy.com/wp-content/uploads/2019/12/0-1-300x225.jpg\" alt=\"\" class=\"wp-image-145\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\"> По имеющимся данным, 12 декабря компания AMD покажет настольную видеокарту Radeon RX 5500 XT. Сообщается также о возможной готовности модели RX 5500, но в розничную торговлю она не поступит. Сегодня есть возможность понаблюдать за моделями RX 5500 XT в исполнении MSI. </p>\n<!-- /wp:paragraph -->', 'Новая видеокарта Radeon RX 5500 XT выйдет 12 декабря', '', 'inherit', 'closed', 'closed', '', '144-revision-v1', '', '', '2019-12-11 14:39:44', '2019-12-11 11:39:44', '', 144, 'http://advanced-components.epizy.com/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/144-revision-v1/', 0, 'revision', '', 0),
 (163, 1, '2019-12-11 14:41:34', '2019-12-11 11:41:34', '<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Добро пожаловать в магазин Матрица! Здесь вы найдёте самые лучшие компоненты для своего компьютера. </p>\n<!-- /wp:paragraph -->', 'Мы открылись!', '', 'inherit', 'closed', 'closed', '', '1-revision-v1', '', '', '2019-12-11 14:41:34', '2019-12-11 11:41:34', '', 1, 'http://advanced-components.epizy.com/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/1-revision-v1/', 0, 'revision', '', 0),
-(164, 1, '2019-12-11 14:42:13', '2019-12-11 11:42:13', '<!-- wp:image {\"align\":\"center\",\"id\":150,\"sizeSlug\":\"medium\"} -->\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-medium\"><img src=\"http://advanced-components.epizy.com/wp-content/uploads/2019/12/11-1-300x169.jpg\" alt=\"\" class=\"wp-image-150\"/></figure></div>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Компания&nbsp;<strong>AOC</strong>&nbsp;анонсировала&nbsp;два сверхшироких монитора формата 21: 9. Это модели&nbsp;<strong>CU34G2</strong>&nbsp;и&nbsp;<strong>CU34G2X</strong>&nbsp;с\nдиагональю 34 дюйма и разрешением 3440 x 1440 пикселей. CU34G2X может\nпохвастаться частотой обновления 144 Гц, вторая модель поскромнее — 100 Гц. Обе\nверсии оснащены VA, поддерживают синхронизацию&nbsp;<strong>AMD FreeSync</strong>, а\nвремя отклика составляет 1 мс.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Отдельно отметим радиус\n1500R, который, как утверждается, обеспечивает лучшее покрытие периферийного\nзрения, что важно для игр и широкоэкранных фильмов.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Оба монитора имеют\nрегулируемую по высоте подставку, а технология подавления мерцания и Low Blue\nLight обеспечивают минимальную нагрузку на глаза. Из других особенностей\nотметим&nbsp;<strong>AOC Game Color</strong>&nbsp;для регулировки насыщенности\nизображения,&nbsp;<strong>Dial Point</strong>&nbsp;для отображения прицела по центру\nэкрана. Есть также встроенный 4-портовый USB-концентратор и аудиовыходы.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"align\":\"center\",\"id\":151,\"sizeSlug\":\"medium\"} -->\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-medium\"><img src=\"http://advanced-components.epizy.com/wp-content/uploads/2019/12/12-300x223.jpg\" alt=\"\" class=\"wp-image-151\"/></figure></div>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">COC34G2 и CU34G2X от AOC\nбудут доступны с января 2020 года по цене 469 и 579 евро соответственно (33 и\n40,8 тысячи рублей).</p>\n<!-- /wp:paragraph -->', 'Новые игровые мониторы AOC имеют время отклика в 1 мс', '', 'inherit', 'closed', 'closed', '', '149-autosave-v1', '', '', '2019-12-11 14:42:13', '2019-12-11 11:42:13', '', 149, 'http://advanced-components.epizy.com/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/149-autosave-v1/', 0, 'revision', '', 0);
+(164, 1, '2019-12-11 14:42:13', '2019-12-11 11:42:13', '<!-- wp:image {\"align\":\"center\",\"id\":150,\"sizeSlug\":\"medium\"} -->\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-medium\"><img src=\"http://advanced-components.epizy.com/wp-content/uploads/2019/12/11-1-300x169.jpg\" alt=\"\" class=\"wp-image-150\"/></figure></div>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Компания&nbsp;<strong>AOC</strong>&nbsp;анонсировала&nbsp;два сверхшироких монитора формата 21: 9. Это модели&nbsp;<strong>CU34G2</strong>&nbsp;и&nbsp;<strong>CU34G2X</strong>&nbsp;с\nдиагональю 34 дюйма и разрешением 3440 x 1440 пикселей. CU34G2X может\nпохвастаться частотой обновления 144 Гц, вторая модель поскромнее — 100 Гц. Обе\nверсии оснащены VA, поддерживают синхронизацию&nbsp;<strong>AMD FreeSync</strong>, а\nвремя отклика составляет 1 мс.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Отдельно отметим радиус\n1500R, который, как утверждается, обеспечивает лучшее покрытие периферийного\nзрения, что важно для игр и широкоэкранных фильмов.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Оба монитора имеют\nрегулируемую по высоте подставку, а технология подавления мерцания и Low Blue\nLight обеспечивают минимальную нагрузку на глаза. Из других особенностей\nотметим&nbsp;<strong>AOC Game Color</strong>&nbsp;для регулировки насыщенности\nизображения,&nbsp;<strong>Dial Point</strong>&nbsp;для отображения прицела по центру\nэкрана. Есть также встроенный 4-портовый USB-концентратор и аудиовыходы.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"align\":\"center\",\"id\":151,\"sizeSlug\":\"medium\"} -->\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-medium\"><img src=\"http://advanced-components.epizy.com/wp-content/uploads/2019/12/12-300x223.jpg\" alt=\"\" class=\"wp-image-151\"/></figure></div>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">COC34G2 и CU34G2X от AOC\nбудут доступны с января 2020 года по цене 469 и 579 евро соответственно (33 и\n40,8 тысячи рублей).</p>\n<!-- /wp:paragraph -->', 'Новые игровые мониторы AOC имеют время отклика в 1 мс', '', 'inherit', 'closed', 'closed', '', '149-autosave-v1', '', '', '2019-12-11 14:42:13', '2019-12-11 11:42:13', '', 149, 'http://advanced-components.epizy.com/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/149-autosave-v1/', 0, 'revision', '', 0),
+(165, 1, '2019-12-11 14:42:52', '2019-12-11 11:42:52', '<!-- wp:image {\"align\":\"center\",\"id\":150,\"sizeSlug\":\"medium\"} -->\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-medium\"><img src=\"http://advanced-components.epizy.com/wp-content/uploads/2019/12/11-1-300x169.jpg\" alt=\"\" class=\"wp-image-150\"/></figure></div>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Компания&nbsp;<strong>AOC</strong>&nbsp;анонсировала&nbsp;два сверхшироких монитора формата 21: 9. Это модели&nbsp;<strong>CU34G2</strong>&nbsp;и&nbsp;<strong>CU34G2X</strong>&nbsp;с\nдиагональю 34 дюйма и разрешением 3440 x 1440 пикселей. CU34G2X может\nпохвастаться частотой обновления 144 Гц, вторая модель поскромнее — 100 Гц. Обе\nверсии оснащены VA, поддерживают синхронизацию&nbsp;<strong>AMD FreeSync</strong>, а\nвремя отклика составляет 1 мс.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Отдельно отметим радиус\n1500R, который, как утверждается, обеспечивает лучшее покрытие периферийного\nзрения, что важно для игр и широкоэкранных фильмов.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Оба монитора имеют\nрегулируемую по высоте подставку, а технология подавления мерцания и Low Blue\nLight обеспечивают минимальную нагрузку на глаза. Из других особенностей\nотметим&nbsp;<strong>AOC Game Color</strong>&nbsp;для регулировки насыщенности\nизображения,&nbsp;<strong>Dial Point</strong>&nbsp;для отображения прицела по центру\nэкрана. Есть также встроенный 4-портовый USB-концентратор и аудиовыходы.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"align\":\"center\",\"id\":151,\"sizeSlug\":\"medium\"} -->\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-medium\"><img src=\"http://advanced-components.epizy.com/wp-content/uploads/2019/12/12-300x223.jpg\" alt=\"\" class=\"wp-image-151\"/></figure></div>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">COC34G2 и CU34G2X от AOC\nбудут доступны с января 2020 года по цене 469 и 579 евро соответственно (33 и\n40,8 тысячи рублей).</p>\n<!-- /wp:paragraph -->', 'Новые игровые мониторы AOC имеют время отклика в 1 мс', '', 'inherit', 'closed', 'closed', '', '149-revision-v1', '', '', '2019-12-11 14:42:52', '2019-12-11 11:42:52', '', 149, 'http://advanced-components.epizy.com/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/149-revision-v1/', 0, 'revision', '', 0);
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
-(165, 1, '2019-12-11 14:42:52', '2019-12-11 11:42:52', '<!-- wp:image {\"align\":\"center\",\"id\":150,\"sizeSlug\":\"medium\"} -->\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-medium\"><img src=\"http://advanced-components.epizy.com/wp-content/uploads/2019/12/11-1-300x169.jpg\" alt=\"\" class=\"wp-image-150\"/></figure></div>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Компания&nbsp;<strong>AOC</strong>&nbsp;анонсировала&nbsp;два сверхшироких монитора формата 21: 9. Это модели&nbsp;<strong>CU34G2</strong>&nbsp;и&nbsp;<strong>CU34G2X</strong>&nbsp;с\nдиагональю 34 дюйма и разрешением 3440 x 1440 пикселей. CU34G2X может\nпохвастаться частотой обновления 144 Гц, вторая модель поскромнее — 100 Гц. Обе\nверсии оснащены VA, поддерживают синхронизацию&nbsp;<strong>AMD FreeSync</strong>, а\nвремя отклика составляет 1 мс.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Отдельно отметим радиус\n1500R, который, как утверждается, обеспечивает лучшее покрытие периферийного\nзрения, что важно для игр и широкоэкранных фильмов.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Оба монитора имеют\nрегулируемую по высоте подставку, а технология подавления мерцания и Low Blue\nLight обеспечивают минимальную нагрузку на глаза. Из других особенностей\nотметим&nbsp;<strong>AOC Game Color</strong>&nbsp;для регулировки насыщенности\nизображения,&nbsp;<strong>Dial Point</strong>&nbsp;для отображения прицела по центру\nэкрана. Есть также встроенный 4-портовый USB-концентратор и аудиовыходы.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"align\":\"center\",\"id\":151,\"sizeSlug\":\"medium\"} -->\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-medium\"><img src=\"http://advanced-components.epizy.com/wp-content/uploads/2019/12/12-300x223.jpg\" alt=\"\" class=\"wp-image-151\"/></figure></div>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">COC34G2 и CU34G2X от AOC\nбудут доступны с января 2020 года по цене 469 и 579 евро соответственно (33 и\n40,8 тысячи рублей).</p>\n<!-- /wp:paragraph -->', 'Новые игровые мониторы AOC имеют время отклика в 1 мс', '', 'inherit', 'closed', 'closed', '', '149-revision-v1', '', '', '2019-12-11 14:42:52', '2019-12-11 11:42:52', '', 149, 'http://advanced-components.epizy.com/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/149-revision-v1/', 0, 'revision', '', 0),
 (166, 1, '2019-12-11 14:43:29', '2019-12-11 11:43:29', '<!-- wp:image {\"align\":\"center\",\"id\":155,\"sizeSlug\":\"medium\"} -->\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-medium\"><img src=\"http://advanced-components.epizy.com/wp-content/uploads/2019/12/89-1-300x169.jpg\" alt=\"\" class=\"wp-image-155\"/></figure></div>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">На данный момент на\nрынке ещё нет 10-нанометровых процессоров&nbsp;<strong>Intel</strong>&nbsp;для настольных\nPC. Компания пытается выжать всё из 14 нанометров, и потому&nbsp;готовит&nbsp;десятое поколение чипов для десктопных PC с 10 ядрами и 20 потоками\nинструкций в максимальной конфигурации.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Эти процессоры относятся\nк семейству&nbsp;<strong>Comet Lake-S</strong>&nbsp;и появятся в апреле 2020 года.\nСообщается, что новая линейка будет работать уже с новым сокетом LGA1200, в\nотличие от текущего сокета LGA1151. Вместе с процессорами выйдет и новая системная\nлогика четырёх версий:&nbsp;<strong>H410</strong>,&nbsp;<strong>Q470</strong>,&nbsp;<strong>Z490</strong>&nbsp;и&nbsp;<strong>W480</strong>.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Модели с индексами Q и W\nпредназначены для встраиваемых устройств, Z — топовые решения для энтузиастов,\nа H — бюджетные модели.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Новым решениям\nприписывают поддержку до 40 линий PCIe 3.0, Wi-Fi 6, USB 3.2 Gen 2x1,\nрасширенные возможности по разгону процессора и памяти, а также улучшение\nдисковой подсистемы и звука.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"fontSize\":\"medium\"} -->\n<p class=\"has-medium-font-size\">Также сообщается, что\nтоповый&nbsp;<strong>Intel Core i9-10900K</strong>&nbsp;сможет разгоняться до 5,1 ГГц на\nодном ядре. Базовая тактовая частота его при этом составит 3,0 ГГц. Цены пока\nне уточняются.</p>\n<!-- /wp:paragraph -->', 'Процессор Intel Core i9-10900K с 10 ядрами и чипсет Z490 выйдут в апреле 2020 года', '', 'inherit', 'closed', 'closed', '', '154-revision-v1', '', '', '2019-12-11 14:43:29', '2019-12-11 11:43:29', '', 154, 'http://advanced-components.epizy.com/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/154-revision-v1/', 0, 'revision', '', 0),
 (168, 0, '2019-12-11 13:37:12', '2019-12-11 13:37:12', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5df0f536949121.18765144-jsHaHB624DGhMdaO1963J3Q6hWog2wsG', '', '', '2019-12-11 16:55:02', '2019-12-11 13:55:02', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=168', 0, 'scheduled-action', '', 3),
 (169, 0, '2019-12-11 14:55:02', '2019-12-11 14:55:02', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5df11795422749.18096220-LmX3DWx4ULtZI0zebTEbAeS5BRldoxXR', '', '', '2019-12-11 19:21:41', '2019-12-11 16:21:41', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=169', 0, 'scheduled-action', '', 3),
@@ -1556,8 +1560,12 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (178, 1, '2019-12-14 00:13:33', '2019-12-13 21:13:33', '{\n    \"idyllic::background_image\": {\n        \"value\": \"\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2019-12-13 21:13:33\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '047fc2b5-5514-432d-9561-ac99f3129126', '', '', '2019-12-14 00:13:33', '2019-12-13 21:13:33', '', 0, 'http://advanced-components.epizy.com/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/047fc2b5-5514-432d-9561-ac99f3129126/', 0, 'customize_changeset', '', 0),
 (179, 1, '2019-12-14 00:19:54', '0000-00-00 00:00:00', '{\n    \"old_sidebars_widgets_data\": {\n        \"value\": {\n            \"wp_inactive_widgets\": [],\n            \"idyllic_main_sidebar\": [\n                \"search-2\",\n                \"recent-posts-2\",\n                \"recent-comments-2\",\n                \"archives-2\",\n                \"categories-2\",\n                \"meta-2\"\n            ],\n            \"idyllic_header_info\": [],\n            \"idyllic_side_menu\": [],\n            \"idyllic_contact_page_sidebar\": [],\n            \"idyllic_form_for_contact_page\": [],\n            \"idyllic_woocommerce_sidebar\": [],\n            \"idyllic_footer_1\": [],\n            \"idyllic_footer_2\": [],\n            \"idyllic_footer_3\": [],\n            \"idyllic_footer_4\": []\n        },\n        \"type\": \"global_variable\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2019-12-13 21:16:41\"\n    },\n    \"vw-kids::vw_kids_p_font_family\": {\n        \"value\": \"Cardo\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2019-12-13 21:19:54\"\n    },\n    \"vw-kids::vw_kids_p_font_style\": {\n        \"value\": \"normal\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2019-12-13 21:19:54\"\n    }\n}', '', '', 'auto-draft', 'closed', 'closed', '', '2bdc37ba-d472-4850-ab91-c7c5d05e7d1c', '', '', '2019-12-14 00:19:54', '2019-12-13 21:19:54', '', 0, 'http://advanced-components.epizy.com/?p=179', 0, 'customize_changeset', '', 0),
 (180, 1, '2019-12-14 00:22:47', '0000-00-00 00:00:00', '{\n    \"blogdescription\": {\n        \"value\": \"\\u041c\\u0430\\u0433\\u0430\\u0437\\u0438\\u043d \\u043f\\u0440\\u043e\\u0434\\u0432\\u0438\\u043d\\u0443\\u0442\\u044b\\u0445 \\u043a\\u043e\\u043c\\u043f\\u043e\\u043d\\u0435\\u043d\\u0442\\u043e\\u0432 \\u043a\\u043e\\u043c\\u043f\\u044c\\u044e\\u0442\\u0435\\u0440\\u0430 \",\n        \"type\": \"option\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2019-12-13 21:22:47\"\n    }\n}', '', '', 'auto-draft', 'closed', 'closed', '', 'bc9f6c33-9b4b-4cf1-8753-f27f2566af91', '', '', '2019-12-14 00:22:47', '0000-00-00 00:00:00', '', 0, 'http://advanced-components.epizy.com/?p=180', 0, 'customize_changeset', '', 0),
-(181, 0, '2019-12-14 07:14:45', '2019-12-14 07:14:45', '[]', 'wc_admin_unsnooze_admin_notes', '', 'pending', 'open', 'closed', '', '', '', '', '2019-12-14 07:14:45', '2019-12-14 07:14:45', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&p=181', 0, 'scheduled-action', '', 1),
-(184, 1, '2019-12-14 09:27:41', '2019-12-14 06:27:41', '', '', '', 'inherit', 'open', 'closed', '', '1', '', '', '2019-12-14 09:27:49', '2019-12-14 06:27:49', '', 48, 'http://advanced-components.epizy.com/wp-content/uploads/2019/11/1.jpg', 0, 'attachment', 'image/jpeg', 0);
+(181, 0, '2019-12-14 07:14:45', '2019-12-14 07:14:45', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5df48f1978baa9.73534207-Ocv5ofVfYXyZVEYvofvt7WJTTH49Hesl', '', '', '2019-12-14 10:28:25', '2019-12-14 07:28:25', '', 0, 'http://advanced-components.epizy.com/?post_type=scheduled-action&#038;p=181', 0, 'scheduled-action', '', 3),
+(184, 1, '2019-12-14 09:27:41', '2019-12-14 06:27:41', '', '', '', 'inherit', 'open', 'closed', '', '1', '', '', '2019-12-14 09:27:49', '2019-12-14 06:27:49', '', 48, 'http://advanced-components.epizy.com/wp-content/uploads/2019/11/1.jpg', 0, 'attachment', 'image/jpeg', 0),
+(185, 0, '2019-12-14 08:28:25', '2019-12-14 08:28:25', '[]', 'wc_admin_unsnooze_admin_notes', '', 'pending', 'open', 'closed', '', '', '', '', '2019-12-14 08:28:25', '2019-12-14 08:28:25', '', 0, 'http://advanced-components/?post_type=scheduled-action&p=185', 0, 'scheduled-action', '', 1),
+(186, 0, '2019-12-14 07:28:33', '2019-12-14 07:28:33', '[\"wc_admin_update_0230_rename_gross_total\"]', 'woocommerce_run_update_callback', '', 'publish', 'open', 'closed', '', 'scheduled-action-5df48f6956eb25.57980574-hEpnoJfgZXYkSoeY82PutzFaP2GNWdnx', '', '', '2019-12-14 10:29:45', '2019-12-14 07:29:45', '', 0, 'http://advanced-components/?post_type=scheduled-action&#038;p=186', 0, 'scheduled-action', '', 3),
+(187, 0, '2019-12-14 07:28:35', '2019-12-14 07:28:35', '[\"wc_admin_update_0230_db_version\"]', 'woocommerce_run_update_callback', '', 'publish', 'open', 'closed', '', 'scheduled-action-5df48f6a1c0993.61384201-JbzmisBtQsugrS9BVG7EvISwMfmTlN8Q', '', '', '2019-12-14 10:29:46', '2019-12-14 07:29:46', '', 0, 'http://advanced-components/?post_type=scheduled-action&#038;p=187', 0, 'scheduled-action', '', 3),
+(191, 1, '2019-12-14 11:11:10', '2019-12-14 08:11:10', '', '', '', 'inherit', 'open', 'closed', '', '5', '', '', '2019-12-14 11:11:13', '2019-12-14 08:11:13', '', 69, 'http://advanced-components/wp-content/uploads/2019/11/5.jpg', 0, 'attachment', 'image/jpeg', 0);
 
 -- --------------------------------------------------------
 
@@ -1568,8 +1576,8 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 CREATE TABLE `wp_termmeta` (
   `meta_id` bigint(20) UNSIGNED NOT NULL,
   `term_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
-  `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
+  `meta_key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `meta_value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
@@ -1595,8 +1603,8 @@ INSERT INTO `wp_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_value`) VALUE
 
 CREATE TABLE `wp_terms` (
   `term_id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `slug` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `name` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `slug` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `term_group` bigint(10) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -1744,7 +1752,10 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (171, 19, 0),
 (172, 19, 0),
 (173, 19, 0),
-(181, 19, 0);
+(181, 19, 0),
+(185, 19, 0),
+(186, 20, 0),
+(187, 20, 0);
 
 -- --------------------------------------------------------
 
@@ -1755,8 +1766,8 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 CREATE TABLE `wp_term_taxonomy` (
   `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL,
   `term_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
-  `taxonomy` varchar(32) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `description` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `taxonomy` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `description` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `parent` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
   `count` bigint(20) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
@@ -1784,8 +1795,8 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (27, 27, 'category', '', 0, 0),
 (25, 25, 'product_cat', '', 0, 5),
 (26, 26, 'action-group', '', 0, 3),
-(19, 19, 'action-group', '', 0, 41),
-(20, 20, 'action-group', '', 0, 2),
+(19, 19, 'action-group', '', 0, 42),
+(20, 20, 'action-group', '', 0, 4),
 (21, 21, 'product_cat', '', 0, 5),
 (22, 22, 'product_cat', '', 0, 5),
 (23, 23, 'category', '', 0, 1),
@@ -1800,8 +1811,8 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 CREATE TABLE `wp_usermeta` (
   `umeta_id` bigint(20) UNSIGNED NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
-  `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
+  `meta_key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `meta_value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
@@ -1824,9 +1835,9 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (13, 1, 'wp_user_level', '10'),
 (14, 1, 'dismissed_wp_pointers', ''),
 (15, 1, 'show_welcome_panel', '0'),
-(16, 1, 'session_tokens', 'a:2:{s:64:\"d1a7e657618194e02349466ce9408d7d6b2a48b3adaaaa06135e54d52b3eda8b\";a:4:{s:10:\"expiration\";i:1576443171;s:2:\"ip\";s:14:\"178.76.231.215\";s:2:\"ua\";s:108:\"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36\";s:5:\"login\";i:1576270371;}s:64:\"2101f11cf920618afb4dc35b529de2c4da9853a859f94fb6cb175592441a7ac9\";a:4:{s:10:\"expiration\";i:1576477003;s:2:\"ip\";s:13:\"5.139.109.176\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36\";s:5:\"login\";i:1576304203;}}'),
+(16, 1, 'session_tokens', 'a:3:{s:64:\"d1a7e657618194e02349466ce9408d7d6b2a48b3adaaaa06135e54d52b3eda8b\";a:4:{s:10:\"expiration\";i:1576443171;s:2:\"ip\";s:14:\"178.76.231.215\";s:2:\"ua\";s:108:\"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36\";s:5:\"login\";i:1576270371;}s:64:\"2101f11cf920618afb4dc35b529de2c4da9853a859f94fb6cb175592441a7ac9\";a:4:{s:10:\"expiration\";i:1576477003;s:2:\"ip\";s:13:\"5.139.109.176\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36\";s:5:\"login\";i:1576304203;}s:64:\"5c202bbd4e3fa2b43c376d307a176523ec64660fec2246c545546f2c75d0bc63\";a:4:{s:10:\"expiration\";i:1577515765;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36\";s:5:\"login\";i:1576306165;}}'),
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '97'),
-(18, 1, 'community-events-location', 'a:1:{s:2:\"ip\";s:11:\"5.139.109.0\";}'),
+(18, 1, 'community-events-location', 'a:1:{s:2:\"ip\";s:9:\"127.0.0.0\";}'),
 (19, 1, 'wc_last_active', '1576281600'),
 (20, 1, 'dismissed_install_notice', '1'),
 (21, 1, 'dismissed_no_secure_connection_notice', '1'),
@@ -1859,15 +1870,15 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 
 CREATE TABLE `wp_users` (
   `ID` bigint(20) UNSIGNED NOT NULL,
-  `user_login` varchar(60) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `user_pass` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `user_nicename` varchar(50) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `user_email` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `user_url` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `user_login` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `user_pass` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `user_nicename` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `user_email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `user_url` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `user_registered` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `user_activation_key` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `user_activation_key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `user_status` int(11) NOT NULL DEFAULT '0',
-  `display_name` varchar(250) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
+  `display_name` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
@@ -1885,15 +1896,15 @@ INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_
 
 CREATE TABLE `wp_wc_admin_notes` (
   `note_id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `type` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `locale` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `title` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `content` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `icon` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `content_data` longtext COLLATE utf8mb4_unicode_520_ci,
-  `status` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `source` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `type` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `locale` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `title` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `content` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `icon` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `content_data` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci,
+  `status` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `source` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `date_created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `date_reminder` datetime DEFAULT NULL,
   `is_snoozable` tinyint(1) NOT NULL DEFAULT '0'
@@ -1923,10 +1934,10 @@ INSERT INTO `wp_wc_admin_notes` (`note_id`, `name`, `type`, `locale`, `title`, `
 CREATE TABLE `wp_wc_admin_note_actions` (
   `action_id` bigint(20) UNSIGNED NOT NULL,
   `note_id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `label` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `query` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `status` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `label` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `query` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `status` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `is_primary` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -1964,9 +1975,10 @@ CREATE TABLE `wp_wc_category_lookup` (
 
 INSERT INTO `wp_wc_category_lookup` (`category_tree_id`, `category_id`) VALUES
 (15, 15),
-(16, 16),
-(17, 17),
-(18, 18);
+(21, 21),
+(22, 22),
+(24, 24),
+(25, 25);
 
 -- --------------------------------------------------------
 
@@ -1977,16 +1989,16 @@ INSERT INTO `wp_wc_category_lookup` (`category_tree_id`, `category_id`) VALUES
 CREATE TABLE `wp_wc_customer_lookup` (
   `customer_id` bigint(20) UNSIGNED NOT NULL,
   `user_id` bigint(20) UNSIGNED DEFAULT NULL,
-  `username` varchar(60) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `first_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `last_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `email` varchar(100) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `username` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `first_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `last_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
   `date_last_active` timestamp NULL DEFAULT NULL,
   `date_registered` timestamp NULL DEFAULT NULL,
-  `country` char(2) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `postcode` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `city` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `state` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
+  `country` char(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `postcode` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `city` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `state` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
@@ -2066,12 +2078,12 @@ CREATE TABLE `wp_wc_order_stats` (
   `date_created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `date_created_gmt` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `num_items_sold` int(11) NOT NULL DEFAULT '0',
-  `gross_total` double NOT NULL DEFAULT '0',
+  `total_sales` double NOT NULL DEFAULT '0',
   `tax_total` double NOT NULL DEFAULT '0',
   `shipping_total` double NOT NULL DEFAULT '0',
   `net_total` double NOT NULL DEFAULT '0',
   `returning_customer` tinyint(1) DEFAULT NULL,
-  `status` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `status` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `customer_id` bigint(20) UNSIGNED NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -2079,7 +2091,7 @@ CREATE TABLE `wp_wc_order_stats` (
 -- Dumping data for table `wp_wc_order_stats`
 --
 
-INSERT INTO `wp_wc_order_stats` (`order_id`, `parent_id`, `date_created`, `date_created_gmt`, `num_items_sold`, `gross_total`, `tax_total`, `shipping_total`, `net_total`, `returning_customer`, `status`, `customer_id`) VALUES
+INSERT INTO `wp_wc_order_stats` (`order_id`, `parent_id`, `date_created`, `date_created_gmt`, `num_items_sold`, `total_sales`, `tax_total`, `shipping_total`, `net_total`, `returning_customer`, `status`, `customer_id`) VALUES
 (85, 0, '2019-12-05 12:46:38', '2019-12-05 09:46:38', 1, 2700, 0, 0, 2700, 0, 'wc-processing', 1),
 (93, 0, '2019-12-06 21:06:25', '2019-12-06 18:06:25', 4, 36000, 0, 0, 36000, 0, 'wc-processing', 2);
 
@@ -2106,14 +2118,14 @@ CREATE TABLE `wp_wc_order_tax_lookup` (
 
 CREATE TABLE `wp_wc_product_meta_lookup` (
   `product_id` bigint(20) NOT NULL,
-  `sku` varchar(100) COLLATE utf8mb4_unicode_520_ci DEFAULT '',
+  `sku` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT '',
   `virtual` tinyint(1) DEFAULT '0',
   `downloadable` tinyint(1) DEFAULT '0',
   `min_price` decimal(10,2) DEFAULT NULL,
   `max_price` decimal(10,2) DEFAULT NULL,
   `onsale` tinyint(1) DEFAULT '0',
   `stock_quantity` double DEFAULT NULL,
-  `stock_status` varchar(100) COLLATE utf8mb4_unicode_520_ci DEFAULT 'instock',
+  `stock_status` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT 'instock',
   `rating_count` bigint(20) DEFAULT '0',
   `average_rating` decimal(3,2) DEFAULT '0.00',
   `total_sales` bigint(20) DEFAULT '0'
@@ -2159,8 +2171,8 @@ INSERT INTO `wp_wc_product_meta_lookup` (`product_id`, `sku`, `virtual`, `downlo
 
 CREATE TABLE `wp_wc_tax_rate_classes` (
   `tax_rate_class_id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `slug` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
+  `name` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `slug` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
@@ -2181,12 +2193,12 @@ INSERT INTO `wp_wc_tax_rate_classes` (`tax_rate_class_id`, `name`, `slug`) VALUE
 
 CREATE TABLE `wp_wc_webhooks` (
   `webhook_id` bigint(20) UNSIGNED NOT NULL,
-  `status` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `name` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `status` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `name` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL,
-  `delivery_url` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `secret` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `topic` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `delivery_url` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `secret` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `topic` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `date_created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `date_created_gmt` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `date_modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
@@ -2205,12 +2217,12 @@ CREATE TABLE `wp_wc_webhooks` (
 CREATE TABLE `wp_woocommerce_api_keys` (
   `key_id` bigint(20) UNSIGNED NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL,
-  `description` varchar(200) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `permissions` varchar(10) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `consumer_key` char(64) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `consumer_secret` char(43) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `nonces` longtext COLLATE utf8mb4_unicode_520_ci,
-  `truncated_key` char(7) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `description` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `permissions` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `consumer_key` char(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `consumer_secret` char(43) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `nonces` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci,
+  `truncated_key` char(7) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `last_access` datetime DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -2222,10 +2234,10 @@ CREATE TABLE `wp_woocommerce_api_keys` (
 
 CREATE TABLE `wp_woocommerce_attribute_taxonomies` (
   `attribute_id` bigint(20) UNSIGNED NOT NULL,
-  `attribute_name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `attribute_label` varchar(200) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `attribute_type` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `attribute_orderby` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `attribute_name` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `attribute_label` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `attribute_type` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `attribute_orderby` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `attribute_public` int(1) NOT NULL DEFAULT '1'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -2237,13 +2249,13 @@ CREATE TABLE `wp_woocommerce_attribute_taxonomies` (
 
 CREATE TABLE `wp_woocommerce_downloadable_product_permissions` (
   `permission_id` bigint(20) UNSIGNED NOT NULL,
-  `download_id` varchar(36) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `download_id` varchar(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `product_id` bigint(20) UNSIGNED NOT NULL,
   `order_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
-  `order_key` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `user_email` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `order_key` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `user_email` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `user_id` bigint(20) UNSIGNED DEFAULT NULL,
-  `downloads_remaining` varchar(9) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `downloads_remaining` varchar(9) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
   `access_granted` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `access_expires` datetime DEFAULT NULL,
   `download_count` bigint(20) UNSIGNED NOT NULL DEFAULT '0'
@@ -2259,9 +2271,9 @@ CREATE TABLE `wp_woocommerce_log` (
   `log_id` bigint(20) UNSIGNED NOT NULL,
   `timestamp` datetime NOT NULL,
   `level` smallint(4) NOT NULL,
-  `source` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `message` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `context` longtext COLLATE utf8mb4_unicode_520_ci
+  `source` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `message` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `context` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 -- --------------------------------------------------------
@@ -2273,8 +2285,8 @@ CREATE TABLE `wp_woocommerce_log` (
 CREATE TABLE `wp_woocommerce_order_itemmeta` (
   `meta_id` bigint(20) UNSIGNED NOT NULL,
   `order_item_id` bigint(20) UNSIGNED NOT NULL,
-  `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
+  `meta_key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `meta_value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
@@ -2312,7 +2324,7 @@ INSERT INTO `wp_woocommerce_order_itemmeta` (`meta_id`, `order_item_id`, `meta_k
 CREATE TABLE `wp_woocommerce_order_items` (
   `order_item_id` bigint(20) UNSIGNED NOT NULL,
   `order_item_name` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `order_item_type` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `order_item_type` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `order_id` bigint(20) UNSIGNED NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -2333,8 +2345,8 @@ INSERT INTO `wp_woocommerce_order_items` (`order_item_id`, `order_item_name`, `o
 CREATE TABLE `wp_woocommerce_payment_tokenmeta` (
   `meta_id` bigint(20) UNSIGNED NOT NULL,
   `payment_token_id` bigint(20) UNSIGNED NOT NULL,
-  `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
-  `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
+  `meta_key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
+  `meta_value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 -- --------------------------------------------------------
@@ -2345,10 +2357,10 @@ CREATE TABLE `wp_woocommerce_payment_tokenmeta` (
 
 CREATE TABLE `wp_woocommerce_payment_tokens` (
   `token_id` bigint(20) UNSIGNED NOT NULL,
-  `gateway_id` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `token` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `gateway_id` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `token` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
-  `type` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `type` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `is_default` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -2360,8 +2372,8 @@ CREATE TABLE `wp_woocommerce_payment_tokens` (
 
 CREATE TABLE `wp_woocommerce_sessions` (
   `session_id` bigint(20) UNSIGNED NOT NULL,
-  `session_key` char(32) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `session_value` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `session_key` char(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `session_value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `session_expiry` bigint(20) UNSIGNED NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -2380,7 +2392,7 @@ INSERT INTO `wp_woocommerce_sessions` (`session_id`, `session_key`, `session_val
 
 CREATE TABLE `wp_woocommerce_shipping_zones` (
   `zone_id` bigint(20) UNSIGNED NOT NULL,
-  `zone_name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `zone_name` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `zone_order` bigint(20) UNSIGNED NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
@@ -2393,8 +2405,8 @@ CREATE TABLE `wp_woocommerce_shipping_zones` (
 CREATE TABLE `wp_woocommerce_shipping_zone_locations` (
   `location_id` bigint(20) UNSIGNED NOT NULL,
   `zone_id` bigint(20) UNSIGNED NOT NULL,
-  `location_code` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `location_type` varchar(40) COLLATE utf8mb4_unicode_520_ci NOT NULL
+  `location_code` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `location_type` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 -- --------------------------------------------------------
@@ -2406,7 +2418,7 @@ CREATE TABLE `wp_woocommerce_shipping_zone_locations` (
 CREATE TABLE `wp_woocommerce_shipping_zone_methods` (
   `zone_id` bigint(20) UNSIGNED NOT NULL,
   `instance_id` bigint(20) UNSIGNED NOT NULL,
-  `method_id` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `method_id` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `method_order` bigint(20) UNSIGNED NOT NULL,
   `is_enabled` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
@@ -2419,15 +2431,15 @@ CREATE TABLE `wp_woocommerce_shipping_zone_methods` (
 
 CREATE TABLE `wp_woocommerce_tax_rates` (
   `tax_rate_id` bigint(20) UNSIGNED NOT NULL,
-  `tax_rate_country` varchar(2) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `tax_rate_state` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `tax_rate` varchar(8) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-  `tax_rate_name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `tax_rate_country` varchar(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `tax_rate_state` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `tax_rate` varchar(8) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
+  `tax_rate_name` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `tax_rate_priority` bigint(20) UNSIGNED NOT NULL,
   `tax_rate_compound` int(1) NOT NULL DEFAULT '0',
   `tax_rate_shipping` int(1) NOT NULL DEFAULT '1',
   `tax_rate_order` bigint(20) UNSIGNED NOT NULL,
-  `tax_rate_class` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
+  `tax_rate_class` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 -- --------------------------------------------------------
@@ -2438,9 +2450,9 @@ CREATE TABLE `wp_woocommerce_tax_rates` (
 
 CREATE TABLE `wp_woocommerce_tax_rate_locations` (
   `location_id` bigint(20) UNSIGNED NOT NULL,
-  `location_code` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `location_code` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `tax_rate_id` bigint(20) UNSIGNED NOT NULL,
-  `location_type` varchar(40) COLLATE utf8mb4_unicode_520_ci NOT NULL
+  `location_type` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
@@ -2777,7 +2789,7 @@ ALTER TABLE `wp_commentmeta`
 -- AUTO_INCREMENT for table `wp_comments`
 --
 ALTER TABLE `wp_comments`
-  MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=150;
+  MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=159;
 
 --
 -- AUTO_INCREMENT for table `wp_links`
@@ -2795,19 +2807,19 @@ ALTER TABLE `wp_mailchimp_jobs`
 -- AUTO_INCREMENT for table `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2138;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2235;
 
 --
 -- AUTO_INCREMENT for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=882;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=894;
 
 --
 -- AUTO_INCREMENT for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=185;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
 
 --
 -- AUTO_INCREMENT for table `wp_termmeta`
@@ -2831,7 +2843,7 @@ ALTER TABLE `wp_term_taxonomy`
 -- AUTO_INCREMENT for table `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
-  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `wp_users`
