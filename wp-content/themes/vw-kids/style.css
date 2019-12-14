@@ -52,7 +52,7 @@ h3,
 h4,
 h5,
 h6{
-  font-family: 'Caveat Brush', cursive;
+  /*font-family: 'Caveat Brush', cursive;*/
   margin:0;
   padding:10px 0;
   color: #343c49;
@@ -1587,7 +1587,7 @@ h2#reply-title {
 .products li {
   text-align: center;
   background: #343c49;
-  font-family: 'Caveat Brush', cursive;
+  /*font-family: 'Caveat Brush', cursive;*/
 }
 #popular-toys a.button.product_type_simple.add_to_cart_button {
   top: 175px;
