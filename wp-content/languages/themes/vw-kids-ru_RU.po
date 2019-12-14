@@ -1,0 +1,1427 @@
+# Translation of Themes - VW Kids in Russian
+# This file is distributed under the same license as the Themes - VW Kids package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-06-30 14:08:48+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Themes - VW Kids\n"
+
+#. Description of the theme
+msgid "VW Kids is a colourful, youthful, fresh and versatile kids WordPress theme for kindergartens, crèches, play schools, preschools, day care centres, babysitters, primary and secondary schools, education and training centres, art classes and nurseries. It is a multipurpose theme which can be used for kids toys and games store, kids skin care products, clothing and shoes mall, kids book store, baby food store, baby care range supplier, kids school bags and stationery store, toy gifts shop and kids fashion store. It can be used by kids’ health care blogger and portfolio designers. It is a totally responsive, SEO enabled, multilingual, cross-browser compatible and retina ready theme with multiple header and footer styles and various blog layouts. VW Kids performs all the advanced functions without ever bloating the website. It has a range of social media icons to promote your services. It has smart placement of call to action (CTA) button and other components throughout the theme to make a user-friendly website. Its design is made attractive with eye-catching colours and beautiful fonts to impress visitors at the first sight. This kids theme is fully customizable and compatible with the new WordPress version. It has clean and bug-free codes making it a high quality theme. Demo: https://www.vwthemes.net/vw-kids-pro/"
+msgstr "VW Kids - это красочная, молодежная, свежая и универсальная WordPress тема для детей, предназначенная для детских садов, яслей, игровых школ, дошкольных учреждений, нянь, начальных и средних школ, центров образования и обучения, художественных классов и детских заведений. Это многоцелевая тема, которая может быть использована как магазине детских игрушек и игр, магазин детской косметики, магазин одежды и обуви, магазин детских книг, магазин детского питания, ассортимент товаров для ухода за детьми, магазин детских школьных сумок и канцелярских товаров, магазин игрушек и подарков, магазин детской одежды. Ее могут использовать детские блоггеры и дизайнеры портфолио. Это полностью адаптивная, поддерживающая SEO, многоязычная, кросс-браузерная и готовая к использованию макет темы с несколькими стилями верхнего и нижнего колонтитула и различными макетами блога. VW Kids выполняет все расширенные функции, не нагружая веб-сайт. Она имеет ряд значков социальных сетей для продвижения ваших услуг. Она имеет умное размещение кнопки призыва к действию (CTA) и другие компоненты по всей теме, чтобы сделать веб-сайт более удобным. Ее дизайн сделан привлекательным с привлекательными цветами и красивыми шрифтами, чтобы произвести впечатление на посетителей с первого взгляда. Эта детская тема полностью настраиваема и совместима с новой версией WordPress. Он имеет чистый и без ошибок код, что делает ее темой высокого качества. Демо: https://www.vwthemes.net/vw-kids-pro/"
+
+#. Theme Name of the theme
+msgid "VW Kids"
+msgstr "VW Kids"
+
+#: functions.php:69
+msgid "GET STARTED"
+msgstr "Начать работу"
+
+#: functions.php:68
+msgid "Thank you for choosing VW Kids Theme. Would like to have you on our Welcome page so that you can reap all the benefits of our VW Kids Theme."
+msgstr "Спасибо, что выбрали тему VW Kids. Пожалуйста, посетите нашу страницу приветствия, чтобы вы могли воспользоваться всеми преимуществами нашей темы VW Kids."
+
+#: functions.php:67
+msgid "Warm Greetings to you!!"
+msgstr "Теплый привет вам!!"
+
+#: inc/getstart/getstart.php:370
+msgid "Contact Us"
+msgstr "Обратная связь"
+
+#: inc/getstart/getstart.php:368
+msgid "If you have any queries after purchase, you can contact us. We are eveready to help you out."
+msgstr "Если у вас есть вопросы после покупки, вы можете связаться с нами. Мы всегда готовы помочь вам."
+
+#: inc/getstart/getstart.php:367
+msgid "Support Queries"
+msgstr "Запросы в поддержку"
+
+#: inc/getstart/getstart.php:362
+msgid "View FAQ"
+msgstr "Посмотрите \"Частые вопросы\""
+
+#: inc/getstart/getstart.php:360
+msgid "We have gathered top most, frequently asked questions and answered them for your easy understanding. We will list down more as we get new challenging queries. Check back often."
+msgstr "Мы собрали самые популярные, часто задаваемые вопросы и ответили на них, для того что бы вы лучше понимали. Мы будем добавлять больше ответов, поскольку у нас появятся новые интересные вопросы. Проверяйте их чаще."
+
+#: inc/getstart/getstart.php:359
+msgid "Frequently Asked Questions"
+msgstr "Часто задаваемые вопросы"
+
+#: inc/getstart/getstart.php:354
+msgid "About Child Theme"
+msgstr "Про дочернюю тему"
+
+#: inc/getstart/getstart.php:352
+msgid "For theme file customizations, make modifications in the child theme and not in the main theme file."
+msgstr "Для настроек файла темы внесите изменения в дочернюю тему, а не в файл основной темы."
+
+#: inc/getstart/getstart.php:351
+msgid "Child Theme"
+msgstr "Дочерняя тема"
+
+#: inc/getstart/getstart.php:347
+msgid "Question"
+msgstr "Вопрос"
+
+#: inc/getstart/getstart.php:345
+msgid "If you have any pre-sale query, we are prepared to resolve it."
+msgstr "Если у вас есть предпродажный вопрос, мы готовы на него ответить."
+
+#: inc/getstart/getstart.php:344
+msgid "Pre-purchase Queries"
+msgstr "Предпродажные вопросы"
+
+#: inc/getstart/getstart.php:340
+msgid "Get Pro"
+msgstr "Получить Pro"
+
+#: inc/getstart/getstart.php:338
+msgid "To gain access to extra theme options and more interesting features, upgrade to pro version."
+msgstr "Чтобы получить доступ к дополнительным параметрам темы и более интересным функциям, выполните обновление до версии pro."
+
+#: inc/getstart/getstart.php:337
+msgid "Pro Version"
+msgstr "Версия PRO"
+
+#: inc/getstart/getstart.php:320
+msgid "Seamless Customer Support"
+msgstr "Полная поддержка клиентов"
+
+#: inc/getstart/getstart.php:315
+msgid "All Access Theme Pass"
+msgstr "Все доступы темы проверены"
+
+#: inc/getstart/getstart.php:310
+msgid "Custom Feature Addition"
+msgstr "Добавление пользовательской функции"
+
+#: inc/getstart/getstart.php:305
+msgid "Priority Error Fixing"
+msgstr "Исправление приоритетной ошибки"
+
+#: inc/getstart/getstart.php:300
+msgid "Budget Friendly Value"
+msgstr "Бюджетная дружеская стоимость"
+
+#: inc/getstart/getstart.php:295
+msgid "Premium Membership"
+msgstr "Премиум членство"
+
+#: inc/getstart/getstart.php:290
+msgid "Custom Background, Colors, Header, Logo & Menu"
+msgstr "Пользовательский фон, цвета, шапка, логотип и меню"
+
+#: inc/getstart/getstart.php:285
+msgid "Shortcodes"
+msgstr "Шорткоды"
+
+#: inc/getstart/getstart.php:280
+msgid "Support to add custom CSS / JS "
+msgstr "Поддержка добавления пользовательских CSS / JS "
+
+#: inc/getstart/getstart.php:275
+msgid "Simple & Mega Menu Option"
+msgstr "Настройки простого и Mega Menu"
+
+#: inc/getstart/getstart.php:270
+msgid "Gallery"
+msgstr "Галерея"
+
+#: inc/getstart/getstart.php:265
+msgid "Section Google Font Choices"
+msgstr "Раздел выбора Google шрифтов"
+
+#: inc/getstart/getstart.php:260
+msgid "Section Enable / Disable"
+msgstr "Раздел Включить / выключить"
+
+#: inc/getstart/getstart.php:255
+msgid "Exclusive Functionalities"
+msgstr "Эксклюзивные функции"
+
+#: inc/getstart/getstart.php:250
+msgid "Secure and Optimized Code"
+msgstr "Безопасный и оптимизированый код"
+
+#: inc/getstart/getstart.php:245
+msgid "Support 3rd Party Plugins"
+msgstr "Поддержка плагинов сторонних разработчиков"
+
+#: inc/getstart/getstart.php:240
+msgid "Woo-Commerce Compatibility"
+msgstr "Совместимость с Woo-Commerce"
+
+#: inc/getstart/getstart.php:235
+msgid "Latest WordPress Compatibility"
+msgstr "Совместимость с последними версиями WordPress"
+
+#: inc/getstart/getstart.php:230
+msgid "Full Documentation"
+msgstr "Полная документация"
+
+#: inc/getstart/getstart.php:227
+msgid "2(Left/Right Sidebar)"
+msgstr "2(Левая/Правая боковая панель)"
+
+#: inc/getstart/getstart.php:225
+msgid "Page Templates & Layout"
+msgstr "Шаблон и разметка страницы"
+
+#: inc/getstart/getstart.php:222
+msgid "3(Full width/Left/Right Sidebar)"
+msgstr "3(Полноэкранный/Левая/Правая боковая панель)"
+
+#: inc/getstart/getstart.php:220
+msgid "Blog Templates & Layout"
+msgstr "Шаблоны и разметка блога"
+
+#: inc/getstart/getstart.php:215
+msgid "Contact us Page Template"
+msgstr "Шаблон страницы \"Свяжитесь с нами\""
+
+#: inc/getstart/getstart.php:211 inc/getstart/getstart.php:212
+#: inc/getstart/getstart.php:217
+msgid "1"
+msgstr "1"
+
+#: inc/getstart/getstart.php:210
+msgid "Home Page Template"
+msgstr "Шаблон домашней страницы"
+
+#: inc/getstart/getstart.php:207
+msgid "6"
+msgstr "6"
+
+#: inc/getstart/getstart.php:206
+msgid "3"
+msgstr "3"
+
+#: inc/getstart/getstart.php:205
+msgid "Template Pages"
+msgstr "Шаблон страниц"
+
+#: inc/getstart/getstart.php:202
+msgid "Unlimited"
+msgstr "Неограниченно"
+
+#: inc/getstart/getstart.php:201
+msgid "4"
+msgstr "4"
+
+#: inc/getstart/getstart.php:200
+msgid "Number of Slides"
+msgstr "Количество слайдов"
+
+#: inc/getstart/getstart.php:195
+msgid "Slider Settings"
+msgstr "Настройки слайдера"
+
+#: inc/getstart/getstart.php:190
+msgid "Social Media Links"
+msgstr "Ссылки на социальные сети"
+
+#: inc/getstart/getstart.php:185
+msgid "Logo Upload"
+msgstr "Загрузка логотипа"
+
+#: inc/getstart/getstart.php:180
+msgid "Responsive Design"
+msgstr "Отзывчивый дизайн"
+
+#: inc/getstart/getstart.php:175
+msgid "Theme Customization"
+msgstr "Настройка темы"
+
+#: inc/getstart/getstart.php:170
+msgid "Premium Themes"
+msgstr "Премиум темы"
+
+#: inc/getstart/getstart.php:169
+msgid "Free Themes"
+msgstr "Бесплатные темы"
+
+#: inc/getstart/getstart.php:162
+msgid "Theme Features"
+msgstr "Возможности темы"
+
+#: inc/getstart/getstart.php:155
+msgid "Pro Documentation"
+msgstr "Профессиональная документация"
+
+#: inc/getstart/getstart.php:154
+msgid "Buy Pro"
+msgstr "Купить ПРО версию"
+
+#: inc/getstart/getstart.php:153
+msgid "Live Demo"
+msgstr "Демонстрация"
+
+#: inc/getstart/getstart.php:148
+msgid "Premium Theme Information"
+msgstr "Информация о премиум теме"
+
+#: inc/getstart/getstart.php:142
+msgid " Once you are done with this, you can see all the demo content on front page. "
+msgstr "Как только вы закончите с этим, вы сможете увидеть весь демонстрационный контент на первой странице."
+
+#: inc/getstart/getstart.php:140
+msgid " Settings -&gt; Reading --&gt; Set the front page display static page to home page "
+msgstr "Насткройки -&gt; Чтение --&gt; Установите статическую страницу как домашнюю страницу "
+
+#: inc/getstart/getstart.php:139
+msgid " Go to "
+msgstr "Перейти"
+
+#: inc/getstart/getstart.php:139
+msgid "2. Set the front page:"
+msgstr "2. Установить главную страницу:"
+
+#: inc/getstart/getstart.php:137
+msgid "Label it \"home\" or anything as you wish. Then select template \"home-page\" from template dropdown."
+msgstr "Пометьте ее как «главная» или как вам больше нравиться. Затем выберите шаблон «домашняя страница» из раскрывающегося списка шаблонов."
+
+#: inc/getstart/getstart.php:136
+msgid "Dashboard &gt;&gt; Pages &gt;&gt; Add New Page"
+msgstr "Консоль &gt;&gt; Страницы &gt;&gt; Добавить новую страницу"
+
+#: inc/getstart/getstart.php:135
+msgid "1. Create a Page to set template:  Go to "
+msgstr "1. Создайте страницу для установки шаблона: Перейдите в "
+
+#: inc/getstart/getstart.php:133
+msgid "Follow these instructions to setup Home page."
+msgstr "Следуйте этим инструкциям, чтобы настроить домашнюю страницу."
+
+#: inc/getstart/getstart.php:131
+msgid "How to set up Home Page Template"
+msgstr "Как настроить шаблон домашней страницы"
+
+#: inc/getstart/getstart.php:124
+msgid "Footer Widget"
+msgstr "Виджет подвала"
+
+#: inc/getstart/getstart.php:121
+msgid "Blog Layout"
+msgstr "Макет блога"
+
+#: inc/getstart/getstart.php:115
+msgid "Typography"
+msgstr "Типография"
+
+#: inc/getstart/getstart.php:112
+msgid "Menus"
+msgstr "Меню"
+
+#: inc/getstart/getstart.php:107
+msgid "Footer Text"
+msgstr "Текст подвала"
+
+#: inc/getstart/getstart.php:96
+msgid "Upload your logo"
+msgstr "Загрузите ваше лого"
+
+#: inc/getstart/getstart.php:91
+msgid "Link to customizer"
+msgstr "Ссылка на настройщик"
+
+#: inc/getstart/getstart.php:88
+msgid "Reviews"
+msgstr "Отзывы"
+
+#: inc/getstart/getstart.php:86
+msgid "All the features and aspects of this WordPress Theme are phenomenal. I'd recommend this theme to all."
+msgstr "Все функции и аспекты этой WordPress темы феноменальны. Я бы рекомендовал эту тему всем."
+
+#: inc/getstart/getstart.php:85
+msgid "Reviews & Testimonials"
+msgstr "Обзоры и отзывы"
+
+#: inc/getstart/getstart.php:82
+msgid "Support Forum"
+msgstr "Форум поддержки"
+
+#: inc/getstart/getstart.php:80
+msgid "Our dedicated team is well prepared to help you out in case of queries and doubts regarding our theme."
+msgstr "Наша целеустремленная команда хорошо подготовлена, чтобы помочь вам в случае вопросов и сомнений относительно нашей темы."
+
+#: inc/getstart/getstart.php:79
+msgid "Having Trouble, Need Support?"
+msgstr "Проблемы, нужна в поддержка?"
+
+#: inc/getstart/getstart.php:76
+msgid "Customizing"
+msgstr "Настройка"
+
+#: inc/getstart/getstart.php:74
+msgid "To begin customizing your website, start by clicking \"Customize\"."
+msgstr "Чтобы начать настройку своего сайта, начните с нажатия «Настроить»."
+
+#: inc/getstart/getstart.php:73
+msgid "Theme Customizer"
+msgstr "Настройщик темы"
+
+#: inc/getstart/getstart.php:68
+msgid "If you need any assistance regarding setting up and configuring the Theme, our documentation is there."
+msgstr "Если вам нужна помощь в установке и настройке темы, тут наша документация."
+
+#: inc/getstart/getstart.php:67
+msgid "Theme Documentation"
+msgstr "Документация темы"
+
+#: inc/getstart/getstart.php:65
+msgid "VW Kids is a colourful, youthful, fresh and versatile kids WordPress theme for kindergartens, creches, play schools, preschools, day care centres, babysitters, primary and secondary schools, education and training centres, art classes and nurseries. It is a multipurpose theme which can be used for kids toys and games store, kids skin care products, clothing and shoes mall, kids book store, baby food store, baby care range supplier, kids school bags and stationery store, toy gifts shop and kids fashion store. It can be used by kids health care blogger and portfolio designers. It is a totally responsive, SEO enabled, multilingual, cross-browser compatible and retina ready theme with multiple header and footer styles and various blog layouts. VW Kids performs all the advanced functions without ever bloating the website. It has a range of social media icons to promote your services. It has smart placement of call to action (CTA) button and other components throughout the theme to make a user-friendly website. Its design is made attractive with eye-catching colours and beautiful fonts to impress visitors at the first sight. This kids theme is fully customizable and compatible with the new WordPress version. It has clean and bug-free codes making it a high quality theme."
+msgstr "VW Kids - это красочная, молодежная, свежая и универсальная WordPress тема для детей, предназначенная для детских садов, яслей, игровых школ, дошкольных учреждений, нянь, начальных и средних школ, центров образования и обучения, художественных классов и детских заведений. Это многоцелевая тема, которая может быть использована как магазине детских игрушек и игр, магазин детской косметики, магазин одежды и обуви, магазин детских книг, магазин детского питания, ассортимент товаров для ухода за детьми, магазин детских школьных сумок и канцелярских товаров, магазин игрушек и подарков, магазин детской одежды. Ее могут использовать детские блоггеры и дизайнеры портфолио. Это полностью адаптивная, поддерживающая SEO, многоязычная, кросс-браузерная и готовая к использованию макет темы с несколькими стилями верхнего и нижнего колонтитула и различными макетами блога. VW Kids выполняет все расширенные функции, не нагружая веб-сайт. Она имеет ряд значков социальных сетей для продвижения ваших услуг. Она имеет умное размещение кнопки призыва к действию (CTA) и другие компоненты по всей теме, чтобы сделать веб-сайт более удобным. Ее дизайн сделан привлекательным с привлекательными цветами и красивыми шрифтами, чтобы произвести впечатление на посетителей с первого взгляда. Эта детская тема полностью настраиваема и совместима с новой версией WordPress. Он имеет чистый и без ошибок код, что делает ее темой высокого качества. "
+
+#: inc/getstart/getstart.php:63
+msgid "Lite Theme Information"
+msgstr "Информация об облегченной теме"
+
+#: inc/getstart/getstart.php:58
+msgid "Support"
+msgstr "Техподдержка"
+
+#: inc/getstart/getstart.php:57
+msgid "Get Premium"
+msgstr "Приобрести Премиум"
+
+#: inc/getstart/getstart.php:56
+msgid "Getting Started"
+msgstr "Приступаем к работе"
+
+#: inc/getstart/getstart.php:49 inc/getstart/getstart.php:327
+msgid "Upgrade to Pro"
+msgstr "Обновиться до PRO-версии"
+
+#: inc/getstart/getstart.php:47
+msgid "vwpro20"
+msgstr "vwpro20"
+
+#: inc/getstart/getstart.php:47
+msgid "Use Coupon"
+msgstr "Использовать купон"
+
+#: inc/getstart/getstart.php:46
+msgid "Buy VW Kids at 20% Discount"
+msgstr "Купить VW Kids со скидкой 20%"
+
+#: inc/getstart/getstart.php:39
+msgid "All our WordPress themes are modern, minimalist, 100% responsive, seo-friendly,feature-rich, and multipurpose that best suit designers, bloggers and other professionals who are working in the creative fields."
+msgstr "Все наши WordPress темы являются современными, минималистичными, 100% адаптивными, подготовлеными к seo, с богатым функционалом и многофункциональными, которые идеально подойдут дизайнерам, блоггерам и другим профессионалам, которые работают в области творчества."
+
+#: inc/getstart/getstart.php:38
+msgid "Welcome to VW Kids Theme"
+msgstr "Добро пожаловать в VW Kids Theme"
+
+#: inc/getstart/getstart.php:5
+msgid "About VW Kids"
+msgstr "Про VW Kids"
+
+#: inc/customizer.php:436
+msgid "Docs"
+msgstr "Документация"
+
+#: inc/getstart/getstart.php:70 inc/customizer.php:435
+msgid "Documentation"
+msgstr "Документация"
+
+#: searchform.php:13
+msgctxt "submit button"
+msgid "Search"
+msgstr "Искать"
+
+#: searchform.php:11
+msgctxt "placeholder"
+msgid "Search"
+msgstr "Найти"
+
+#: page-template/custom-home-page.php:77
+msgid "SHOP NOW"
+msgstr "КУПИТЬ СЕЙЧАС"
+
+#: page-template/custom-home-page.php:15
+msgid "ALL CATEGORIES"
+msgstr "ВСЕ РУБРИКИ"
+
+#. Template Name of the theme
+msgid "Custom Home Page"
+msgstr "Пользовательская домашняя страница"
+
+#: sidebar.php:18
+msgid "Meta"
+msgstr "Мета"
+
+#: sidebar.php:12
+msgid "Archives"
+msgstr "Архивы"
+
+#: woocommerce/checkout/form-checkout.php:52
+msgid "Your order"
+msgstr "Ваш заказ"
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr "Вы должны войти в систему для покупки."
+
+#: comments.php:70
+msgid "Comments are closed."
+msgstr "Обсуждение закрыто."
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:35
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s комментарий для &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s комментария для &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s комментариев для &ldquo;%2$s&rdquo;"
+
+#. translators: %s: post title
+#: comments.php:30
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Один комментарий к &ldquo;%s&rdquo;"
+
+#: footer.php:57
+msgid " &copy; Copyright 2019 -"
+msgstr " &copy; Авторское право 2019 -"
+
+#: inc/social-widgets/social-icon.php:96
+msgid "Youtube:"
+msgstr "Youtube:"
+
+#: inc/social-widgets/social-icon.php:92
+msgid "Tumblr:"
+msgstr "Tumblr:"
+
+#: inc/social-widgets/social-icon.php:88
+msgid "Pinterest:"
+msgstr "Pinterest:"
+
+#: inc/social-widgets/social-icon.php:84
+msgid "Instagram:"
+msgstr "Instagram:"
+
+#: inc/social-widgets/social-icon.php:80
+msgid "Linkedin:"
+msgstr "Linkedin:"
+
+#: inc/social-widgets/social-icon.php:76
+msgid "Google+:"
+msgstr "Google+:"
+
+#: inc/social-widgets/social-icon.php:72
+msgid "Twitter:"
+msgstr "Twitter:"
+
+#: inc/social-widgets/social-icon.php:68
+msgid "Facebook:"
+msgstr "Facebook:"
+
+#: inc/social-widgets/social-icon.php:64
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: inc/social-widgets/social-icon.php:14
+msgid "Widget for Social icons section"
+msgstr "Виджет для раздела социальных сетей"
+
+#: inc/social-widgets/social-icon.php:12
+msgid "Social Icon"
+msgstr "Иконка соц. сети"
+
+#: inc/typography/customize/control-typography.php:370
+msgid "Oblique"
+msgstr "Наклоненный"
+
+#: inc/typography/customize/control-typography.php:369
+msgid "Italic"
+msgstr "Курсив"
+
+#: inc/typography/customize/control-typography.php:367
+msgid "No Fonts Style"
+msgstr "Без стиля шрифта"
+
+#: inc/typography/customize/control-typography.php:353
+msgid "Ultra Bold"
+msgstr "Ультра толстый"
+
+#: inc/typography/customize/control-typography.php:352
+msgid "Bold"
+msgstr "Жирный"
+
+#: inc/typography/customize/control-typography.php:351
+msgid "Medium"
+msgstr "Средний"
+
+#: inc/typography/customize/control-typography.php:350
+#: inc/typography/customize/control-typography.php:368
+msgid "Normal"
+msgstr "Обычный"
+
+#: inc/typography/customize/control-typography.php:349
+msgid "Light"
+msgstr "Светлая"
+
+#: inc/typography/customize/control-typography.php:348
+msgid "Thin"
+msgstr "Тонкий"
+
+#: inc/typography/customize/control-typography.php:347
+msgid "No Fonts weight"
+msgstr "Без толщины шрифта"
+
+#: inc/typography/customize/control-typography.php:333
+msgid "Yanone Kaffeesatz"
+msgstr "Yanone Kaffeesatz"
+
+#: inc/typography/customize/control-typography.php:332
+msgid "Volkhov"
+msgstr "Volkhov"
+
+#: inc/typography/customize/control-typography.php:331
+msgid "Vollkorn"
+msgstr "Vollkorn"
+
+#: inc/typography/customize/control-typography.php:330
+msgid "Vampiro One"
+msgstr "Vampiro One"
+
+#: inc/typography/customize/control-typography.php:329
+msgid "Varela Round"
+msgstr "Varela Round"
+
+#: inc/typography/customize/control-typography.php:328
+msgid "VT323"
+msgstr "VT323"
+
+#: inc/typography/customize/control-typography.php:327
+msgid "Ubuntu"
+msgstr "Ubuntu"
+
+#: inc/typography/customize/control-typography.php:326
+msgid "Tangerine"
+msgstr "Tangerine"
+
+#: inc/typography/customize/control-typography.php:325
+msgid "Shrikhand"
+msgstr "Shrikhand"
+
+#: inc/typography/customize/control-typography.php:324
+msgid "Sacramento"
+msgstr "Sacramento"
+
+#: inc/typography/customize/control-typography.php:323
+msgid "Shadows Into Light"
+msgstr "Shadows Into Light"
+
+#: inc/typography/customize/control-typography.php:322
+msgid "Shadows Into Light Two"
+msgstr "Shadows Into Light Two"
+
+#: inc/typography/customize/control-typography.php:321
+msgid "Source Sans Pro"
+msgstr "Source Sans Pro"
+
+#: inc/typography/customize/control-typography.php:320
+msgid "Slabo"
+msgstr "Slabo"
+
+#: inc/typography/customize/control-typography.php:319
+msgid "Righteous"
+msgstr "Righteous"
+
+#: inc/typography/customize/control-typography.php:318
+msgid "Russo One"
+msgstr "Russo One"
+
+#: inc/typography/customize/control-typography.php:317
+msgid "Rokkitt"
+msgstr "Rokkitt"
+
+#: inc/typography/customize/control-typography.php:316
+msgid "Rubik"
+msgstr "Rubik"
+
+#: inc/typography/customize/control-typography.php:315
+msgid "Raleway"
+msgstr "Raleway"
+
+#: inc/typography/customize/control-typography.php:314
+msgid "Quattrocento Sans"
+msgstr "Quattrocento Sans"
+
+#: inc/typography/customize/control-typography.php:313
+msgid "Quicksand"
+msgstr "Quicksand"
+
+#: inc/typography/customize/control-typography.php:312
+msgid "Poiret One"
+msgstr "Poiret One"
+
+#: inc/typography/customize/control-typography.php:311
+msgid "Permanent Marker"
+msgstr "Permanent Marker"
+
+#: inc/typography/customize/control-typography.php:310
+msgid "Philosopher"
+msgstr "Philosopher"
+
+#: inc/typography/customize/control-typography.php:309
+msgid "PT Sans"
+msgstr "PT Sans"
+
+#: inc/typography/customize/control-typography.php:308
+msgid "Playfair Display"
+msgstr "Playfair Display"
+
+#: inc/typography/customize/control-typography.php:307
+msgid "Playball"
+msgstr "Playball"
+
+#: inc/typography/customize/control-typography.php:306
+msgid "Padauk"
+msgstr "Padauk"
+
+#: inc/typography/customize/control-typography.php:305
+msgid "Pacifico"
+msgstr "Pacifico"
+
+#: inc/typography/customize/control-typography.php:304
+msgid "Patua One"
+msgstr "Patua One"
+
+#: inc/typography/customize/control-typography.php:303
+msgid "Orbitron"
+msgstr "Orbitron"
+
+#: inc/typography/customize/control-typography.php:302
+msgid "Oxygen"
+msgstr "Oxygen"
+
+#: inc/typography/customize/control-typography.php:301
+msgid "Overpass Mono"
+msgstr "Overpass Mono"
+
+#: inc/typography/customize/control-typography.php:300
+msgid "Overpass"
+msgstr "Overpass"
+
+#: inc/typography/customize/control-typography.php:299
+msgid "Open Sans"
+msgstr "Open Sans"
+
+#: inc/typography/customize/control-typography.php:298
+msgid "Noto Serif"
+msgstr "Noto Serif"
+
+#: inc/typography/customize/control-typography.php:297
+msgid "Marck Script"
+msgstr "Marck Script"
+
+#: inc/typography/customize/control-typography.php:296
+msgid "Muli"
+msgstr "Muli"
+
+#: inc/typography/customize/control-typography.php:295
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: inc/typography/customize/control-typography.php:294
+msgid "Monda"
+msgstr "Monda"
+
+#: inc/typography/customize/control-typography.php:293
+msgid "Merriweather"
+msgstr "Merriweather"
+
+#: inc/typography/customize/control-typography.php:292
+msgid "Lobster Two"
+msgstr "Lobster Two"
+
+#: inc/typography/customize/control-typography.php:291
+msgid "Libre Baskerville"
+msgstr "Libre Baskerville"
+
+#: inc/typography/customize/control-typography.php:290
+msgid "Lora"
+msgstr "Lora"
+
+#: inc/typography/customize/control-typography.php:289
+msgid "Lato"
+msgstr "Lato"
+
+#: inc/typography/customize/control-typography.php:288
+msgid "Lobster"
+msgstr "Lobster"
+
+#: inc/typography/customize/control-typography.php:287
+msgid "Kanit"
+msgstr "Kanit"
+
+#: inc/typography/customize/control-typography.php:286
+msgid "Josefin Sans"
+msgstr "Josefin Sans"
+
+#: inc/typography/customize/control-typography.php:285
+msgid "Josefin Slab"
+msgstr "Josefin Slab"
+
+#: inc/typography/customize/control-typography.php:284
+msgid "Julius Sans One"
+msgstr "Julius Sans One"
+
+#: inc/typography/customize/control-typography.php:283
+msgid "IM Fell English SC"
+msgstr "IM Fell English SC"
+
+#: inc/typography/customize/control-typography.php:282
+msgid "Indie Flower"
+msgstr "Indie Flower"
+
+#: inc/typography/customize/control-typography.php:281
+msgid "Inconsolata"
+msgstr "Inconsolata"
+
+#: inc/typography/customize/control-typography.php:280
+msgid "Hammersmith One"
+msgstr "Hammersmith One"
+
+#: inc/typography/customize/control-typography.php:279
+msgid "Handlee"
+msgstr "Handlee"
+
+#: inc/typography/customize/control-typography.php:278
+msgid "Great Vibes"
+msgstr "Great Vibes"
+
+#: inc/typography/customize/control-typography.php:277
+msgid "Gloria Hallelujah"
+msgstr "Gloria Hallelujah"
+
+#: inc/typography/customize/control-typography.php:276
+msgid "Frank Ruhl Libre"
+msgstr "Frank Ruhl Libre"
+
+#: inc/typography/customize/control-typography.php:275
+msgid "Francois One"
+msgstr "Francois One"
+
+#: inc/typography/customize/control-typography.php:274
+msgid "Fjalla One"
+msgstr "Fjalla One"
+
+#: inc/typography/customize/control-typography.php:273
+msgid "Fredoka One"
+msgstr "Fredoka One"
+
+#: inc/typography/customize/control-typography.php:272
+msgid "Economica"
+msgstr "Economica"
+
+#: inc/typography/customize/control-typography.php:271
+msgid "Droid Sans"
+msgstr "Droid Sans"
+
+#: inc/typography/customize/control-typography.php:270
+msgid "Dosis"
+msgstr "Dosis"
+
+#: inc/typography/customize/control-typography.php:269
+msgid "Days One"
+msgstr "Days One"
+
+#: inc/typography/customize/control-typography.php:268
+msgid "Chewy"
+msgstr "Chewy"
+
+#: inc/typography/customize/control-typography.php:267
+msgid "Cookie"
+msgstr "Куки"
+
+#: inc/typography/customize/control-typography.php:266
+msgid "Cuprum"
+msgstr "Cuprum"
+
+#: inc/typography/customize/control-typography.php:265
+msgid "Crimson Text"
+msgstr "Crimson Text"
+
+#: inc/typography/customize/control-typography.php:264
+msgid "Cormorant Garamond"
+msgstr "Cormorant Garamond"
+
+#: inc/typography/customize/control-typography.php:263
+msgid "Cherry Swash"
+msgstr "Cherry Swash"
+
+#: inc/typography/customize/control-typography.php:262
+msgid "Courgette"
+msgstr "Courgette"
+
+#: inc/typography/customize/control-typography.php:261
+msgid "Cardo"
+msgstr "Cardo"
+
+#: inc/typography/customize/control-typography.php:260
+msgid "Cabin"
+msgstr "Cabin"
+
+#: inc/typography/customize/control-typography.php:259
+msgid "BenchNine"
+msgstr "BenchNine"
+
+#: inc/typography/customize/control-typography.php:258
+msgid "Bree Serif"
+msgstr "Bree Serif"
+
+#: inc/typography/customize/control-typography.php:257
+msgid "Bitter"
+msgstr "Bitter"
+
+#: inc/typography/customize/control-typography.php:256
+msgid "Bad Script"
+msgstr "Bad Script"
+
+#: inc/typography/customize/control-typography.php:255
+msgid "Boogaloo"
+msgstr "Boogaloo"
+
+#: inc/typography/customize/control-typography.php:254
+msgid "Bangers"
+msgstr "Bangers"
+
+#: inc/typography/customize/control-typography.php:253
+msgid "Averia Serif Libre"
+msgstr "Averia Serif Libre"
+
+#: inc/typography/customize/control-typography.php:252
+msgid "Alfa Slab One"
+msgstr "Alfa Slab One"
+
+#: inc/typography/customize/control-typography.php:251
+msgid "Alegreya"
+msgstr "Alegreya"
+
+#: inc/typography/customize/control-typography.php:250
+msgid "Arvo"
+msgstr "Arvo"
+
+#: inc/typography/customize/control-typography.php:249
+msgid "Arsenal"
+msgstr "Arsenal"
+
+#: inc/typography/customize/control-typography.php:248
+msgid "Arimo"
+msgstr "Arimo"
+
+#: inc/typography/customize/control-typography.php:247
+msgid "Architects Daughter"
+msgstr "Architects Daughter"
+
+#: inc/typography/customize/control-typography.php:246
+msgid "Anton"
+msgstr "Anton"
+
+#: inc/typography/customize/control-typography.php:245
+msgid "Acme"
+msgstr "Acme"
+
+#: inc/typography/customize/control-typography.php:244
+msgid "Abril Fatface"
+msgstr "Abril Fatface"
+
+#: inc/typography/customize/control-typography.php:243
+msgid "No Fonts"
+msgstr "Без шрифта"
+
+#: inc/typography/customize/control-typography.php:54
+msgid "Letter Spacing"
+msgstr "Расстояния между буквами"
+
+#: inc/typography/customize/control-typography.php:53
+msgid "Line Height"
+msgstr "Высота рядка"
+
+#: inc/typography/customize/control-typography.php:52
+msgid "Font Style"
+msgstr "Стиль шрифта"
+
+#: inc/typography/customize/control-typography.php:51
+msgid "Font Weight"
+msgstr "Толщина шрифта"
+
+#: inc/typography/customize/control-typography.php:50
+msgid "Font Size"
+msgstr "Размер шрифта"
+
+#: inc/typography/customize/control-typography.php:49
+msgid "Font Family"
+msgstr "Семейство шрифта"
+
+#: inc/typography/customize/control-typography.php:48
+msgid "Font Color"
+msgstr "Цвет шрифта"
+
+#: inc/typography/ctypo.php:344
+msgid "Heading 6"
+msgstr "Заголовок 6"
+
+#: inc/typography/ctypo.php:339 inc/typography/ctypo.php:345
+msgid "Select how heading 6 should appear."
+msgstr "Выберите способ отображения заголовка 6."
+
+#: inc/typography/ctypo.php:338
+msgid "Heading 6 Color"
+msgstr "Цвет Заголовка 6"
+
+#: inc/typography/ctypo.php:317
+msgid "Heading 5"
+msgstr "Заголовок 5"
+
+#: inc/typography/ctypo.php:312 inc/typography/ctypo.php:318
+msgid "Select how heading 5 should appear."
+msgstr "Выберите способ отображения заголовка 5."
+
+#: inc/typography/ctypo.php:311
+msgid "Heading 5 Color"
+msgstr "Цвет Заголовка 5"
+
+#: inc/typography/ctypo.php:290
+msgid "Heading 4"
+msgstr "Заголовок 4"
+
+#: inc/typography/ctypo.php:285 inc/typography/ctypo.php:291
+msgid "Select how heading 4 should appear."
+msgstr "Выберите способ отображения заголовка 4."
+
+#: inc/typography/ctypo.php:284
+msgid "Heading 4 Color"
+msgstr "Цвет Заголовка 4"
+
+#: inc/typography/ctypo.php:263
+msgid "Heading 3"
+msgstr "Заголовок 3"
+
+#: inc/typography/ctypo.php:258 inc/typography/ctypo.php:264
+msgid "Select how heading 3 should appear."
+msgstr "Выберите способ отображения заголовка 3."
+
+#: inc/typography/ctypo.php:257
+msgid "Heading 3 Color"
+msgstr "Цвет Заголовка 3"
+
+#: inc/typography/ctypo.php:236
+msgid "Heading 2"
+msgstr "Заголовок 2"
+
+#: inc/typography/ctypo.php:231 inc/typography/ctypo.php:237
+msgid "Select how heading 2 should appear."
+msgstr "Выберите способ отображения заголовка 2."
+
+#: inc/typography/ctypo.php:230
+msgid "Heading 2 Color"
+msgstr "Цвет Заголовка 2"
+
+#: inc/typography/ctypo.php:209
+msgid "Heading 1"
+msgstr "Заголовок 1"
+
+#: inc/typography/ctypo.php:204 inc/typography/ctypo.php:210
+msgid "Select how heading 1 should appear."
+msgstr "Выберите способ отображения заголовка 1."
+
+#: inc/typography/ctypo.php:203
+msgid "Heading 1 Color"
+msgstr "Цвет Заголовка 1"
+
+#: inc/typography/ctypo.php:182
+msgid "Anchor Tag Typography"
+msgstr "Якорь метки типографии"
+
+#: inc/typography/ctypo.php:177 inc/typography/ctypo.php:183
+msgid "Select how you want your a tag to appear."
+msgstr "Выберите способ отображения метки."
+
+#: inc/typography/ctypo.php:176
+msgid "Anchor Tag Color"
+msgstr "Цвет метки якоря"
+
+#: inc/typography/ctypo.php:155
+msgid "Paragraph Typography"
+msgstr "Типография параграфа"
+
+#: inc/typography/ctypo.php:150 inc/typography/ctypo.php:156
+msgid "Select how you want your paragraphs to appear."
+msgstr "Выберите способ отображения параграфов."
+
+#: inc/typography/ctypo.php:149
+msgid "Paragraph Color"
+msgstr "Цвет параграфа"
+
+#: inc/typography/ctypo.php:36
+msgid "Headings Typography"
+msgstr "Типография шапки"
+
+#: inc/typography/ctypo.php:31
+msgid "Content Typography"
+msgstr "Типография содержимого"
+
+#: inc/typography/ctypo.php:27
+msgid "Theme Typography"
+msgstr "Типография темы"
+
+#: inc/customizer.php:428
+msgid "UPGRADE PRO"
+msgstr "Обновиться до Pro"
+
+#: inc/customizer.php:427
+msgid "VW KIDS PRO"
+msgstr "VW KIDS PRO"
+
+#: inc/customizer.php:330
+msgid "Copyright 2019, ....."
+msgstr "Авторское право 2019, ....."
+
+#: inc/customizer.php:328
+msgid "Copyright Text"
+msgstr "Текст авторского права"
+
+#: inc/customizer.php:319
+msgid "Footer"
+msgstr "Нижний колонтитул"
+
+#: inc/customizer.php:310
+msgid "First select static page in homepage setting for front page.Below given edit button is to customize Home Page. Just click on the edit option, add whatever elements you want to include in the homepage, save the changes and you are good to go."
+msgstr "Сначала выберите статическую страницу в настройках домашней страницы для главной страницы. Ниже находиться кнопка редактирования для настройки домашней страницы. Просто нажмите на опцию редактирования, добавьте все элементы, которые вы хотите включить в домашнюю страницу, сохраните изменения, и все готово."
+
+#: inc/customizer.php:297
+msgid "Customize Home Page"
+msgstr "Настроить домашнюю страницу"
+
+#: inc/customizer.php:235
+msgid "Select Page to show popular product"
+msgstr "Выберите страницу для отображения популярного товара"
+
+#: inc/customizer.php:225
+msgid "Most Popular Product"
+msgstr "Самый популярный товар"
+
+#: inc/customizer.php:157
+msgid "Slider image size (825 x 470)"
+msgstr "Размер изображения слайдера (825 x 470)"
+
+#: inc/customizer.php:156
+msgid "Select Slider Page"
+msgstr "Выберите страницу слайдера"
+
+#: inc/customizer.php:145
+msgid "Show / Hide Slider"
+msgstr "Показать / Скрыть слайдер"
+
+#: inc/getstart/getstart.php:104 inc/customizer.php:135
+msgid "Slider Section"
+msgstr "Раздел слайдера"
+
+#: inc/customizer.php:127
+msgid "example@gmail.com"
+msgstr "example@gmail.com"
+
+#: inc/customizer.php:125
+msgid "Add Email Address"
+msgstr "Добавьте адресс почты"
+
+#: inc/customizer.php:114
+msgid "+00 987 654 1230"
+msgstr "+00 987 654 1230"
+
+#: inc/customizer.php:112
+msgid "Add Phone Number"
+msgstr "Добавьте номер телефона"
+
+#: inc/customizer.php:101
+msgid "FREE SHIPPING : lorem ipsum is adummy text"
+msgstr "БЕСПЛАТНАЯ ДОСТАВКА : lorem ipsum is adummy text"
+
+#: inc/customizer.php:99
+msgid "Add Discount Text"
+msgstr "Добавьте текст скидки"
+
+#: inc/getstart/getstart.php:99 inc/customizer.php:90
+msgid "Topbar Settings"
+msgstr "Настройки верхней панели"
+
+#: inc/customizer.php:79
+msgid "Here you can change the sidebar layout for pages. "
+msgstr "Здесь вы можете изменить макет боковой панели для страниц."
+
+#: inc/customizer.php:78
+msgid "Page Sidebar Layout"
+msgstr "Расположение боковой панели страницы"
+
+#: inc/customizer.php:68
+msgid "Grid Layout"
+msgstr "Сетчатый макет"
+
+#: inc/customizer.php:67
+msgid "Four Columns"
+msgstr "Четыре колонки"
+
+#: inc/customizer.php:66
+msgid "Three Columns"
+msgstr "Три колонки"
+
+#: inc/customizer.php:65 inc/customizer.php:73 inc/customizer.php:84
+msgid "One Column"
+msgstr "Один столбец"
+
+#: inc/customizer.php:63 inc/customizer.php:82
+msgid "Left Sidebar"
+msgstr "Левый сайдбар"
+
+#: inc/customizer.php:60
+msgid "Here you can change the sidebar layout for posts. "
+msgstr "Здесь вы можете изменить макет боковой панели для записей."
+
+#: inc/customizer.php:59
+msgid "Post Sidebar Layout"
+msgstr "Макет боковой панели страницы"
+
+#: inc/customizer.php:54 inc/customizer.php:64 inc/customizer.php:83
+msgid "Right Sidebar"
+msgstr "Правая колонка"
+
+#: inc/customizer.php:33
+msgid "General Settings"
+msgstr "Основные настройки"
+
+#: inc/customizer.php:28
+msgid "VW Settings"
+msgstr "Настройки VW"
+
+#. translators: %s: search term
+#: search.php:19 search.php:53 search.php:86 search.php:119 search.php:154
+#: search.php:189 search.php:225
+msgid "Results For: %s"
+msgstr "Результаты поиска: %s"
+
+#: template-parts/header/navigation.php:11
+msgid "Menu"
+msgstr "Меню"
+
+#: template-parts/header/middle-header.php:43
+msgid "shopping cart"
+msgstr "корзина"
+
+#: template-parts/header/middle-header.php:35
+msgid "Login / Register"
+msgstr "Вход / Регистрация"
+
+#: template-parts/header/middle-header.php:32
+msgid "My Account"
+msgstr "Моя учётная запись"
+
+#: template-parts/single-post-layout.php:50
+msgid "Previous post:"
+msgstr "Предыдущая запись:"
+
+#: template-parts/single-post-layout.php:49
+msgid "Previous"
+msgstr "Назад"
+
+#: template-parts/single-post-layout.php:47
+msgid "Next post:"
+msgstr "Следующая запись:"
+
+#: template-parts/single-post-layout.php:46
+msgid "Next"
+msgstr "Далее"
+
+#: template-parts/single-post-layout.php:41
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr "<span class=\"meta-nav\">Опубликовано в</span><span class=\"post-title\">%title</span>"
+
+#: template-parts/content-image.php:30 template-parts/content-gallery.php:36
+#: template-parts/content.php:30 template-parts/content-video.php:48
+#: template-parts/content-audio.php:49 template-parts/single-post-layout.php:22
+msgid "% Comments"
+msgstr "Комментарии (%)"
+
+#: template-parts/content-image.php:30 template-parts/content-gallery.php:36
+#: template-parts/content.php:30 template-parts/content-video.php:48
+#: template-parts/content-audio.php:49 template-parts/single-post-layout.php:22
+msgid "0 Comments"
+msgstr "0 комментариев"
+
+#: template-parts/content-image.php:30 template-parts/content-gallery.php:36
+#: template-parts/content.php:30 template-parts/content-video.php:48
+#: template-parts/content-audio.php:49 template-parts/single-post-layout.php:22
+msgid "0 Comment"
+msgstr "Нет комментариев"
+
+#: template-parts/content-image.php:36 template-parts/grid-layout.php:26
+#: template-parts/content-gallery.php:42 template-parts/content.php:36
+#: template-parts/content-video.php:54 template-parts/content-audio.php:55
+msgid "READ MORE"
+msgstr "ЧИТАТЬ ДАЛЕЕ"
+
+#: template-parts/grid-layout.php:26
+msgid "Read More"
+msgstr "Читать далее"
+
+#: template-parts/image-layout.php:33 inc/customizer.php:314
+msgid "Edit"
+msgstr "Изменить"
+
+#: template-parts/image-layout.php:28
+msgid "Pages:"
+msgstr "Страниц:"
+
+#: no-results.php:19
+msgid "Back to Home Page"
+msgstr "Перейти на домашнюю страницу"
+
+#: no-results.php:14
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Извините, по вашему запросу ничего не найдено. Попробуйте другие ключевые слова."
+
+#: no-results.php:12
+msgid "Ready to publish your first post? Get started here."
+msgstr "Готовы опубликовать вашу первую запись? Начните отсюда."
+
+#: no-results.php:9
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: header.php:17
+msgid "http://gmpg.org/xfn/11"
+msgstr "http://gmpg.org/xfn/11"
+
+#: single.php:40 single.php:73 single.php:105 single.php:137 single.php:171
+#: single.php:206 single.php:238 image.php:40 image.php:73 image.php:105
+#: image.php:137 image.php:171 image.php:206 image.php:238 search.php:41
+#: search.php:75 search.php:108 search.php:141 search.php:176 search.php:213
+#: search.php:247 archive.php:45 archive.php:81 archive.php:116 archive.php:151
+#: archive.php:188 archive.php:227 archive.php:263 index.php:45 index.php:78
+#: index.php:110 index.php:142 index.php:176 index.php:211 index.php:243
+msgid "Page"
+msgstr "Страница"
+
+#: single.php:39 single.php:72 single.php:104 single.php:136 single.php:170
+#: single.php:205 single.php:237 image.php:39 image.php:72 image.php:104
+#: image.php:136 image.php:170 image.php:205 image.php:237 search.php:40
+#: search.php:74 search.php:107 search.php:140 search.php:175 search.php:212
+#: search.php:246 archive.php:44 archive.php:80 archive.php:115 archive.php:150
+#: archive.php:187 archive.php:226 archive.php:262 index.php:44 index.php:77
+#: index.php:109 index.php:141 index.php:175 index.php:210 index.php:242
+msgid "Next page"
+msgstr "Следующая страница"
+
+#: single.php:38 single.php:71 single.php:103 single.php:135 single.php:169
+#: single.php:204 single.php:236 image.php:38 image.php:71 image.php:103
+#: image.php:135 image.php:169 image.php:204 image.php:236 search.php:39
+#: search.php:73 search.php:106 search.php:139 search.php:174 search.php:211
+#: search.php:245 archive.php:43 archive.php:79 archive.php:114 archive.php:149
+#: archive.php:186 archive.php:225 archive.php:261 index.php:43 index.php:76
+#: index.php:108 index.php:140 index.php:174 index.php:209 index.php:241
+msgid "Previous page"
+msgstr "Предыдущая страница"
+
+#: 404.php:16
+msgid "Return to the home page"
+msgstr "Вернуться на главную страницу"
+
+#: 404.php:14 no-results.php:17
+msgid "Dont worry&hellip it happens to the best of us."
+msgstr "Не волнуйтесь, и это случилось с лучшими из нас."
+
+#: 404.php:13
+msgid "Looks like you have taken a wrong turn&hellip"
+msgstr "Похоже, вы пошли не туда &hellip"
+
+#: 404.php:12
+msgid "Not Found"
+msgstr "Не найдено"
+
+#: 404.php:12
+msgid "404"
+msgstr "404"
+
+#: functions.php:320
+msgid "Kids WordPress Theme"
+msgstr "WordPress тема Kids"
+
+#: functions.php:138
+msgid "Appears on footer 4"
+msgstr "Появится в подвале 4"
+
+#: functions.php:137
+msgid "Footer Navigation 4"
+msgstr "Навигация в подвале 4"
+
+#: functions.php:128
+msgid "Appears on footer 3"
+msgstr "Появится в подвале 3"
+
+#: functions.php:127
+msgid "Footer Navigation 3"
+msgstr "Навигация в подвале 3"
+
+#: functions.php:118
+msgid "Appears on footer 2"
+msgstr "Появится в подвале 2"
+
+#: functions.php:117
+msgid "Footer Navigation 2"
+msgstr "Навигация в подвале 2"
+
+#: functions.php:108
+msgid "Appears on footer 1"
+msgstr "Появится в подвале 1"
+
+#: functions.php:107
+msgid "Footer Navigation 1"
+msgstr "Навигация в подвале 1"
+
+#: functions.php:97
+msgid "Sidebar 3"
+msgstr "Боковая панель 3"
+
+#: functions.php:88 functions.php:98
+msgid "Appears on page sidebar"
+msgstr "Появится на боковой панели страницы"
+
+#: functions.php:87
+msgid "Page Sidebar"
+msgstr "Боковая панель страницы"
+
+#: functions.php:78
+msgid "Appears on blog page sidebar"
+msgstr "Появится на боковой панели страницы блога"
+
+#: functions.php:77
+msgid "Blog Sidebar"
+msgstr "Боковая панель блога"
+
+#: functions.php:32
+msgid "Primary Menu"
+msgstr "Основное меню"
+
+#. Author URI of the theme
+msgid "https://www.vwthemes.com/"
+msgstr "https://www.vwthemes.com/"
+
+#. Author of the theme
+msgid "VW Themes"
+msgstr "VW Themes"
+
+#. Theme URI of the theme
+msgid "https://www.vwthemes.com/themes/free-kids-wordpress-theme/"
+msgstr "https://www.vwthemes.com/themes/free-kids-wordpress-theme/"
