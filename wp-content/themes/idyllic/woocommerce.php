@@ -27,62 +27,7 @@ if( 'default' == $layout ) { //Settings from customizer
 	if(($idyllic_settings['idyllic_sidebar_layout_options'] != 'nosidebar') && ($idyllic_settings['idyllic_sidebar_layout_options'] != 'fullwidth')){ ?>
 <aside id="secondary" class="widget-area" role="complementary">
 	<?php }
-}
-
-?>
-
-<h6>Категории товаров:</h6>
-
-<?php
-
-function display_categories() {
-	$taxonomy     = 'product_cat';
-	$orderby      = 'name';
-	$show_count   = 0;      // 1 for yes, 0 for no
-	$pad_counts   = 0;      // 1 for yes, 0 for no
-	$hierarchical = 1;      // 1 for yes, 0 for no
-	$title        = '';
-	$empty        = 0;
-
-	$args           = [
-		'taxonomy'     => $taxonomy,
-		'orderby'      => $orderby,
-		'show_count'   => $show_count,
-		'pad_counts'   => $pad_counts,
-		'hierarchical' => $hierarchical,
-		'title_li'     => $title,
-		'hide_empty'   => $empty,
-	];
-	$all_categories = get_categories( $args );
-	foreach ( $all_categories as $cat ) {
-		if ( $cat->name === 'Uncategorized' ) {
-			continue;
-		}
-
-		$category_id = $cat->term_id;
-		?>
-        <a href="<?= get_term_link( $cat->slug, 'product_cat' ) ?>">
-			<?= $cat->name ?>
-        </a>
-        <br/>
-		<?php
-
-		$args2 = [
-			'taxonomy'     => $taxonomy,
-			'child_of'     => 0,
-			'parent'       => $category_id,
-			'orderby'      => $orderby,
-			'show_count'   => $show_count,
-			'pad_counts'   => $pad_counts,
-			'hierarchical' => $hierarchical,
-			'title_li'     => $title,
-			'hide_empty'   => $empty,
-		];
-	}
-}
-
-display_categories();
-
+} 
 	if( 'default' == $layout ) { //Settings from customizer
 		if(($idyllic_settings['idyllic_sidebar_layout_options'] != 'nosidebar') && ($idyllic_settings['idyllic_sidebar_layout_options'] != 'fullwidth')): ?>
 		<?php dynamic_sidebar( 'idyllic_woocommerce_sidebar' ); ?>
