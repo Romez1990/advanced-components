@@ -62,7 +62,10 @@ get_header( 'shop' ); ?>
 			</div>
 			<?php if ( 'Disable' != $vw_kids_woocommerce_single_product_page_sidebar ) {?>
 				<div id="sidebar" class="col-lg-4 col-md-4">
-					<?php dynamic_sidebar('woocommerce-single-sidebar'); ?>
+                    <?php
+					display_categories();
+                    dynamic_sidebar('woocommerce-single-sidebar');
+                    ?>
 				</div>
 			<?php }?>
 		</div>
