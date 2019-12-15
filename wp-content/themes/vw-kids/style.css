@@ -24,14 +24,14 @@ VW Kids WordPress Theme is released under the terms of GNU GPL
 html{
   overflow-x: hidden;
 }
-body{ 
-  margin:0; 
-  padding:0; 
+body{
+  margin:0;
+  padding:0;
   -ms-word-wrap:break-word;
   word-wrap:break-word;
   position:relative;
   background: #fff;
-  font-size: 14px; 
+  font-size: 14px;
   color: #ababab;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
@@ -39,8 +39,8 @@ body{
 img{
   margin:0;
   padding:0;
-  border:none; 
-  max-width:100%; 
+  border:none;
+  max-width:100%;
   height:auto;
 }
 section img{
@@ -57,16 +57,16 @@ h6{
   padding:10px 0;
   color: #343c49;
 }
-p{ 
-  margin:0 0 15px; 
+p{
+  margin:0 0 15px;
   padding:0;
   letter-spacing: 1px;
 }
-a{ 
-  text-decoration:none; 
+a{
+  text-decoration:none;
   color: #9cc44e;
 }
-a:hover{ 
+a:hover{
   text-decoration:none;
   color:#333;
 }
@@ -78,17 +78,17 @@ a:focus{
   outline: 1px dotted #000;
   border-bottom: 1px solid #000;
 }
-ul{ 
-  margin:0 0 0 15px; 
+ul{
+  margin:0 0 0 15px;
   padding:0;
 }
 a:focus,
-input[type="text"]:focus, 
-input[type="email"]:focus, 
-input[type="phno"]:focus, 
-input[type="password"]:focus, 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="phno"]:focus,
+input[type="password"]:focus,
 input[type="search"]:focus,
-input[type="tel"]:focus, 
+input[type="tel"]:focus,
 textarea:focus,
 input[type="submit"]:focus,
 #comments:focus,
@@ -102,7 +102,7 @@ select{
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-.clear{ 
+.clear{
   clear:both;
 }
 input[type="search"] {
@@ -116,23 +116,23 @@ input[type="search"] {
 input[type='submit']:hover{
   cursor: pointer;
 }
-.center{ 
-  text-align:center; 
+.center{
+  text-align:center;
   margin-bottom:40px;
 }
-.middle-align{ 
-  margin: 0 auto; 
+.middle-align{
+  margin: 0 auto;
   padding: 3em 0 0;
 }
-.wp-caption{ 
-  margin:0; 
-  padding:0; 
-  font-size:13px; 
+.wp-caption{
+  margin:0;
+  padding:0;
+  font-size:13px;
   max-width:100%;
 }
-.wp-caption-text{ 
-  margin:0; 
-  padding:0; 
+.wp-caption-text{
+  margin:0;
+  padding:0;
 }
 /* Text meant only for screen readers. */
 .screen-reader-text {
@@ -163,44 +163,44 @@ input[type='submit']:hover{
   width: auto;
   z-index: 100000; /* Above WP toolbar. */
 }
-.sticky{ 
-  margin:0; 
-  padding:0; 
+.sticky{
+  margin:0;
+  padding:0;
 }
 .sticky .post-main-box h3{
   background: url(assets/images/pin.png) no-repeat scroll 0 0px;
   padding-left: 40px;
 }
-.gallery-caption{ 
+.gallery-caption{
   margin:0;
   padding:0;
 }
-.alignleft, 
+.alignleft,
 img.alignleft {
-  display: inline; 
-  float: left; 
-  margin-right:20px; 
-  margin-top:4px; 
-  margin-bottom:10px; 
+  display: inline;
+  float: left;
+  margin-right:20px;
+  margin-top:4px;
+  margin-bottom:10px;
   padding:0;
   border:1px solid #bbb;
-  padding:5px; 
+  padding:5px;
 }
-.alignright, 
-img.alignright { 
-  display: inline; 
-  float: right; 
-  border:1px solid #bbb; 
+.alignright,
+img.alignright {
+  display: inline;
+  float: right;
+  border:1px solid #bbb;
   padding:5px;
   margin-bottom:10px;
   margin-left:25px;
 }
-.aligncenter, 
+.aligncenter,
 img.aligncenter {
-  clear: both; 
-  display: block; 
-  margin-left: auto; 
-  margin-right: auto; 
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top:0;
   border: solid 1px #bbb;
   padding: 5px;
@@ -210,8 +210,8 @@ img.alignnone {
   border: solid 1px #bbb;
   padding: 5px;
 }
-.comment-list .comment-content ul { 
-  list-style:none; 
+.comment-list .comment-content ul {
+  list-style:none;
   margin-left:15px;
 }
 .comment-list .comment-content ul li{
@@ -230,23 +230,23 @@ img.alignnone {
 input[type="text"],
 input[type="email"],
 input[type="phno"],
-input[type="password"], 
+input[type="password"],
 textarea{
   border:1px solid #bcbcbc;
-  width:100%; 
+  width:100%;
   font-size:16px;
-  padding:10px 10px; 
+  padding:10px 10px;
   margin:0 0 23px 0;
   height:auto;
 }
 textarea{
-  height:111px; 
+  height:111px;
 }
 input[type="submit"] {
   text-align:center;
   text-transform:uppercase;
   font-size:12px;
-  padding: 13px 30px; 
+  padding: 13px 30px;
   background: #9cc44e;
   font-weight:bold;
   color: #fff;
@@ -312,7 +312,7 @@ input[type="submit"] {
 p.site-description {
   font-weight: 500;
   letter-spacing: 1px;
-  font-style: italic;  
+  font-style: italic;
   font-size: 13px;
   margin-bottom: 0;
 }
@@ -321,7 +321,7 @@ p.site-description {
 
 .main-header .woocommerce-product-search {
   border: solid 2px #eeeeee;
-  border-radius: 30px;  
+  border-radius: 30px;
   padding: 5px 15px;
 }
 .main-header button[type="submit"]{
@@ -391,7 +391,7 @@ ul.list_nav {
 .main-navigation ul{
   list-style: none;
   margin: 0;
-  padding-left: 0;  
+  padding-left: 0;
   font-family: 'Caveat Brush', cursive;
   text-align: center;
 }
@@ -570,9 +570,9 @@ ul.list_nav {
 }
 
 /* --------- SLIDER--------- */
-#slider{ 
-  max-width:100%; 
-  margin:auto; 
+#slider{
+  max-width:100%;
+  margin:auto;
   padding:0;
   background: #fff;
 }
@@ -583,9 +583,9 @@ ul.list_nav {
 #slider .carousel-item-next,
 #slider .carousel-item-prev,
 #slider .carousel-item.active {
-  display: block !important;  
+  display: block !important;
 }
-#slider .carousel-control-prev-icon, 
+#slider .carousel-control-prev-icon,
 #slider .carousel-control-next-icon{
   background-image: none;
   font-size: 15px;
@@ -594,7 +594,7 @@ ul.list_nav {
   padding: 15px 22px;
   border: solid 2px #343c49;
 }
-#slider .carousel-control-prev-icon:hover, 
+#slider .carousel-control-prev-icon:hover,
 #slider .carousel-control-next-icon:hover{
   background: #9cc44e;
   color: #fff;
@@ -991,7 +991,7 @@ h1.page-title {
 .tags a {
   text-decoration: none!important;
   font-weight: 400;
-   border-radius: 3px; 
+   border-radius: 3px;
   color: #121212!important;
   background: #f8f8f8;
   border: 1px solid #ccc;
@@ -1038,7 +1038,7 @@ h2#reply-title {
   padding:30px 0;
 }
 .bradcrumbs a{
-  background:#f1f1f1; 
+  background:#f1f1f1;
   color:#000;
   padding:5px 15px;
   margin-right:5px;
@@ -1047,7 +1047,7 @@ h2#reply-title {
   background:#ffd34e;
 }
 .bradcrumbs span{
-  background:#dddddd; 
+  background:#dddddd;
   color:#000;
   padding:5px 15px;
 }
@@ -1059,9 +1059,9 @@ h2#reply-title {
 #comments ol {
   list-style: none;
 }
-#comments{  
+#comments{
   margin-top:30px;
-}  
+}
 #comments h2.comments-title{
   font-size:25px;
   font-weight:bold;
@@ -1072,7 +1072,7 @@ h2#reply-title {
   font-size:20px;
   font-weight:bold;
   clear:both;
-}  
+}
 #comments input[type="text"],
 #comments input[type="email"],
 #comments textarea{
@@ -1092,7 +1092,7 @@ h2#reply-title {
   color:#343c49;
   background:#9cc44e;
   padding:5px 15px;
-}  
+}
 #comments a.comment-reply-link:hover{
   background:#ddd;
   color: #000;
@@ -1110,7 +1110,7 @@ h2#reply-title {
   background:#f8f8f8;
   display:inline-block;
   border: 1px solid #d6d6d6;
-} 
+}
 #comments ul{
   margin:0 0 0 40px;
 }
@@ -1200,7 +1200,7 @@ h2#reply-title {
   padding: 5px;
   color: #555a5e;
 }
-#sidebar select, 
+#sidebar select,
 .woocommerce .woocommerce-ordering select{
   padding: 10px 5px;
   border: solid 1px #e1e1e1;
@@ -1300,8 +1300,8 @@ h2#reply-title {
 }
 .content-vw p{
   text-align:justify;
-  line-height: 25px; 
-  font-size: 14px; 
+  line-height: 25px;
+  font-size: 14px;
   margin:0 0 20px 0;
 }
 .content-vw h1{
@@ -1310,12 +1310,12 @@ h2#reply-title {
 .content-vw h2{
   font-size:32px;
   padding:0;
-  margin:0 0 25px; 
+  margin:0 0 25px;
 }
 .content-vw h3{
   font-size:36px;
   padding:0;
-  margin:0 0 25px; 
+  margin:0 0 25px;
 }
 .content-vw h4{
   font-size:20px;
@@ -1325,23 +1325,23 @@ h2#reply-title {
 .content-vw h5{
   margin:0 0 15px;
   font-size:18px;
-  padding:0; 
+  padding:0;
 }
 .content-vw h6{
   margin:0 0 15px;
   font-size:17px;
-  padding:0; 
+  padding:0;
 }
 .content-vw ul{
   list-style:none;
   margin:0 0 0 10px;
-  padding:10px 0 0; 
+  padding:10px 0 0;
   font-size:16px;
 }
 .content-vw ol{
   list-style: none;
   margin:0 0 0 15px;
-  padding:10px 0 0 0; 
+  padding:10px 0 0 0;
   font-size:16px;
   counter-reset: myCounter;
 }
@@ -1370,7 +1370,7 @@ h2#reply-title {
   line-height:13px;
   float:right;
   font-weight:bold;width:100%;
-} 
+}
 .pagination span, .pagination a {
   display:block;
   float:left;
@@ -1385,10 +1385,10 @@ h2#reply-title {
   -ms-transition: background .15s ease-in-out;
   -o-transition: background .15s ease-in-out;
   transition: background .15s ease-in-out;
-} 
+}
 .pagination a:hover{
   background: #9cc44e;
-} 
+}
 .pagination .current {
   padding: 10px 15px;
   background: #9cc44e;
@@ -1405,38 +1405,38 @@ h2#reply-title {
   clear:both;
 }
 .post-navigation {
-  clear: both; 
+  clear: both;
 }
 .nav-previous {
   float: left;
   width: 50%;
 }
-.post-navigation .current .screen-reader-text { 
-  position: absolute !important; 
+.post-navigation .current .screen-reader-text {
+  position: absolute !important;
 }
-.post-navigation a { 
-  color: #343c49; 
-  display: block; 
+.post-navigation a {
+  color: #343c49;
+  display: block;
 }
-.post-navigation span { 
-  display: block; 
+.post-navigation span {
+  display: block;
 }
-.post-navigation .meta-nav { 
-  color: #555a5e; 
+.post-navigation .meta-nav {
+  color: #555a5e;
   font-size: 13px;
-  letter-spacing: 0.076923077em; 
-  line-height: 1.6153846154; 
-  margin-bottom: 0.5384615385em; 
-  text-transform: uppercase; 
+  letter-spacing: 0.076923077em;
+  line-height: 1.6153846154;
+  margin-bottom: 0.5384615385em;
+  text-transform: uppercase;
 }
 .post-navigation .post-title {
-  font-size: 15px; 
-  font-weight: 700;  
-  line-height: 1.2173913043; 
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2173913043;
   text-rendering: optimizeLegibility;
 }
 .post-navigation a:hover .post-title,
-.post-navigation a:focus .post-title { 
+.post-navigation a:focus .post-title {
   color: #9cc44e;
 }
 .post-navigation:before {
@@ -1463,7 +1463,7 @@ h2#reply-title {
   z-index: 1;
 }
 .post-navigation .page-numbers {
-  display: inline-block; 
+  display: inline-block;
   letter-spacing: 0.013157895em;
   line-height: 1;
   margin: 0 0.7368421053em 0 -0.7368421053em;
@@ -1549,7 +1549,7 @@ h2#reply-title {
   margin-bottom: 0;
   padding: 15px;
 }
-.post-navigation span { 
+.post-navigation span {
   display: block;
 }
 .post-navigation .post-title {
@@ -1609,7 +1609,7 @@ a.button.product_type_simple.add_to_cart_button  {
   background: #343c49 ;
   padding-bottom: 40px;
 }
-#popular-toys a.added_to_cart.wc-forward {
+#popular-toys a.addmaincontented_to_cart.wc-forward {
   top: 175px;
   left: 155px;
 }
@@ -1846,10 +1846,10 @@ nav.woocommerce-MyAccount-navigation ul li a, .woocommerce-account .woocommerce-
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1; 
+    z-index: 1;
     left: 0;
     top: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     transition: 0.5s;
     overflow-y: scroll;
     background: #fff ;
@@ -1867,7 +1867,7 @@ nav.woocommerce-MyAccount-navigation ul li a, .woocommerce-account .woocommerce-
   }
   .toggle-nav span{
     font-size:30px;
-    cursor:pointer; 
+    cursor:pointer;
     text-align: right;
   }
   .toggle-nav{
@@ -1881,7 +1881,7 @@ nav.woocommerce-MyAccount-navigation ul li a, .woocommerce-account .woocommerce-
     position: relative;
     top: 25%;
     width: 100%;
-    text-align: center; 
+    text-align: center;
     margin-top: 0px;
     float: none;
   }
@@ -1889,7 +1889,7 @@ nav.woocommerce-MyAccount-navigation ul li a, .woocommerce-account .woocommerce-
     display: block;
   }
   .menubar .nav ul li{
-    border-top:1px #f1f1f1 solid; 
+    border-top:1px #f1f1f1 solid;
     display:block;
   }
   .main-navigation ul li:first-child a, a.closebtn.mobile-menu {
@@ -1901,7 +1901,7 @@ nav.woocommerce-MyAccount-navigation ul li a, .woocommerce-account .woocommerce-
     text-decoration: none;
     font-size: 17px;
     color: #000;
-    display: block; 
+    display: block;
     transition: 0.3s;
     float: none;
     margin: 5px 0;
@@ -1934,7 +1934,7 @@ nav.woocommerce-MyAccount-navigation ul li a, .woocommerce-account .woocommerce-
     padding: 0;
     display: block;
     text-align: center;
-  } 
+  }
   .main-navigation ul li:last-child{
     border-bottom: 1px #f1f1f1 solid;
   }
@@ -2065,4 +2065,8 @@ nav.woocommerce-MyAccount-navigation ul li a, .woocommerce-account .woocommerce-
   #popular-toys a.button.product_type_simple.add_to_cart_button{
     top: 52%;
   }
+}
+
+#maincontent div {
+  flex-direction: row-reverse;
 }
