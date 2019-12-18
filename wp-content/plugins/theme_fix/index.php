@@ -37,4 +37,5 @@ function add_address_and_phone() {
         });
     </script>
 	<?php
+
 }
